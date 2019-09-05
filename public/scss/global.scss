@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    margin:0 auto;
+    max-width: 1170px;
+}
+
+h1{
+    font-family: myriad-pro, sans-serif;
+}
+
+button,input,textarea {
+    outline: none;
+}
+
+li{
+    list-style: none;
+    display: inline;
+}
+a{
+    text-decoration: none;
+}
+
+.benz-btn {
+    border: none;
+    border-radius: 26px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    width: 174px;
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #004700;
+    width: 120%;
+    height: 52px;
+}
