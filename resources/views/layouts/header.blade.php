@@ -2,17 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mercedes-Benz</title>
+    <title>CarGuru</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="icon" type="image/ico" href="{{ asset('images/logo-icon.png') }}" />
+    <link rel="icon" type="image/ico" href="{{ asset('images/carguru-logo.png') }}"/>
     <script src="{{ asset('https://kit.fontawesome.com/b11236bde2.js') }}"></script>
 </head>
 <body>
 <div class="wrapper">
     <header class="header">
         <div class="brand-logo">
-            <img class="brand-img" alt="logo-icon" src="images/logo-icon.png">
-            <h3 class="brand-text">Mercedes-Benz</h3>
+            <img class="brand-img" alt="logo-icon" src="images/carguru-logo.png">
         </div>
         <div class="nav-content">
             <div class="container-nav">
@@ -24,7 +23,7 @@
                         <li>
                             <div class="signOut-btn">
                                 <a href="#" onclick="event.preventDefault();document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">
-                                    Sign out
+                                    Logout
 
                                     <form id="logout-form" action="{{ url('logout') }}" method="POST" style="display: none;">
                                         @csrf
