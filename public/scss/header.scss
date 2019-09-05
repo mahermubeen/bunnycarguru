@@ -29,6 +29,9 @@
             .admin-login{
                 color: #ffffff;
                 grid-column: 2;
+                .signOut-btn{
+                    display:inline;
+                }
                 li{
                     border-right: 1px solid white;
                     font-size: 13px;

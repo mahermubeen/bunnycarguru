@@ -71,6 +71,8 @@ a {
       .header .container-nav .nav-links .admin-login {
         color: #ffffff;
         grid-column: 2; }
+        .header .container-nav .nav-links .admin-login .signOut-btn {
+          display: inline; }
         .header .container-nav .nav-links .admin-login li {
           border-right: 1px solid white;
           font-size: 13px;
