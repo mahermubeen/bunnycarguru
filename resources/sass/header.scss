@@ -1,0 +1,95 @@
+.header{
+    height: 103px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    .brand-logo{
+        width: 376px;
+        padding: 60px 0 0 140px;
+        .brand-img{
+            position: relative;
+            left: 18%;
+        }
+        .brand-text{
+            margin-top: 0;
+            font-weight: 500;
+        }
+    }
+    .container-nav{
+        margin: 0 auto 0 0;
+        max-width: 1170px;
+        height: 103px;
+        .nav-links{
+            padding: 14px 0 14px 40px;
+            display: grid;
+            grid-template-columns: 18.8% 1fr max-content;
+            grid-column-gap: 1.2em;
+            .admin-login{
+                color: #ffffff;
+                grid-column: 2;
+                .signOut-btn{
+                    display:inline;
+                }
+                li{
+                    border-right: 1px solid white;
+                    font-size: 13px;
+                    padding: 0 18px;
+                    &:last-child{
+                        border-right: none;
+                    }
+                    a{
+                        color:white;
+                        &:hover{
+                            color:#004700;
+                        }
+                    }
+                }
+                span{
+                    color: #004700;
+                }
+            }
+            .login-apis{
+                li{
+                    border-radius:50%;
+                    a{
+                        color: white;
+                        background: #004700;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        .nav-list{
+            display: grid;
+            grid-template-columns: 19% 1fr max-content;
+            padding: 14px 0 14px 40px;
+            font-size: 15px;
+            grid-column-gap: 1.2em;
+            line-height: 50px;
+            .options{
+                grid-column: 2;
+                li{
+                    padding:0 14px;
+                    a{
+                        color: #7a7a7a;
+                        &:hover{
+                            color:#32cd32;
+                        }
+                    }
+                }
+            }
+            .search-checkout{
+                li {
+                    padding: 0 4px 0 3px;
+                }
+            }
+        }
+    }
+}
