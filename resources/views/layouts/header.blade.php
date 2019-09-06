@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>CarGuru</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="icon" type="image/ico" href="{{ asset('images/carguru-logo.png') }}"/>
-    <script src="{{ asset('https://kit.fontawesome.com/b11236bde2.js') }}"></script>
+    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
+    <link rel="icon" type="image/ico" href="{{ secure_asset('images/carguru-logo.png') }}"/>
+    <script src="{{ secure_asset('https://kit.fontawesome.com/b11236bde2.js') }}"></script>
 </head>
 <body>
 <div class="wrapper">
