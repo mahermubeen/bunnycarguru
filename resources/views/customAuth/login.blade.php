@@ -8,7 +8,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="icon" type="image/ico" href="{{ secure_asset('images/carguru-logo.png') }}"/>
     <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
-    <script src="{{ secure_secure_asset('https://kit.fontawesome.com/b11236bde2.js') }}"></script>
+    <script src="{{ secure_asset('https://kit.fontawesome.com/b11236bde2.js') }}"></script>
 </head>
 <body class="admin-body">
         <div class="admin-container">
