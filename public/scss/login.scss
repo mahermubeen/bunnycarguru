@@ -1,0 +1,131 @@
+.admin-container{
+    .login-heading{
+        text-align: center;
+        border-top-right-radius: 15px;
+        padding: 45px 0 30px;
+        background-color: #004700;
+        border-top-left-radius: 15px;
+        display: grid;
+        grid-template-columns: 95% 1fr;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 49px;
+            line-height: 60px;
+        }
+    }
+    .login-box-body{
+        padding: 50px 100px 100px 100px;
+        display: grid;
+        grid-template-columns: 0px max-content;
+        .admin-list-ul{
+            li{
+                padding-right: 10px;
+                border-right: 1px solid #004700;
+                &:last-child{
+                    padding-left:10px;
+                    border-right: none;
+                }
+                a{
+                    color:#004700;
+                    font-size: 23px;
+                    line-height: 28px;
+                    &:hover{
+                        color: #32cd32;
+                    }
+                }
+                .active{
+                    color: #32cd32;
+                }
+            }
+        }
+        .login-form{
+            margin: 25px 0;
+            .form-group{
+                width: 430px;
+                margin: 20px 0;
+                display: grid;
+                grid-template-columns: max-content 1fr;
+                align-items: center;
+                border-radius: 6px;
+                background-color: #f3f3f3;
+                box-shadow: inset 0px 3px 10px 0px rgba(0, 0, 0, 0.08);
+                border: none;
+                padding: 20px;
+                grid-gap: 10px;
+                input{
+                    background-color: #f3f3f3 !important;
+                    border: none;
+                    font-size: 16px;
+                    line-height: 30px;
+                }
+
+            }
+            .login-btn-box{
+                .forgot-pass{
+                    padding: 0 25px 15px;
+                    a{
+                        font-size: 14px;
+                        line-height: 30px;
+                        color:#909090;
+                        text-decoration: underline;
+                    }
+                }
+                .login-apis-box{
+                    display: grid;
+                    grid-template-columns: 1fr max-content;
+                    align-items: center;
+                    padding: 15px 0;
+                    button{
+                        background-color: rgb(50, 205, 50);
+                        box-shadow: 0px 2px 62px 0px rgba(0, 0, 0, 0.15);
+                        width: 154px;
+                        height: 55px;
+                        border-radius: 32px;
+                        border: none;
+                        color: white;
+                        font-size: 16px;
+                        line-height: 28px;
+                        cursor: pointer;
+                        img{
+                            margin-left: 10px;
+                        }
+                    }
+                    .apis{
+                        .fb{
+                            border-radius:50%;
+                            a{
+                                color: white;
+                                background: #4f73bc;
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                                display: inline-flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 18px;
+                                line-height: 28px;
+                            }
+                        }
+                        .google{
+                            border-radius:50%;
+                            padding-left: 7px;
+                            a{
+                                color: white;
+                                background: #dc4e40;
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                                display: inline-flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 18px;
+                                line-height: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

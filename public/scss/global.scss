@@ -1,28 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-.container{
-    margin:0 auto;
+.container {
+    margin: 0 auto;
     max-width: 1170px;
 }
 
-h1{
+h1 {
     font-family: myriad-pro, sans-serif;
 }
 
-button,input,textarea {
+button, input, textarea {
     outline: none;
 }
 
-li{
+li {
     list-style: none;
     display: inline;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ a{
     cursor: pointer;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 7px;
 }
 
@@ -45,8 +45,89 @@ a{
     background-color: #eaeaea;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: #004700;
     width: 120%;
     height: 52px;
+}
+
+.admin-body {
+    background: url(../images/login-bg.png) no-repeat;
+    background-size: 100% 100%;
+        .admin-container {
+            margin:29vh auto;
+            background: white;
+            width: 630px;
+            border-radius: 15px;
+            .bubble-design{
+                position: relative;
+                top: 15%;
+                left: -216px;
+                width: 180px;
+                height: 170px;
+            }
+            .cross{
+                position: relative;
+                background-color: #ffffff;
+                border-radius: 50%;
+                bottom: 60px;
+                width: 50px;
+                height: 50px;
+                display: grid;
+                justify-content: center;
+                font-weight: bold;
+                align-items: center;
+            }
+        }
+}
+
+
+
+
+
+
+
+
+.row{
+    display: grid;
+    grid-gap: 27px;
+    grid-template-columns: max-content 1fr;
+    height: 43px;
+}
+.row2{
+    grid-template-columns: 1fr max-content;
+}
+.row4{
+    grid-template-columns: auto;
+}
+.col{
+
+    border-radius: 32px;
+}
+.col1{
+    width: 54px;
+    background: white;
+}
+.col2{
+    background: white;
+}
+.col3{
+
+}
+.col4{
+    width: 140px;
+    background: #32cd32;
+    margin-left: 15px;
+}
+.col5{
+    width: 20px;
+}
+.col6{
+    background: white;
+}
+.col7{
+
+}
+.col8{
+    background-color: #32cd32;
 }
