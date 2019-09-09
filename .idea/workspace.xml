@@ -3,16 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b48edb9c-5847-42b7-bed5-8ad587156319" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.sass-cache/8866f5315add4b813f9a07d71486758f6a32798c/global.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/public/.sass-cache/8866f5315add4b813f9a07d71486758f6a32798c/global.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.sass-cache/8866f5315add4b813f9a07d71486758f6a32798c/login.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/public/.sass-cache/8866f5315add4b813f9a07d71486758f6a32798c/login.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/.sass-cache/8866f5315add4b813f9a07d71486758f6a32798c/register.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/public/.sass-cache/8866f5315add4b813f9a07d71486758f6a32798c/register.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.sass-cache/8866f5315add4b813f9a07d71486758f6a32798c/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/public/.sass-cache/8866f5315add4b813f9a07d71486758f6a32798c/style.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/login.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/scss/register.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/register.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/customAuth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customAuth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/customAuth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customAuth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
@@ -175,7 +169,7 @@
       <workItem from="1567639957080" duration="8200000" />
       <workItem from="1567714738843" duration="21727000" />
       <workItem from="1567791488415" duration="1047000" />
-      <workItem from="1567999511908" duration="8060000" />
+      <workItem from="1567999511908" duration="8550000" />
     </task>
     <servers />
   </component>
@@ -207,11 +201,6 @@
           <url>file://$PROJECT_DIR$/resources/views/index.blade.php</url>
           <line>268</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/customAuth/login.blade.php</url>
-          <line>23</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

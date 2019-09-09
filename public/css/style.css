@@ -187,15 +187,12 @@ a {
         grid-template-rows: auto; }
         .register-body .register-container .register-box-body .register-form .form-group {
           margin: 20px 0 0 0;
-          display: grid;
-          grid-template-columns: max-content;
-          align-items: center;
           border-radius: 6px;
           background-color: #f3f3f3;
           box-shadow: inset 0px 3px 10px 0px rgba(0, 0, 0, 0.08);
           border: none;
-          padding: 20px;
-          grid-gap: 10px; }
+          display: grid;
+          padding: 20px; }
           .register-body .register-container .register-box-body .register-form .form-group input {
             background-color: #f3f3f3 !important;
             border: none;
