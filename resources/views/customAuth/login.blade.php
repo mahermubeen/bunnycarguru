@@ -6,33 +6,20 @@
     <title>CarGuru | Login </title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="icon" type="image/ico" href="{{ secure_asset('images/carguru-logo.png') }}"/>
-    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
-    <script src="{{ secure_asset('https://kit.fontawesome.com/b11236bde2.js') }}"></script>
+    <link rel="icon" type="image/ico" href="{{ asset('images/carguru-logo.png') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <script src="{{ asset('https://kit.fontawesome.com/b11236bde2.js') }}"></script>
 </head>
-<body class="admin-body">
+<body>
+    <div class="admin-body">
         <div class="admin-container">
+            <div></div>
             <div class="login-heading">
                 <a href="{{ url('/') }}">{{ __('Login') }}</a>
                 <span class="cross">X</span>
             </div>
             <div class="login-box-body">
-                <div class="bubble-design">
-                    <div class="row">
-                        <div class="col col1"></div>
-                        <div class="col col2"></div>
-                    </div>
-                    <div class="row row2">
-                        <div class="col col4"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col col5"></div>
-                        <div class="col col6"></div>
-                    </div>
-                    <div class="row row4">
-                        <div class="col col8"></div>
-                    </div>
-                </div>
+                <div></div>
                 <div class="login-box-content">
                     <div class="admin-box-list">
                         <ul class="admin-list-ul">
@@ -44,27 +31,27 @@
                         @csrf
 
                         <div class="form-group has-feedback">
-                            <img src="{{ secure_asset('images/mail.png') }}"/>
-                            <input type="text" class="form-control @error('name') is-invalid @enderror" name="name"
-                                   value="{{ old('name') }}" required autocomplete="name" placeholder="Username">
+                            <img src="{{ asset('images/mail.png') }}"/>
+                            <input  name="name"
+                                   required autocomplete="off" placeholder="Username">
                         </div>
                         @error('name')
                         <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
+                            <strong>{{ $message }}</strong>
+                        </span>
                         @enderror
 
                         <div class="form-group has-feedback">
-                            <img src="{{ secure_asset('images/eye.png') }}"/>
-                            <input type="password" class="form-control @error('password') is-invalid @enderror"
+                            <img src="{{ asset('images/eye.png') }}"/>
+                            <input
                                    name="password"
-                                   required autocomplete="password" placeholder="Public Key"
+                                   required placeholder="Password"
                             />
                         </div>
                         @error('password')
                         <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
+                            <strong>{{ $message }}</strong>
+                        </span>
                         @enderror
 
                         <div class="login-btn-box">
@@ -85,5 +72,6 @@
                 </div>
             </div>
         </div>
+    </div>
 </body>
 </html>
