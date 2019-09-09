@@ -8,263 +8,164 @@
                 <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
             </div>
-            <div class="form-services">
-                <div class="services-form-list">
-                    <ul>
-                        <li><a href="#"><img alt="battery" src="images/battery.png"></a></li>
-                        <li><a href="#"><img alt="tyre" src="images/tyre.png"></a></li>
-                        <li><a href="#"><img alt="oil" src="images/oil.png"></a></li>
-                        <li><a href="#"><img alt="customer" src="images/customer.png"></a></li>
-                    </ul>
+        </div>
+    </section>
+    <section class="main-section">
+        <section class="aboutUs">
+            <div class="container">
+                <div class="about-section">
+                    <h1 class="heading6">About Us</h1>
+                    <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                        a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                        centuries, but also the leap into electronic typesetting,</p>
                 </div>
-                <form class="services-form">
-                    <label class="labels" for="fname">First Name*</label>
-                    <label class="labels" for="lname">Last Name*</label>
-                    <input class="inputs" id="fname" type="text" name="fname">
-                    <input class="inputs" id="lname" type="text" name="lname">
-                    <label class="labels" for="email">Email</label>
-                    <label class="labels" for="phone">Phone*</label>
-                    <input class="inputs" id="email" type="text" name="email">
-                    <input class="inputs" id="phone" type="text" name="phone">
-                    <label class="labels" class="row" for="location">Your Location</label>
-                    <input class="inputs row" id="location" type="text" name="location">
-                    <label class="labels" class="row" for="service">Services Interested</label>
-                    <select class="row inputs" id="service">
-                        <option></option>
-                        <option>hello</option>
-                        <option>hello</option>
-                        <option>hello</option>
-                    </select>
-                    <label class="row form-btn">
-                        <button type="button" class="benz-btn">Send <img src="./images/send-arrow.png"
-                                                                         alt="send-arrow"/></button>
-                    </label>
-                </form>
-            </div>
-        </div>
-    </section>
-    <section class="aboutUs">
-        <div class="container">
-            <div class="about-section">
-                <h1 class="heading6">About Us</h1>
-                <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-                    a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                    centuries, but also the leap into electronic typesetting,</p>
-            </div>
-            <div class="services-section">
-                <h1 class="heading6">Our Services</h1>
-                <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
-                <div class="our-services-list">
-                    <ul class="services">
-                        <li>
-                            <img src="images/car.png"/>
-                            <h3 class="heading2">Everything About Mercedes</h3>
-                            <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
-                            <button class="benz-btn">
-                                Details
-                                <img src="images/send-arrow.png" alt="send-arrow"/>
-                            </button>
-                        </li>
-                        <li>
-                            <img src="images/Icon1.png"/>
-                            <h3 class="heading2">Battery Testing & Installation</h3>
-                            <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
-                            <button class="benz-btn">
-                                Details
-                                <img src="images/send-arrow.png" alt="send-arrow"/>
-                            </button>
-                        </li>
-                        <li>
-                            <img src="images/Icon2.png"/>
-                            <h3 class="heading2">Flat Tyre Replacement</h3>
-                            <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
-                            <button class="benz-btn">
-                                Details
-                                <img src="images/send-arrow.png" alt="send-arrow"/>
-                            </button>
-                        </li>
-                        <li>
-                            <img src="images/Icon3.png"/>
-                            <h3 class="heading2">Car Oil <br/>Change</h3>
-                            <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
-                            <button class="benz-btn">
-                                Details
-                                <img src="images/send-arrow.png" alt="send-arrow"/>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="schedule">
-        <div class="container">
-            <div class="schedule-wrapper">
-                <h1 class="heading3">Schedule a Free Consultation</h1>
-                <p class="paragraph3">Lorem Ipsum is simply dummy text of the </p>
-                <ul class="schedule-list">
-                    <li>
-                        <h3 class="heading4">International Call</h3>
-                        <p class="paragraph4">+88 (0) 101 0000 000</p>
-                    </li>
-                    <li>
-                        <h3 class="heading4">What's app</h3>
-                        <p class="paragraph4">+88 (0) 101 0000 000</p>
-                    </li>
-                    <li>
-                        <h3 class="heading4">Skype Call</h3>
-                        <p class="paragraph4">+88 (0) 101 0000 000</p>
-                    </li>
-                    <li>
-                        <h3 class="heading4">Mail Us</h3>
-                        <p class="paragraph4">+88 (0) 101 0000 000</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="work">
-        <div class="container">
-            <div class="work-section">
-                <figure class="work-img">
-                    <img src="images/business-car-img.png" alt="business-car"/>
-                </figure>
-                <div class="how-wrapper">
-                    <h1 class="heading6">How We Work</h1>
-                    <p class="paragraph5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et.</p>
-                    <div class="how-content">
-                        <h3 class="heading5">Stuck with dead Car Battery?</h3>
-                        <p class="paragraph5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt</p>
+                <div class="services-section">
+                    <div class="services-heading">
+                        <h1 class="heading6">Our Services</h1>
+                        <span>
+                            <a href="">View All Services Here</a>
+                        </span>
                     </div>
-                    <div class="how-content">
-                        <h3 class="heading5">Stuck with dead Car Battery?</h3>
-                        <p class="paragraph5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt</p>
-                    </div>
-                    <div class="how-content">
-                        <h3 class="heading5">Stuck with dead Car Battery?</h3>
-                        <p class="paragraph5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt</p>
-                    </div>
-                    <div class="how-content">
-                        <h3 class="heading5">Stuck with dead Car Battery?</h3>
-                        <p class="paragraph5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt</p>
-                    </div>
-                    <div class="how-content">
-                        <h3 class="heading5">Stuck with dead Car Battery?</h3>
-                        <p class="paragraph5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt</p>
-                    </div>
-                    <div class="how-content">
-                        <h3 class="heading5">Stuck with dead Car Battery?</h3>
-                        <p class="paragraph5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt</p>
-                    </div>
-                    <div class="how-content">
-                        <h3 class="heading5">Stuck with dead Car Battery?</h3>
-                        <p class="paragraph5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt</p>
-                    </div>
-                    <div class="how-content">
-                        <h3 class="heading5">Stuck with dead Car Battery?</h3>
-                        <p class="paragraph5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt</p>
-                    </div>
-                </div>
-                <img class="car-img" src="images/car-business.png">
-            </div>
-        </div>
-    </section>
-    <section class="chooseService">
-        <div class="choose-service-wrapper container">
-            <h1 class="heading6">Choose Your Service Here</h1>
-            <p class="paragraph5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum
-                is simply dummy text of the printing and typesetting industry.</p>
-        </div>
-        <div class="choose-service-images">
-            <figure><img src="images/car1.png" alt=""/></figure>
-            <figure><img src="images/car2.png" alt=""/></figure>
-            <figure><img src="images/car3.png" alt=""/></figure>
-            <figure><img src="images/car4.png" alt=""/></figure>
-            <figure><img src="images/car5.png" alt=""/></figure>
-            <figure><img src="images/car6.png" alt=""/></figure>
-        </div>
-    </section>
-    <section class="choose-us-section">
-        <div class="container">
-            <div class="choose-us-wrapper">
-                <h1 class="heading3">Why Choose Us</h1>
-                <p class="paragraph3">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
-                <div class="choose-us-carousal">
-                    <div class="carousal">
-                        <img src="images/group1.png"/>
-                        <h3 class="heading5">Best Value</h3>
-                        <p class="paragraph6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown printer took a galley of type and scrambled it to make.</p>
-                    </div>
-                    <div class="carousal">
-                        <img src="images/group2.png"/>
-                        <h3 class="heading5">Effective Service</h3>
-                        <p class="paragraph6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown printer took a galley of type and scrambled it to make.</p>
-                    </div>
-                    <div class="carousal">
-                        <img src="images/group3.png"/>
-                        <h3 class="heading5">Reliable Warranty</h3>
-                        <p class="paragraph6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown printer took a galley of type and scrambled it to make.</p>
+
+                    <div class="our-services-list">
+                        <ul class="services">
+                            <li>
+                                <img class="battery-1" src="images/battery-icon.png"/>
+                                <img class="battery-2" src="images/battery-white.png"/>
+                                <h3 class="heading2">Battery Replacement</h3>
+                                <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+                                <button class="benz-btn benz-services">
+                                    Details
+                                    <img src="images/send-arrow.png" alt="send-arrow"/>
+                                </button>
+                            </li>
+                            <li>
+                                <img class="tyre-1" src="images/tyre-icon.png"/>
+                                <img class="tyre-2" src="images/tyre-white.png"/>
+                                <h3 class="heading2">Tyre Change</h3>
+                                <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+                                <button class="benz-btn benz-services">
+                                    Details
+                                    <img src="images/send-arrow.png" alt="send-arrow"/>
+                                </button>
+                            </li>
+                            <li>
+                                <img class="oil-1" src="images/oil-icon.png"/>
+                                <img class="oil-2" src="images/oil-white.png"/>
+                                <h3 class="heading2">Oil Change Service</h3>
+                                <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+                                <button class="benz-btn benz-services">
+                                    Details
+                                    <img src="images/send-arrow.png" alt="send-arrow"/>
+                                </button>
+                            </li>
+                            <li>
+                                <img class="car-1" src="images/car-icon.png"/>
+                                <img class="car-2" src="images/car-white.png"/>
+                                <h3 class="heading2">AC Gas Change Service</h3>
+                                <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+                                <button class="benz-btn benz-services">
+                                    Details
+                                    <img src="images/send-arrow.png" alt="send-arrow"/>
+                                </button>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="customers-wrapper">
-                <h1 class="heading8">Loved By Our Customers</h1>
-                <p class="paragraph7">With our experience, we always bring the best services for Clients</p>
-                <div class="customers-carousal">
-                    <div class="carousal">
-                        <div class="carousal-idea">
-                            <p class="paragraph8">“Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
-                                the 1500s...
-                            </p>
+        </section>
+        <section class="latest-work">
+            <div class="container latest-work-container">
+                <div class="work-heading">
+                    <button>
+                        <a href="#">
+                            View All Works
+                            <img src="images/black-send-arrow.png" />
+                        </a>
+                    </button>
+                    <h2>Discover our latest work history</h2>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+            </div>
+            <div class="work-images">
+                <div class="work-img">
+                    <img  src="images/work-man1.png" />
+                    <div class="image-hover-detail">See Our Latest Work History</div>
+                </div>
+                <div class="work-img">
+                    <img  src="images/work-man2.png" />
+                    <div class="image-hover-detail">See Our Latest Work History</div>
+                </div>
+                <div class="work-img">
+                    <img src="images/work-man3.png" />
+                    <div class="image-hover-detail">See Our Latest Work History</div>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="latest-news">
+            <div class="container latest-news-container">
+                <div class="work-heading">
+                    <button>
+                        <a href="#">
+                            View More News
+                            <img src="images/black-send-arrow.png" />
+                        </a>
+                    </button>
+                    <h2>Discover our latest news feed</h2>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <div class="news-feed-wrapper">
+                    <div class="news-details">
+                        <div class="news-detail-1">
+                            <span>6 Jun 2019</span>
+                            <h3>Lorem Ispum dolor smith emet text here.</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever ...</p>
+                            <a href="#">Read More</a>
                         </div>
-                        <div class="polygon"></div>
-                        <div class="carousal-man-detail">
-                            <figure class="man-img">
-                                <img src="images/man1.png"/>
-                            </figure>
-                            <div class="man-details">
-                                <h3 class="man-heading">Jenny Adams</h3>
-                                <span class="man-des">(Dubai Resident)</span>
+                        <div class="news-detail-2">
+                            <img src="images/news-feed-img.png"/>
+                            <div class="news-cover-heading">
+                                <span>6 Jun 2019</span>
+                                <h3>Lorem Ispum dolor smith emet text here.</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="carousal">
-                        <div class="carousal-idea">
-                            <p class="paragraph8">“Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
-                                the 1500s...</p>
+                    <div class="news-details">
+                        <div class="news-detail-1">
+                            <span>6 Jun 2019</span>
+                            <h3>Lorem Ispum dolor smith emet text here.</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever ...</p>
+                            <a href="#">Read More</a>
                         </div>
-                        <div class="polygon"></div>
-                        <div class="carousal-man-detail">
-                            <figure class="man-img">
-                                <img src="images/man2.png"/>
-                            </figure>
-                            <div class="man-details">
-                                <h3 class="man-heading">John Doe</h3>
-                                <span class="man-des">(Dubai Resident)</span>
+                        <div class="news-detail-2">
+                            <img src="images/news-feed-img.png"/>
+                            <div class="news-cover-heading">
+                                <span>6 Jun 2019</span>
+                                <h3>Lorem Ispum dolor smith emet text here.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-details">
+                        <div class="news-detail-1">
+                            <span>6 Jun 2019</span>
+                            <h3>Lorem Ispum dolor smith emet text here.</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever ...</p>
+                            <a href="#">Read More</a>
+                        </div>
+                        <div class="news-detail-2">
+                            <img src="images/news-feed-img.png"/>
+                            <div class="news-cover-heading">
+                                <span>6 Jun 2019</span>
+                                <h3>Lorem Ispum dolor smith emet text here.</h3>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
     <section class="contact-section">
         <div class="container">

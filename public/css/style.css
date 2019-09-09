@@ -24,13 +24,14 @@ a {
 
 .benz-btn {
   border: none;
-  border-radius: 26px;
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   width: 174px;
   padding: 12px 0;
-  cursor: pointer; }
+  text-align: left;
+  cursor: pointer;
+  background-color: transparent; }
 
 ::-webkit-scrollbar {
   width: 7px; }
@@ -666,8 +667,9 @@ a {
           font-size: 15px;
           line-height: 15px; } }
 .home {
-  padding: 8%;
-  background: url("../images/banner-img.png") no-repeat; }
+  padding: 3% 20% 29% 20%;
+  margin: 7% 0 0 0;
+  background: url("../images/index-main-banner.png") no-repeat; }
   .home .home-container {
     display: grid;
     justify-content: space-between;
@@ -720,182 +722,221 @@ a {
           border-radius: 30px;
           background-color: #cfcfcf; }
 
-.aboutUs {
-  background: url("../images/about-img.png") no-repeat;
-  text-align: center;
-  padding: 0 0 100px; }
-  .aboutUs .about-section {
-    text-align: center; }
-    .aboutUs .about-section .heading6 {
+.main-section {
+  background: url("../images/index-main1-bg.png") no-repeat; }
+  .main-section .aboutUs {
+    padding: 0 0 100px; }
+    .main-section .aboutUs .about-section .heading6 {
+      font-size: 40px;
+      line-height: 50px;
+      color: #474747;
       padding: 100px 0 40px; }
-    .aboutUs .about-section .paragraph {
+    .main-section .aboutUs .about-section .paragraph {
       padding: 0 0 55px;
-      color: #6c677c; }
-  .aboutUs .services-section .paragraph {
-    padding: 0 0 55px;
-    color: #6c677c; }
-  .aboutUs .services-section .heading6 {
-    padding: 45px 0 40px; }
-  .aboutUs .services-section .our-services-list .services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 240px));
-    justify-content: center;
-    grid-gap: 4.5%; }
-    .aboutUs .services-section .our-services-list .services li h3 {
-      padding: 28px 5px 0; }
-    .aboutUs .services-section .our-services-list .services li .para {
-      padding: 28px 0 28px;
-      line-height: 32px;
-      font-size: 16px;
-      color: #6c677c; }
-    .aboutUs .services-section .our-services-list .services li .heading2 {
-      color: #727272;
-      font-size: 23px;
-      line-height: 28px; }
-
-.schedule {
-  background: url("../images/schedule-img.png") no-repeat;
-  background-size: cover;
-  padding: 140px 0 220px;
-  text-align: center; }
-  .schedule .schedule-wrapper .heading3 {
-    color: #ffffff;
-    font-size: 40px;
-    line-height: 50px; }
-  .schedule .schedule-wrapper .paragraph3 {
-    line-height: 32px;
+      color: #858585;
+      font-size: 18px;
+      line-height: 35px; }
+    .main-section .aboutUs .services-section .services-heading {
+      display: grid;
+      grid-template-columns: 1fr max-content;
+      align-items: center; }
+      .main-section .aboutUs .services-section .services-heading .heading6 {
+        padding: 45px 0 40px;
+        font-size: 40px;
+        line-height: 50px;
+        color: #474747; }
+      .main-section .aboutUs .services-section .services-heading span a {
+        font-size: 17px;
+        line-height: 50px;
+        color: #32cd32;
+        cursor: pointer; }
+    .main-section .aboutUs .services-section .our-services-list .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 240px));
+      justify-content: center;
+      grid-gap: 30px; }
+      .main-section .aboutUs .services-section .our-services-list .services li {
+        border-radius: 6px;
+        padding: 40px 15px 8px 20px;
+        box-shadow: 0px 2px 29.12px 2.88px rgba(70, 70, 70, 0.03);
+        cursor: pointer; }
+        .main-section .aboutUs .services-section .our-services-list .services li .benz-services {
+          font-size: 23px;
+          line-height: 40px; }
+        .main-section .aboutUs .services-section .our-services-list .services li .battery-2 {
+          display: none; }
+        .main-section .aboutUs .services-section .our-services-list .services li .oil-2 {
+          display: none; }
+        .main-section .aboutUs .services-section .our-services-list .services li .tyre-2 {
+          display: none; }
+        .main-section .aboutUs .services-section .our-services-list .services li .car-2 {
+          display: none; }
+        .main-section .aboutUs .services-section .our-services-list .services li:hover {
+          background-color: limegreen; }
+          .main-section .aboutUs .services-section .our-services-list .services li:hover .heading2, .main-section .aboutUs .services-section .our-services-list .services li:hover .para {
+            color: white; }
+          .main-section .aboutUs .services-section .our-services-list .services li:hover .battery-1 {
+            display: none; }
+          .main-section .aboutUs .services-section .our-services-list .services li:hover .battery-2 {
+            display: block; }
+          .main-section .aboutUs .services-section .our-services-list .services li:hover .oil-1 {
+            display: none; }
+          .main-section .aboutUs .services-section .our-services-list .services li:hover .oil-2 {
+            display: block; }
+          .main-section .aboutUs .services-section .our-services-list .services li:hover .tyre-1 {
+            display: none; }
+          .main-section .aboutUs .services-section .our-services-list .services li:hover .tyre-2 {
+            display: block; }
+          .main-section .aboutUs .services-section .our-services-list .services li:hover .car-1 {
+            display: none; }
+          .main-section .aboutUs .services-section .our-services-list .services li:hover .car-2 {
+            display: block; }
+        .main-section .aboutUs .services-section .our-services-list .services li h3 {
+          padding: 28px 5px 0; }
+        .main-section .aboutUs .services-section .our-services-list .services li .para {
+          padding: 28px 0 28px;
+          line-height: 35px;
+          font-size: 16px;
+          color: #858585; }
+        .main-section .aboutUs .services-section .our-services-list .services li .heading2 {
+          font-size: 22px;
+          line-height: 28px;
+          color: #474747; }
+  .main-section .latest-work .latest-work-container p {
     font-size: 18px;
-    color: #ffffff; }
-  .schedule .schedule-wrapper .schedule-list {
-    margin: 60px 0 0;
+    color: #706f72;
+    line-height: 32px;
+    padding: 35px 0; }
+  .main-section .latest-work .latest-work-container .work-heading {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
-    .schedule .schedule-wrapper .schedule-list li {
-      border-right: 1px solid #ffffff; }
-      .schedule .schedule-wrapper .schedule-list li .heading4 {
-        color: #ffffff;
-        font-size: 23px;
-        line-height: 28px; }
-      .schedule .schedule-wrapper .schedule-list li .paragraph4 {
-        line-height: 28px;
-        font-size: 15px;
-        color: #ffffff; }
-      .schedule .schedule-wrapper .schedule-list li:last-child {
-        border-right: none; }
-
-.work .work-section {
-  display: grid;
-  grid-template-columns: 49% 49% 1fr;
-  grid-auto-rows: 585px;
-  padding: 30px 0 60px; }
-  .work .work-section .work-img {
-    display: flex; }
-    .work .work-section .work-img img {
-      width: 100%;
-      border-radius: 6px; }
-  .work .work-section .how-wrapper {
-    overflow-y: scroll;
-    height: 100%;
-    padding: 0 30px; }
-    .work .work-section .how-wrapper .paragraph5 {
-      margin: 32px 0; }
-  .work .work-section .car-img {
-    position: relative;
-    left: 25%;
-    top: 25%; }
-
-.chooseService {
-  padding: 100px 0;
-  text-align: center; }
-  .chooseService .choose-service-wrapper .paragraph5 {
-    padding: 30px 0; }
-  .chooseService .choose-service-wrapper .heading6 {
-    padding: 0; }
-  .chooseService .choose-service-images {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 1em;
-    grid-auto-rows: minmax(380px, 380px); }
-    .chooseService .choose-service-images figure img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-    .chooseService .choose-service-images figure:nth-child(1) {
-      grid-column: 1/3; }
-    .chooseService .choose-service-images figure:nth-child(2) {
-      grid-column: 3/5;
-      grid-row: 1/3; }
-    .chooseService .choose-service-images figure:nth-child(3) {
-      grid-column: 5/7; }
-    .chooseService .choose-service-images figure:last-child {
-      grid-column: 5/7; }
-
-.choose-us-section {
-  background: url("../images/why-choose-bg.png") no-repeat top;
-  background-size: cover;
-  padding: 300px 0 1px; }
-  .choose-us-section .choose-us-wrapper .heading3 {
-    text-align: center; }
-  .choose-us-section .choose-us-wrapper .paragraph3 {
-    text-align: center;
-    padding: 22px 0 45px; }
-  .choose-us-section .choose-us-wrapper .choose-us-carousal {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.8em;
-    grid-auto-rows: 530px; }
-    .choose-us-section .choose-us-wrapper .choose-us-carousal .carousal {
+    grid-template-columns: 1fr max-content;
+    grid-gap: 300px; }
+    .main-section .latest-work .latest-work-container .work-heading button {
       border-radius: 6px;
       background-color: white;
-      box-shadow: 0 2px 29px 3px rgba(70, 70, 70, 0.03);
-      padding: 50px 35px 15px 30px; }
-      .choose-us-section .choose-us-wrapper .choose-us-carousal .carousal .heading5 {
-        margin: 20px 0; }
-  .choose-us-section .customers-wrapper {
-    margin: 300px 0 180px; }
-    .choose-us-section .customers-wrapper .heading8 {
-      text-align: center; }
-    .choose-us-section .customers-wrapper .paragraph7 {
-      text-align: center;
-      padding: 36px 0 60px 0; }
-    .choose-us-section .customers-wrapper .customers-carousal {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 30px; }
-      .choose-us-section .customers-wrapper .customers-carousal .carousal .carousal-idea {
-        background-color: white;
-        box-shadow: 0px 2px 29.12px 2.88px rgba(70, 70, 70, 0.1);
-        padding: 50px 35px 40px 30px; }
-      .choose-us-section .customers-wrapper .customers-carousal .carousal .polygon {
-        width: 90px;
-        height: 60px;
-        clip-path: polygon(65% 0, 0 0, 100% 100%);
-        background-color: #ffffff; }
-      .choose-us-section .customers-wrapper .customers-carousal .carousal .carousal-man-detail {
-        display: grid;
-        grid-template-columns: 6.250em 20% 1fr;
-        grid-gap: 20px; }
-        .choose-us-section .customers-wrapper .customers-carousal .carousal .carousal-man-detail .man-heading {
-          color: #474747;
-          font-size: 22px;
-          line-height: 28px; }
-        .choose-us-section .customers-wrapper .customers-carousal .carousal .carousal-man-detail .man-des {
-          line-height: 30px;
-          font-size: 16px;
-          color: #32cd32; }
-        .choose-us-section .customers-wrapper .customers-carousal .carousal .carousal-man-detail .man-img {
-          grid-column: 2; }
-        .choose-us-section .customers-wrapper .customers-carousal .carousal .carousal-man-detail img {
-          border-radius: 50%;
-          width: 116px;
-          height: 116px; }
+      box-shadow: 0px 2px 29.12px 2.88px rgba(36, 45, 60, 0.05);
+      width: 270px;
+      height: 79px;
+      border: none;
+      cursor: pointer; }
+      .main-section .latest-work .latest-work-container .work-heading button a {
+        color: #474747;
+        font-size: 16px;
+        line-height: 27px; }
+        .main-section .latest-work .latest-work-container .work-heading button a img {
+          margin-left: 20px; }
+    .main-section .latest-work .latest-work-container .work-heading h2 {
+      font-size: 40px;
+      line-height: 50px;
+      color: #474747;
+      font-weight: 400; }
+  .main-section .latest-work .work-images {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    grid-gap: 25px;
+    padding: 45px 0;
+    position: relative; }
+    .main-section .latest-work .work-images .image-hover-detail {
+      display: none;
+      color: #ffffff;
+      width: 600px;
+      justify-content: center;
+      align-items: center;
+      height: 94px;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 27px;
+      background-color: #32cd32;
+      position: absolute;
+      bottom: 52px;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px; }
+    .main-section .latest-work .work-images .work-img {
+      cursor: pointer; }
+      .main-section .latest-work .work-images .work-img:hover .image-hover-detail {
+        display: grid; }
+  .main-section .latest-news .latest-news-container .work-heading {
+    padding: 65px 0 20px 0;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-gap: 300px; }
+    .main-section .latest-news .latest-news-container .work-heading button {
+      border-radius: 6px;
+      background-color: white;
+      box-shadow: 0px 2px 29.12px 2.88px rgba(36, 45, 60, 0.05);
+      width: 270px;
+      height: 79px;
+      border: none; }
+      .main-section .latest-news .latest-news-container .work-heading button a {
+        font-size: 16px;
+        line-height: 27px;
+        color: #474747; }
+        .main-section .latest-news .latest-news-container .work-heading button a img {
+          margin-left: 20px; }
+    .main-section .latest-news .latest-news-container .work-heading h2 {
+      font-size: 40px;
+      line-height: 50px;
+      color: #474747;
+      font-weight: 400; }
+  .main-section .latest-news .latest-news-container p {
+    padding: 20px 0;
+    font-size: 18px;
+    line-height: 32px;
+    color: #706f72; }
+  .main-section .latest-news .latest-news-container .news-feed-wrapper {
+    padding: 32px 0 80px;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-gap: 30px; }
+  .main-section .latest-news .news-feed-wrapper .news-details .news-detail-1 {
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0px 2px 29.12px 2.88px rgba(70, 70, 70, 0.03);
+    width: 370px;
+    height: 411px;
+    padding: 55px 25px 40px 25px; }
+    .main-section .latest-news .news-feed-wrapper .news-details .news-detail-1 span {
+      border-radius: 6px;
+      background-color: limegreen;
+      width: 122px;
+      height: 37px;
+      font-size: 16px;
+      line-height: 28px;
+      color: #ffffff;
+      padding: 6px; }
+    .main-section .latest-news .news-feed-wrapper .news-details .news-detail-1 h3 {
+      font-size: 23px;
+      line-height: 28px;
+      color: #474747;
+      padding: 30px 0 0; }
+    .main-section .latest-news .news-feed-wrapper .news-details .news-detail-1 p {
+      padding: 20px 0;
+      font-size: 16px;
+      line-height: 30px;
+      color: #706f72; }
+    .main-section .latest-news .news-feed-wrapper .news-details .news-detail-1 a {
+      font-size: 18px;
+      line-height: 28px;
+      color: #474747;
+      font-weight: 400;
+      cursor: pointer; }
+  .main-section .latest-news .news-feed-wrapper .news-details .news-detail-2 {
+    display: none; }
 
 .contact-section {
   background-color: #32cd32;
   padding: 100px 0 0;
   text-align: center; }
+  .contact-section .contact-wrapper .heading3 {
+    font-size: 40px;
+    line-height: 50px;
+    color: #ffffff; }
   .contact-section .contact-wrapper .paragraph3 {
-    padding: 28px 0 48px; }
+    padding: 28px 0 48px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 32px; }
   .contact-section .contact-wrapper .contact-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
@@ -906,7 +947,14 @@ a {
       .contact-section .contact-wrapper .contact-list li:last-child {
         border-right: none; }
       .contact-section .contact-wrapper .contact-list li .heading2 {
-        margin: 22px 0; }
+        margin: 22px 0;
+        font-size: 23px;
+        line-height: 28px;
+        color: #474747; }
+      .contact-section .contact-wrapper .contact-list li .paragraph8 {
+        font-size: 16px;
+        line-height: 30px;
+        color: #706f72; }
 
 .map-div {
   background: url("./../images/map.png") no-repeat center;
@@ -920,59 +968,83 @@ a {
     padding: 80px 0 100px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
-    .footer .footer-list li {
+    .footer .footer-list .heading9 {
+      padding: 0 50px; }
+      .footer .footer-list .heading9 h3 {
+        font-size: 23px;
+        line-height: 28px;
+        color: #474747; }
+    .footer .footer-list .about-us-li {
       border-right: 1px solid #eaeaea;
       padding: 0 50px; }
-      .footer .footer-list li:last-child {
+      .footer .footer-list .about-us-li .footer-apis li {
+        border-radius: 50%; }
+        .footer .footer-list .about-us-li .footer-apis li a {
+          color: white;
+          background: #8b8b8b;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center; }
+          .footer .footer-list .about-us-li .footer-apis li a:hover {
+            background: #32cd32; }
+      .footer .footer-list .about-us-li:last-child {
         border-right: none; }
-    .footer .footer-list .paragraph8 {
-      padding: 30px 0 35px; }
-    .footer .footer-list .footer-apis li {
-      border-radius: 50%; }
-      .footer .footer-list .footer-apis li a {
-        color: white;
-        background: #8b8b8b;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center; }
-        .footer .footer-list .footer-apis li a:hover {
-          background: #32cd32; }
-    .footer .footer-list .recent-heading {
-      border-bottom: 1px solid #eaeaea; }
-      .footer .footer-list .recent-heading:last-child {
-        border-bottom: none; }
-      .footer .footer-list .recent-heading h4 {
-        padding: 27px 0 0;
-        font-size: 18px;
-        line-height: 34px;
+      .footer .footer-list .about-us-li .heading9 {
+        font-size: 23px;
+        line-height: 28px;
         color: #474747; }
-      .footer .footer-list .recent-heading span {
-        color: #32cd32;
+      .footer .footer-list .about-us-li .paragraph8 {
+        padding: 30px 0 35px;
         font-size: 16px;
-        line-height: 28px; }
-      .footer .footer-list .recent-heading p {
-        color: #474747;
-        font-size: 16px;
-        line-height: 28px; }
-      .footer .footer-list .recent-heading .recent-details {
-        display: grid;
-        grid-template-columns: max-content 1fr;
-        grid-gap: 4%;
-        padding: 0 0 15px 0; }
-    .footer .footer-list .footer-form .inputs {
+        line-height: 30px;
+        color: #706f72; }
+    .footer .footer-list .recent-post-li {
+      border-right: 1px solid #eaeaea;
+      padding: 0 50px; }
+      .footer .footer-list .recent-post-li .recent-heading {
+        border-bottom: 1px solid #eaeaea; }
+        .footer .footer-list .recent-post-li .recent-heading:last-child {
+          border-bottom: none; }
+        .footer .footer-list .recent-post-li .recent-heading h4 {
+          padding: 27px 0 0;
+          font-size: 18px;
+          line-height: 34px;
+          color: #474747; }
+        .footer .footer-list .recent-post-li .recent-heading span {
+          color: #32cd32;
+          font-size: 16px;
+          line-height: 28px; }
+        .footer .footer-list .recent-post-li .recent-heading p {
+          color: #474747;
+          font-size: 16px;
+          line-height: 28px; }
+        .footer .footer-list .recent-post-li .recent-heading .recent-details {
+          display: grid;
+          grid-template-columns: max-content 1fr;
+          grid-gap: 4%;
+          padding: 0 0 15px 0; }
+    .footer .footer-list .footer-form .newsletter-input {
       margin: 30px 0 30px;
-      border-radius: 30px; }
+      border-radius: 30px;
+      background-color: white;
+      box-shadow: inset 0px 3px 7px 0px rgba(50, 205, 50, 0.15);
+      width: 278px;
+      height: 50px;
+      padding: 11px 11px 11px 25px; }
+      .footer .footer-list .footer-form .newsletter-input input {
+        border: none; }
     .footer .footer-list .footer-form .subs-btn {
       border: none;
       border-radius: 26px;
       color: #ffffff;
       font-family: 'Poppins', sans-serif;
-      font-size: 18px;
-      width: 174px;
-      padding: 12px 0;
+      font-size: 14px;
+      line-height: 28px;
+      width: 140px;
+      padding: 10px 0;
       cursor: pointer;
       background-color: #32cd32;
       margin: 20px 0 20px 0; }

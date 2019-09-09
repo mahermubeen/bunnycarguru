@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="container">
         <ul class="footer-list">
-            <li>
+            <li class="about-us-li">
                 <h3 class="heading9">About Us</h3>
                 <p class="paragraph8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.</p>
                 <ul class="footer-apis">
@@ -11,7 +11,7 @@
                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                 </ul>
             </li>
-            <li>
+            <li class="recent-post-li">
                 <h3 class="heading9">Recent Posts</h3>
                 <div class="recent-heading">
                     <h4>Johny's Wall: Mind the gap</h4>
@@ -31,7 +31,9 @@
             <li class="heading9">
                 <h3>Our NewsLetter</h3>
                 <form class="footer-form">
-                    <input class="inputs" type="email" name="email" />
+                    <div class="newsletter-input">
+                        <input type="email" name="email" placeholder="Email Address" />
+                    </div>
                     <button class="subs-btn" type="submit">Subscribe</button>
                 </form>
             </li>

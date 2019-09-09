@@ -4,75 +4,107 @@
         padding: 80px 0 100px;
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
-        li{
-            border-right: 1px solid #eaeaea;
+        .heading9{
             padding: 0 50px;
-            &:last-child{
-                border-right: none;
+            h3{
+                font-size: 23px;
+                line-height: 28px;
+                color:#474747;
             }
         }
-        .paragraph8{
-            padding:30px 0 35px;
-        }
-        .footer-apis{
-            li{
-                border-radius:50%;
-                a {
-                    color: white;
-                    background: #8b8b8b;
-                    width: 25px;
-                    height: 25px;
-                    border-radius: 50%;
-                    display: inline-flex;
-                    justify-content: center;
-                    align-items: center;
-                    &:hover{
-                        background: #32cd32;
+        .about-us-li{
+            border-right: 1px solid #eaeaea;
+            padding: 0 50px;
+            .footer-apis{
+                li{
+                    border-radius:50%;
+                    a {
+                        color: white;
+                        background: #8b8b8b;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        &:hover{
+                            background: #32cd32;
+                        }
                     }
                 }
             }
-        }
-        .recent-heading{
-            border-bottom: 1px solid #eaeaea;
             &:last-child{
-                border-bottom: none;
+                border-right: none;
             }
-            h4{
-                padding: 27px 0 0;
-                font-size: 18px;
-                line-height: 34px;
-                color: #474747;
-            }
-            span{
-                color:#32cd32;
-                font-size: 16px;
+            .heading9{
+                font-size: 23px;
                 line-height: 28px;
+                color:#474747;
             }
-            p{
-                color: #474747;
+            .paragraph8{
+                padding:30px 0 35px;
                 font-size: 16px;
-                line-height: 28px;
-            }
-            .recent-details{
-                display: grid;
-                grid-template-columns: max-content 1fr;
-                grid-gap: 4%;
-                padding: 0 0 15px 0;
+                line-height: 30px;
+                color:#706f72;
             }
         }
+        .recent-post-li{
+            border-right: 1px solid #eaeaea;
+            padding: 0 50px;
+            .recent-heading{
+                border-bottom: 1px solid #eaeaea;
+                &:last-child{
+                    border-bottom: none;
+                }
+                h4{
+                    padding: 27px 0 0;
+                    font-size: 18px;
+                    line-height: 34px;
+                    color: #474747;
+                }
+                span{
+                    color:#32cd32;
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+                p{
+                    color: #474747;
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+                .recent-details{
+                    display: grid;
+                    grid-template-columns: max-content 1fr;
+                    grid-gap: 4%;
+                    padding: 0 0 15px 0;
+                }
+            }
+        }
+
+
+
         .footer-form{
-            .inputs{
+            .newsletter-input{
                 margin:30px 0 30px;
                 border-radius: 30px;
+                background-color: rgb(255, 255, 255);
+                box-shadow: inset 0px 3px 7px 0px rgba(50, 205, 50, 0.15);
+                width: 278px;
+                height: 50px;
+                padding: 11px 11px 11px 25px;
+                input{
+                    border:none;
+                }
             }
             .subs-btn{
                 border: none;
                 border-radius: 26px;
                 color: #ffffff;
                 font-family: 'Poppins', sans-serif;
-                font-size: 18px;
-                width: 174px;
-                padding: 12px 0;
+                font-size: 14px;
+                line-height: 28px;
+                width: 140px;
+                padding: 10px 0;
                 cursor: pointer;
                 background-color: #32cd32;
                 margin: 20px 0 20px 0;

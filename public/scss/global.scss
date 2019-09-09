@@ -28,13 +28,14 @@ a {
 
 .benz-btn {
     border: none;
-    border-radius: 26px;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     width: 174px;
     padding: 12px 0;
+    text-align: left;
     cursor: pointer;
+    background-color: transparent;
 }
 
 ::-webkit-scrollbar {
