@@ -11,8 +11,8 @@
     <script src="{{ secure_asset('https://kit.fontawesome.com/b11236bde2.js') }}"></script>
 </head>
 <body>
-    <div class="admin-body">
-        <div class="admin-container">
+    <div class="login-body">
+        <div class="login-container">
             <div></div>
             <div class="login-heading">
                 <a href="{{ url('/') }}">{{ __('Login') }}</a>
@@ -21,8 +21,8 @@
             <div class="login-box-body">
                 <div></div>
                 <div class="login-box-content">
-                    <div class="admin-box-list">
-                        <ul class="admin-list-ul">
+                    <div class="login-box-list">
+                        <ul class="login-list-ul">
                             <li><a class="active" href="{{ url('/')  }}">Login</a></li>
                             <li><a href="{{ url('/customRegister') }}">Register</a></li>
                         </ul>
@@ -37,7 +37,9 @@
                             <img src="{{ secure_asset('images/mail.png') }}"/>
                             <input  name="name"
                                     type="text"
-                                   required autocomplete="nope" placeholder="Username">
+                                   required
+                                    autocomplete="nope"
+                                    placeholder="Username">
                         </div>
                         @error('name')
                         <span class="invalid-feedback" role="alert">
@@ -65,7 +67,10 @@
                                 <a href="{{ url('/password/reset')  }}">Forgot Password?</a>
                             </div>
                             <div class="login-apis-box">
-                                <button type="submit" class="btn btn-primary btn-block btn-flat">Login<img src="images/send-arrow.png" /></button>
+                                <button type="submit">
+                                    Login
+                                    <img src="images/send-arrow.png" />
+                                </button>
 
                                 <ul class="apis">
                                     <li class="fb"><a href="#"><i class="fab fa-facebook-f"></i></a></li>

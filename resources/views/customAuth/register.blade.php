@@ -6,49 +6,68 @@
     <title>CarGuru | Register </title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="icon" type="image/ico" href="{{ asset('images/carguru-logo.png') }}"/>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="icon" type="image/ico" href="{{ secure_asset('images/carguru-logo.png') }}"/>
+    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
 </head>
 <body>
-
-<div class="admin">
-    <div class="admin-container">
-
+<div class="register-body">
+    <div class="register-container">
+        <div></div>
         <div class="register-heading">
             <a href="{{ url('/customRegister') }}">{{ __('Register') }}</a>
+            <span class="cross">X</span>
         </div>
-
         <div class="register-box-body">
+            <div></div>
             <div class="register-box-content">
-
-                <div class="admin-box-list">
-                    <ul class="admin-list-ul">
+                <div class="register-box-list">
+                    <ul class="register-list-ul">
                         <li><a href="{{ url('/')  }}">Login</a></li>
-                        <li><a href="{{ url('/customRegister') }}">Register</a></li>
+                        <li><a class="active" href="{{ url('/customRegister') }}">Register</a></li>
                     </ul>
                 </div>
-
-                <form action="{{ url('/customRegister') }}" method="post">
+                <form class="register-form" action="{{ url('/customRegister') }}" method="post">
                     @csrf
 
-                    <div class="form-group has-feedback">
-                        <input type="text" name="name" value="{{ old('name') }}"
-                               class="form-control @error('name') is-invalid @enderror"
-                               placeholder="Username"
+                    <input id="username" style="display:none" type="text" name="fakeusernameremembered">
+                    <input id="password" style="display:none" type="password" name="fakepasswordremembered">
+
+                    <div class="form-group">
+                        <input
+                            type="text"
+                           name="fname"
+                           value="{{ old('fname') }}"
+                           placeholder="First Name"
+                            autocomplete="nope"
                         />
                     </div>
-                    @error('name')
+                    @error('fname')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
                       </span>
                     @enderror
 
-                    <div class="form-group has-feedback">
-                        <input type="email"
-                               name="email"
-                               value="{{ old('email') }}"
-                               class="form-control @error('email') is-invalid @enderror"
-                               placeholder="Email"
+                    <div class="form-group">
+                        <input
+                            type="text"
+                           name="lname"
+                           value="{{ old('lname') }}"
+                           placeholder="Last Name"
+                            autocomplete="nope"
+                        />
+                    </div>
+                    @error('lname')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                      </span>
+                    @enderror
+
+                    <div class="form-group">
+                        <input
+                            type="email"
+                            name="email"
+                            value="{{ old('email') }}"
+                            placeholder="Email"
                         />
                     </div>
                     @error('email')
@@ -57,25 +76,12 @@
                       </span>
                     @enderror
 
-                    <div class="form-group has-feedback">
-                        <input type="text"
-                               name="role"
-                               value="{{ old('role') }}"
-                               class="form-control @error('role') is-invalid @enderror"
-                               placeholder="Role"
-                        />
-                    </div>
-                    @error('role')
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $message }}</strong>
-                      </span>
-                    @enderror
-
-                    <div class="form-group has-feedback">
-                        <input type="password"
-                               name="password"
-                               class="form-control @error('password') is-invalid @enderror"
-                               placeholder="Password"
+                    <div class="form-group">
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="Password"
+                            autocomplete="new-password"
                         />
                     </div>
                     @error('password')
@@ -84,21 +90,13 @@
                       </span>
                     @enderror
 
-                    <div class="form-group has-feedback">
-                        <input type="password"
-                               name="password_confirmation"
-                               class="form-control"
-                               placeholder="Retype password"
-                        />
-                    </div>
-
-                    <div class="row">
-                        <button type="submit" class="btn btn-primary btn-block btn-flat">
-                            {{ __('Register') }}
+                    <div class="register-btn-box">
+                        <button type="submit">
+                            Register
+                            <img src="images/send-arrow.png" />
                         </button>
                     </div>
                 </form>
-
             </div>
         </div>
 
