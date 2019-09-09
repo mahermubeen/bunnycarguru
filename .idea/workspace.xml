@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b48edb9c-5847-42b7-bed5-8ad587156319" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.sass-cache/8866f5315add4b813f9a07d71486758f6a32798c/global.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/public/.sass-cache/8866f5315add4b813f9a07d71486758f6a32798c/global.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.sass-cache/8866f5315add4b813f9a07d71486758f6a32798c/login.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/public/.sass-cache/8866f5315add4b813f9a07d71486758f6a32798c/login.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/login.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/customAuth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customAuth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +164,7 @@
       <workItem from="1567639957080" duration="8200000" />
       <workItem from="1567714738843" duration="21727000" />
       <workItem from="1567791488415" duration="1047000" />
-      <workItem from="1567999511908" duration="2496000" />
+      <workItem from="1567999511908" duration="3410000" />
     </task>
     <servers />
   </component>

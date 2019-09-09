@@ -30,10 +30,14 @@
                     <form class="login-form" action="{{ url('/customLogin') }}" method="post">
                         @csrf
 
+                        <input id="username" style="display:none" type="text" name="fakeusernameremembered">
+                        <input id="password" style="display:none" type="password" name="fakepasswordremembered">
+
                         <div class="form-group has-feedback">
                             <img src="{{ secure_asset('images/mail.png') }}"/>
                             <input  name="name"
-                                   required autocomplete="off" placeholder="Username">
+                                    type="text"
+                                   required autocomplete="nope" placeholder="Username">
                         </div>
                         @error('name')
                         <span class="invalid-feedback" role="alert">
@@ -45,6 +49,8 @@
                             <img src="{{ secure_asset('images/eye.png') }}"/>
                             <input
                                    name="password"
+                                   type="password"
+                                   autocomplete="new-password"
                                    required placeholder="Password"
                             />
                         </div>
