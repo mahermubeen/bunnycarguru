@@ -665,57 +665,60 @@ a {
         .login-body .login-container .login-box-body .login-list-ul li a {
           font-size: 15px;
           line-height: 15px; } }
-.home .home-container {
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10%; }
-  .home .home-container .servicesRepair-wrapper .heading {
-    color: #004700;
-    font-size: 50px;
-    line-height: 55px;
-    padding: 45px 0 0; }
-  .home .home-container .servicesRepair-wrapper .paragraph {
-    line-height: 32px;
-    font-size: 18px;
-    color: #6c677c; }
-  .home .home-container .form-services .services-form-list ul {
+.home {
+  padding: 8%;
+  background: url("../images/banner-img.png") no-repeat; }
+  .home .home-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; }
-    .home .home-container .form-services .services-form-list ul li {
-      justify-content: center;
-      align-items: center;
-      display: grid;
-      border: 1px solid #8080806e;
-      padding: 5px;
-      margin-left: 7px;
-      cursor: pointer;
-      box-shadow: 1px 10px 3px 1px rgba(0, 0, 0, 0.1); }
-      .home .home-container .form-services .services-form-list ul li:nth-child(1) {
-        margin-left: 0; }
-      .home .home-container .form-services .services-form-list ul li:hover {
-        border: 1px solid #32cd32; }
-  .home .home-container .form-services .services-form {
-    display: grid;
+    justify-content: space-between;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 6px;
-    justify-content: center;
-    padding: 45px 50px 60px;
-    border-radius: 6px;
-    background-color: white;
-    box-shadow: 0 14px 6px 2px rgba(68, 65, 71, 0.05); }
-    .home .home-container .form-services .services-form .row {
-      grid-column: 1/3; }
-    .home .home-container .form-services .services-form .labels {
-      line-height: 2.8;
-      color: #6c677c;
-      font-size: 15px; }
-    .home .home-container .form-services .services-form .form-btn {
-      margin: 28px 0 0; }
-      .home .home-container .form-services .services-form .form-btn .benz-btn {
-        height: 60px;
-        border-radius: 30px;
-        background-color: #cfcfcf; }
+    grid-column-gap: 10%; }
+    .home .home-container .servicesRepair-wrapper .heading {
+      color: #004700;
+      font-size: 50px;
+      line-height: 55px;
+      padding: 45px 0 0; }
+    .home .home-container .servicesRepair-wrapper .paragraph {
+      line-height: 32px;
+      font-size: 18px;
+      color: #6c677c; }
+    .home .home-container .form-services .services-form-list ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; }
+      .home .home-container .form-services .services-form-list ul li {
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        border: 1px solid #8080806e;
+        padding: 5px;
+        margin-left: 7px;
+        cursor: pointer;
+        box-shadow: 1px 10px 3px 1px rgba(0, 0, 0, 0.1); }
+        .home .home-container .form-services .services-form-list ul li:nth-child(1) {
+          margin-left: 0; }
+        .home .home-container .form-services .services-form-list ul li:hover {
+          border: 1px solid #32cd32; }
+    .home .home-container .form-services .services-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 6px;
+      justify-content: center;
+      padding: 45px 50px 60px;
+      border-radius: 6px;
+      background-color: white;
+      box-shadow: 0 14px 6px 2px rgba(68, 65, 71, 0.05); }
+      .home .home-container .form-services .services-form .row {
+        grid-column: 1/3; }
+      .home .home-container .form-services .services-form .labels {
+        line-height: 2.8;
+        color: #6c677c;
+        font-size: 15px; }
+      .home .home-container .form-services .services-form .form-btn {
+        margin: 28px 0 0; }
+        .home .home-container .form-services .services-form .form-btn .benz-btn {
+          height: 60px;
+          border-radius: 30px;
+          background-color: #cfcfcf; }
 
 .aboutUs {
   background: url("../images/about-img.png") no-repeat;
