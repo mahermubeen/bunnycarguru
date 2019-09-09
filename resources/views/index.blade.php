@@ -15,10 +15,7 @@
             <div class="container">
                 <div class="about-section">
                     <h1 class="heading6">About Us</h1>
-                    <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-                        a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                        centuries, but also the leap into electronic typesetting,</p>
+                    <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,</p>
                 </div>
                 <div class="services-section">
                     <div class="services-heading">
@@ -34,7 +31,7 @@
                                 <img class="battery-1" src="images/battery-icon.png"/>
                                 <img class="battery-2" src="images/battery-white.png"/>
                                 <h3 class="heading2">Battery Replacement</h3>
-                                <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+                                <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
                                 <button class="benz-btn benz-services">
                                     Details
                                     <img src="images/send-arrow.png" alt="send-arrow"/>
@@ -44,7 +41,7 @@
                                 <img class="tyre-1" src="images/tyre-icon.png"/>
                                 <img class="tyre-2" src="images/tyre-white.png"/>
                                 <h3 class="heading2">Tyre Change</h3>
-                                <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+                                <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
                                 <button class="benz-btn benz-services">
                                     Details
                                     <img src="images/send-arrow.png" alt="send-arrow"/>
@@ -54,7 +51,7 @@
                                 <img class="oil-1" src="images/oil-icon.png"/>
                                 <img class="oil-2" src="images/oil-white.png"/>
                                 <h3 class="heading2">Oil Change Service</h3>
-                                <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+                                <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
                                 <button class="benz-btn benz-services">
                                     Details
                                     <img src="images/send-arrow.png" alt="send-arrow"/>
@@ -64,7 +61,7 @@
                                 <img class="car-1" src="images/car-icon.png"/>
                                 <img class="car-2" src="images/car-white.png"/>
                                 <h3 class="heading2">AC Gas Change Service</h3>
-                                <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+                                <p class="para">Lorem Ipsum is simply dummy text of the printing and typese </p>
                                 <button class="benz-btn benz-services">
                                     Details
                                     <img src="images/send-arrow.png" alt="send-arrow"/>

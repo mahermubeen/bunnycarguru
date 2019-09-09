@@ -114,7 +114,7 @@
             .our-services-list{
                 .services {
                     display: grid;
-                    grid-template-columns: repeat(auto-fit,minmax(200px,240px));
+                    grid-template-columns: repeat(4, 1fr);
                     justify-content: center;
                     grid-gap: 30px;
                     li{
@@ -197,8 +197,8 @@
             }
             .work-heading{
                 display: grid;
-                grid-template-columns: 1fr max-content;
-                grid-gap: 300px;
+                grid-template-columns: max-content 1fr;
+                grid-gap: 27%;
                 button{
                     border-radius: 6px;
                     background-color: rgb(255, 255, 255);
@@ -220,7 +220,7 @@
                     font-size: 40px;
                     line-height: 50px;
                     color:#474747;
-                    font-weight: 400;
+                    font-weight: 500;
                 }
             }
         }
@@ -264,7 +264,7 @@
                 padding: 65px 0 20px 0;
                 display: grid;
                 grid-template-columns: max-content 1fr;
-                grid-gap: 300px;
+                grid-gap: 27%;
                 button{
                     border-radius: 6px;
                     background-color: rgb(255, 255, 255);
@@ -272,6 +272,7 @@
                     width: 270px;
                     height: 79px;
                     border: none;
+                    cursor: pointer;
                     a{
                         font-size: 16px;
                         line-height: 27px;
@@ -285,7 +286,7 @@
                     font-size: 40px;
                     line-height: 50px;
                     color: #474747;
-                    font-weight: 400;
+                    font-weight: 500;
                 }
             }
             p{
@@ -297,7 +298,7 @@
             .news-feed-wrapper{
                 padding: 32px 0 80px;
                 display: grid;
-                grid-template-columns: repeat(3, max-content);
+                grid-template-columns: repeat(3, 1fr);
                 grid-gap: 30px;
             }
         }
@@ -310,6 +311,7 @@
                     width: 370px;
                     height: 411px;
                     padding: 55px 25px 40px 25px;
+                    cursor: pointer;
                     span{
                         border-radius: 6px;
                         background-color: rgb(50, 205, 50);
@@ -342,6 +344,43 @@
                 }
                 .news-detail-2{
                     display: none;
+                    cursor: pointer;
+                    img{
+                        width:100%;
+                    }
+                    .news-cover-heading{
+                        border-radius: 0 0 6px 6px;
+                        background-color: rgb(50, 205, 50);
+                        box-shadow: 0px 2px 29.12px 2.88px rgba(70, 70, 70, 0.03);
+                        width: 100%;
+                        padding: 30px 30px 40px 30px;
+                        span{
+                            font-size: 16px;
+                            line-height: 18px;
+                            color: #474747;
+                            border-radius: 6px;
+                            background-color: rgb(255, 255, 255);
+                            width: 122px;
+                            height: 37px;
+                            padding: 6px;
+                            position: relative;
+                            bottom: 42px;
+                        }
+                        h3{
+                            font-size: 23px;
+                            line-height: 28px;
+                            color: #ffffff;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                &:hover{
+                    .news-detail-1{
+                        display:none;
+                    }
+                    .news-detail-2{
+                        display: grid;
+                    }
                 }
             }
         }

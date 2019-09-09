@@ -6,8 +6,8 @@
     <title>CarGuru | Register </title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="icon" type="image/ico" href="{{ secure_asset('images/carguru-logo.png') }}"/>
-    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
+    <link rel="icon" type="image/ico" href="{{ asset('images/carguru-logo.png') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
 <div class="register-body">
@@ -29,7 +29,7 @@
                 <form class="register-form" action="{{ url('/customRegister') }}" method="post">
                     @csrf
 
-                    <input id="username" style="display:none" type="text" name="fakeusernameremembered">
+                    <input id="email" style="display:none" type="text" name="fakeusernameremembered">
                     <input id="password" style="display:none" type="password" name="fakepasswordremembered">
 
                     <div class="form-group">

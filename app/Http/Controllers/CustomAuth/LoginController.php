@@ -117,7 +117,7 @@ class LoginController extends Controller
     protected function validateLogin(Request $request)
     {
         $request->validate([
-            $this->username() => 'required|string',
+            $this->email() => 'required|string',
             'password' => 'required|string',
         ]);
     }
@@ -143,7 +143,7 @@ class LoginController extends Controller
      */
     protected function credentials(Request $request)
     {
-        return $request->only($this->username(), 'password');
+        return $request->only($this->email(), 'password');
     }
 
     /**
@@ -185,7 +185,7 @@ class LoginController extends Controller
     protected function sendFailedLoginResponse(Request $request)
     {
         throw ValidationException::withMessages([
-            $this->username() => [trans('auth.failed')],
+            $this->email() => [trans('auth.failed')],
         ]);
     }
 
@@ -194,9 +194,9 @@ class LoginController extends Controller
      *
      * @return string
      */
-    public function username()
+    public function email()
     {
-        return 'name';
+        return 'email';
     }
 
     /**
@@ -284,7 +284,7 @@ class LoginController extends Controller
         );
 
         throw ValidationException::withMessages([
-            $this->username() => [Lang::get('auth.throttle', ['seconds' => $seconds])],
+            $this->email() => [Lang::get('auth.throttle', ['seconds' => $seconds])],
         ])->status(429);
     }
 
@@ -318,7 +318,7 @@ class LoginController extends Controller
      */
     protected function throttleKey(Request $request)
     {
-        return Str::lower($request->input($this->username())).'|'.$request->ip();
+        return Str::lower($request->input($this->email())).'|'.$request->ip();
     }
 
     /**

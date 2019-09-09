@@ -17,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'role', 'password', 'avatar'
+        'fname', 'lname', 'email', 'password'
     ];
 
     /**
@@ -43,16 +43,6 @@ class User extends Authenticatable
 
     public function add($data) {
         $user = User::create($data);
-
-        //Send register email
-        $email = $data['email'];
-        $messageData = ['email' => $data['email'], 'name' => $data['name']];
-        Mail::send('email.register', $messageData, function($message) use($email){
-            $message -> to($email)-> subject('Registration with BunnyCorp');
-        });
-
-        dd('hello');
-
         return $user -> id;
     }
 

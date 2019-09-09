@@ -18,109 +18,63 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
-    {{--    car guru css and scripts--}}
-    <title>Car Guru</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="icon" type="image/ico" href="{{ asset('images/logo-icon.png') }}"/>
-    <script src="{{ asset('https://kit.fontawesome.com/b11236bde2.js images/carguru-logo.png') }}"></script>
-
-    <style>
-        /*hide the submenu*/
-        ul.submenu {
-            max-height: 0;
-            overflow: hidden;
-        }
-
-        /*position the label*/
-        label {
-            position: relative;
-            display: block;
-            cursor: pointer;
-        }
-
-        /*show the submenu when checked*/
-        input:checked ~ ul.submenu {
-            max-height: 300px;
-        }
-    </style>
-
 </head>
 <body>
-<div id="app">
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    {{ config('app.name', 'Laravel') }}
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    @guest
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-        </li>
-        @if (Route::has('register'))
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-            </li>
-        @endif
-    @else
-        <header class="header">
-            <div class="brand-logo">
-                <img class="brand-img" alt="logo-icon" src="images/logo-icon.png">
-                <h3 class="brand-text">Mercedes-Benz</h3>
-            </div>
-            <div class="nav-content">
-                <div class="container-nav">
-                    <div class="nav-links">
-                        <ul class="admin-login">
-                            <li><a href="#">Mon-Fri:09:00AM to 06:00PM</a></li>
-                            <li><a href="#">Talk With Specialist: <span>+88 (0) 101 0000</span></a></li>
-                            <li><a href="#">My Acc</a></li>
-                            <li><a href="#">LogIn</a></li>
-                            <li>
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav mr-auto">
+
+                    </ul>
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Authentication Links -->
+                        @guest
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
-                                     document.getElementById('logout-form').submit();">
+                                                     document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                          style="display: none;">
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
                                 </div>
                             </li>
-                        </ul>
-                        <ul class="login-apis">
-                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        </ul>
-                    </div>
-                    <nav class="nav-list">
-                        <ul class="options">
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">ABOUT US</a></li>
-                            <li><a href="#">SERVICES</a></li>
-                            <li><a href="#">BLOG</a></li>
-                            <li><a href="#">BRANDS WE OFFER</a></li>
-                            <li><a href="#">CONTACT US</a></li>
-                        </ul>
-                        <ul class="search-checkout">
-                            <li><a href="#"><img alt="bucket" src="images/bucket.png"></a></li>
-                            <li><a href="#"><img alt="search" src="images/search.png"></a></li>
-                        </ul>
-                    </nav>
+                        @endguest
+                    </ul>
                 </div>
             </div>
-        </header>
-    @endguest
+        </nav>
 
-    <div>
-        @yield('content')
+        <main class="py-4">
+            @yield('content')
+        </main>
     </div>
-</div>
 </body>
 </html>
