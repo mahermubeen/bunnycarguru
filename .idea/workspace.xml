@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b48edb9c-5847-42b7-bed5-8ad587156319" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/customAuth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customAuth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customAuth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customAuth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="b48edb9c-5847-42b7-bed5-8ad587156319" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +164,7 @@
       <workItem from="1568043115636" duration="32000" />
       <workItem from="1568043149990" duration="8428000" />
       <workItem from="1568247315510" duration="696000" />
-      <workItem from="1568248227052" duration="8838000" />
+      <workItem from="1568248227052" duration="9030000" />
     </task>
     <servers />
   </component>
