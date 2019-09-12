@@ -4,7 +4,7 @@
     grid-template-columns: max-content 1fr;
     background-image: url('../images/bg.png');
     background-repeat: no-repeat;
-    background-position: 613px 0px;
+    background-position-x: 100%;
     background-size: 76% 59%;
     overflow-y: unset;
     position: relative;
@@ -208,7 +208,7 @@
 
 
 
-@media screen and (max-width: 1580px) {
+@media screen and (max-width: 1800px) {
     .header {
         padding: 0 30px;
         background-size: 80vw 60%;
@@ -221,12 +221,16 @@
         }
 
         .container-nav {
+            margin: 0 auto;
             .nav-links {
-                grid-template-columns: 1fr max-content;
+                grid-template-columns: 7fr 3fr;
 
                 .admin-login {
                     grid-column: 1;
                 }
+            }
+            .nav-list{
+                grid-template-columns: 7fr 2fr !important;
             }
         }
     }
@@ -257,7 +261,7 @@
 
             .nav-list {
                 width: 750px;
-                grid-template-columns: 1fr max-content;
+                grid-template-columns: 1fr max-content !important;
 
                 .options {
                     grid-column: 1;

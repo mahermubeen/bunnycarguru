@@ -59,7 +59,7 @@ a {
   grid-template-columns: max-content 1fr;
   background-image: url("../images/bg.png");
   background-repeat: no-repeat;
-  background-position: 613px 0px;
+  background-position-x: 100%;
   background-size: 76% 59%;
   overflow-y: unset;
   position: relative; }
@@ -191,7 +191,7 @@ a {
         grid-template-columns: 1fr max-content; }
         .header .container-nav .nav-list .options {
           grid-column: 1; } }
-@media screen and (max-width: 1580px) {
+@media screen and (max-width: 1800px) {
   .header {
     padding: 0 30px;
     background-size: 80vw 60%;
@@ -200,10 +200,14 @@ a {
       display: none; }
     .header .brand-logo {
       padding: 48px 0 0 0; }
-    .header .container-nav .nav-links {
-      grid-template-columns: 1fr max-content; }
-      .header .container-nav .nav-links .admin-login {
-        grid-column: 1; } }
+    .header .container-nav {
+      margin: 0 auto; }
+      .header .container-nav .nav-links {
+        grid-template-columns: 7fr 3fr; }
+        .header .container-nav .nav-links .admin-login {
+          grid-column: 1; }
+      .header .container-nav .nav-list {
+        grid-template-columns: 7fr 2fr !important; } }
 @media screen and (max-width: 1380px) {
   .header {
     padding: 0 25px;
@@ -222,7 +226,7 @@ a {
       width: 100vw; }
     .header .container-nav .nav-list {
       width: 750px;
-      grid-template-columns: 1fr max-content; }
+      grid-template-columns: 1fr max-content !important; }
       .header .container-nav .nav-list .options {
         grid-column: 1; } }
 @media screen and (max-width: 1190px) {
