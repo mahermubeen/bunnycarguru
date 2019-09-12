@@ -19,7 +19,7 @@
                     <li>About Us</li>
                     <li>Services</li>
                     <li>Blog</li>
-                    <li>Search By Car</li>
+                    <li>Search By Cars</li>
                     <li>Contact Us</li>
                 </ul>
             </nav>
