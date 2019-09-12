@@ -8,6 +8,10 @@
     margin: 0 auto;
     max-width: 1170px;
 }
+html{
+    scroll-behavior: smooth;
+}
+
 
 h1 {
     font-family: myriad-pro, sans-serif;
@@ -50,4 +54,16 @@ a {
     background-color: #004700;
     width: 120%;
     height: 52px;
+}
+
+@media screen and (max-width: 1240px) {
+    .container {
+        margin: 0 30px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        margin: 0 15px;
+    }
 }

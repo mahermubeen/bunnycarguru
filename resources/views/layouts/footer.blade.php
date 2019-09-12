@@ -1,5 +1,5 @@
 <footer class="footer">
-    <div class="container">
+    <div class="container footer-container">
         <ul class="footer-list">
             <li class="about-us-li">
                 <h3 class="heading9">About Us</h3>
@@ -28,7 +28,7 @@
                     </div>
                 </div>
             </li>
-            <li class="heading9">
+            <li class="newsletter-wrapper">
                 <h3>Our NewsLetter</h3>
                 <form class="footer-form">
                     <div class="newsletter-input">
@@ -49,5 +49,20 @@
     </div>
 </footer>
 </div>
+
+<script>
+
+    closeNav = function() {
+        document.getElementById("main-nav").style.display = "none";
+        document.getElementById("bars").style.display = "block";
+    }
+
+    openNav = function() {
+        document.getElementById("main-nav").style.display = "block";
+        document.getElementById("bars").style.display = "none";
+    }
+
+</script>
+
 </body>
 </html>

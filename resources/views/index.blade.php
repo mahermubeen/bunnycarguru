@@ -81,11 +81,14 @@
                             <img src="images/black-send-arrow.png" />
                         </a>
                     </button>
-                    <h2>Discover our latest work history</h2>
+                    <div class="right-content">
+                        <h2>Discover our latest work history </h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                    </div>
                 </div>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
             </div>
-            <div class="work-images">
+            <div class="work-images container">
                 <div class="work-img">
                     <img  src="images/work-man1.png" />
                     <div class="image-hover-detail">See Our Latest Work History</div>
@@ -102,8 +105,8 @@
 
             </div>
         </section>
-        <section class="latest-news">
-            <div class="container latest-news-container">
+        <section class="latest-news latest-work">
+            <div class="container latest-work-container">
                 <div class="work-heading">
                     <button>
                         <a href="#">
@@ -111,56 +114,61 @@
                             <img src="images/black-send-arrow.png" />
                         </a>
                     </button>
-                    <h2>Discover our latest news feed</h2>
+                    <div class="right-content">
+                        <h2>Discover our latest news feed</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                    </div>
                 </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                <div class="news-feed-wrapper">
-                    <div class="news-details">
-                        <div class="news-detail-1">
-                            <span>6 Jun 2019</span>
-                            <h3>Lorem Ispum dolor smith emet text here.</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever ...</p>
-                            <a href="#">Read More</a>
-                        </div>
-                        <div class="news-detail-2">
-                            <img src="images/news-feed-img.png"/>
-                            <div class="news-cover-heading">
-                                <span>6 Jun 2019</span>
-                                <h3>Lorem Ispum dolor smith emet text here.</h3>
-                            </div>
-                        </div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+            </div>
+
+            <div class="news-feed-wrapper container">
+                <div class="news-details">
+                    <div class="news-detail-1">
+                        <span>6 Jun 2019</span>
+                        <h3>Lorem Ispum dolor smith emet text here.</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever ...</p>
+                        <a href="#">Read More</a>
                     </div>
-                    <div class="news-details">
-                        <div class="news-detail-1">
+                    <div class="news-detail-2">
+                        <img src="images/news-feed-img.png"/>
+                        <div class="news-cover-heading">
                             <span>6 Jun 2019</span>
                             <h3>Lorem Ispum dolor smith emet text here.</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever ...</p>
-                            <a href="#">Read More</a>
-                        </div>
-                        <div class="news-detail-2">
-                            <img src="images/news-feed-img.png"/>
-                            <div class="news-cover-heading">
-                                <span>6 Jun 2019</span>
-                                <h3>Lorem Ispum dolor smith emet text here.</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-details">
-                        <div class="news-detail-1">
-                            <span>6 Jun 2019</span>
-                            <h3>Lorem Ispum dolor smith emet text here.</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever ...</p>
-                            <a href="#">Read More</a>
-                        </div>
-                        <div class="news-detail-2">
-                            <img src="images/news-feed-img.png"/>
-                            <div class="news-cover-heading">
-                                <span>6 Jun 2019</span>
-                                <h3>Lorem Ispum dolor smith emet text here.</h3>
-                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="news-details">
+                    <div class="news-detail-1">
+                        <span>6 Jun 2019</span>
+                        <h3>Lorem Ispum dolor smith emet text here.</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever ...</p>
+                        <a href="#">Read More</a>
+                    </div>
+                    <div class="news-detail-2">
+                        <img src="images/news-feed-img.png"/>
+                        <div class="news-cover-heading">
+                            <span>6 Jun 2019</span>
+                            <h3>Lorem Ispum dolor smith emet text here.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-details">
+                    <div class="news-detail-1">
+                        <span>6 Jun 2019</span>
+                        <h3>Lorem Ispum dolor smith emet text here.</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever ...</p>
+                        <a href="#">Read More</a>
+                    </div>
+                    <div class="news-detail-2">
+                        <img src="images/news-feed-img.png"/>
+                        <div class="news-cover-heading">
+                            <span>6 Jun 2019</span>
+                            <h3>Lorem Ispum dolor smith emet text here.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
     </section>

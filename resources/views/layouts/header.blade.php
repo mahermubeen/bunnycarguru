@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>CarGuru</title>
-    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
-    <link rel="icon" type="image/ico" href="{{ secure_asset('images/carguru-logo.png') }}"/>
-    <script src="{{ secure_asset('https://kit.fontawesome.com/b11236bde2.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="icon" type="image/ico" href="{{ asset('images/carguru-logo.png') }}"/>
+    <script src="{{ asset('https://kit.fontawesome.com/b11236bde2.js') }}"></script>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 </head>
 <body>
 <div class="wrapper">
     <header class="header">
+        <div id="main-nav" class="responsive-nav">
+            <div onclick="closeNav()" class="cross"></div>
+            <nav>
+                <ul>
+                    <li class="active">Home</li>
+                    <li>About Us</li>
+                    <li>Services</li>
+                    <li>Blog</li>
+                    <li>Brands We Offer</li>
+                    <li>Contact Us</li>
+                </ul>
+            </nav>
+        </div>
         <div class="brand-logo">
             <img class="brand-img" alt="logo-icon" src="images/carguru-logo.png">
         </div>
@@ -22,10 +36,13 @@
                         <li><a href="#">My Acc</a></li>
                         <li>
                             <div class="signOut-btn">
-                                <a href="#" onclick="event.preventDefault();document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">
+                                <a href="#"
+                                   onclick="event.preventDefault();document.getElementById('logout-form').submit();"
+                                   class="btn btn-default btn-flat">
                                     Logout
 
-                                    <form id="logout-form" action="{{ url('logout') }}" method="POST" style="display: none;">
+                                    <form id="logout-form" action="{{ url('logout') }}" method="POST"
+                                          style="display: none;">
                                         @csrf
                                     </form>
                                 </a>
@@ -55,6 +72,7 @@
                 </nav>
             </div>
         </div>
+        <div onclick="openNav()" id="bars" class="bars">
     </header>
 
 @yield('content')
