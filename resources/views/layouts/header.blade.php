@@ -19,7 +19,7 @@
                     <li>About Us</li>
                     <li>Services</li>
                     <li>Blog</li>
-                    <li>Search By Cars</li>
+                    <li>Search By Car</li>
                     <li>Contact Us</li>
                 </ul>
             </nav>
@@ -62,7 +62,7 @@
                         <li><a href="#">ABOUT US</a></li>
                         <li><a href="#">SERVICES</a></li>
                         <li><a href="#">BLOG</a></li>
-                        <li><a href="#">BRANDS WE OFFER</a></li>
+                        <li><a href="#">SEARCH BY CAR</a></li>
                         <li><a href="#">CONTACT US</a></li>
                     </ul>
                     <ul class="search-checkout">
