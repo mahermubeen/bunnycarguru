@@ -81,7 +81,7 @@
                             <img src="images/black-send-arrow.png" />
                         </a>
                     </button>
-                    <div class="right-content">
+                    <div class="discover-content">
                         <h2>Discover our latest work history </h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
                     </div>
