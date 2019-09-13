@@ -5,8 +5,8 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif; }
 
-body {
-  overflow-x: hidden; }
+body, html {
+  overflow-x: hidden !important; }
 
 .container {
   margin: 0 auto;
@@ -273,8 +273,12 @@ a {
   .header {
     padding: 0 12px;
     background-size: 100vw 65%; }
+    .header .bars {
+      right: 25px; }
     .header .brand-logo {
       padding: 75px 0 0 15px; }
+      .header .brand-logo .brand-img {
+        left: 18% !important; }
     .header .container-nav .nav-links {
       grid-template-columns: 11fr 2fr;
       grid-gap: 0; }
@@ -900,10 +904,12 @@ a {
           font-size: 15px;
           line-height: 15px; } }
 .home {
-  padding: 3% 20% 29% 20%;
+  padding: 3% 20% 29% 13%;
   margin: 7% 0 0 0;
   background: url(../images/index-main-banner.png) no-repeat;
   background-size: cover; }
+  .home img {
+    display: none; }
   .home .home-container {
     display: grid;
     justify-content: space-between;
@@ -1134,12 +1140,13 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-gap: 20px;
-    justify-content: center; }
+    justify-content: center;
+    padding: 0 0 80px !important; }
     .main-section .latest-news .news-feed-wrapper .news-details .news-detail-1 {
       border-radius: 6px;
       background-color: white;
       box-shadow: 0px 2px 29.12px 2.88px rgba(70, 70, 70, 0.03);
-      padding: 55px 25px 40px 25px;
+      padding: 55px 25px 76px 25px;
       cursor: pointer; }
       .main-section .latest-news .news-feed-wrapper .news-details .news-detail-1 span {
         border-radius: 6px;
@@ -1176,7 +1183,7 @@ a {
         background-color: limegreen;
         box-shadow: 0px 2px 29.12px 2.88px rgba(70, 70, 70, 0.03);
         width: 100%;
-        padding: 30px 30px 40px 30px; }
+        padding: 30px 30px 60px 30px; }
         .main-section .latest-news .news-feed-wrapper .news-details .news-detail-2 .news-cover-heading span {
           font-size: 16px;
           line-height: 18px;
@@ -1281,7 +1288,7 @@ a {
   .home {
     background: url("../images/responsive-banner.png") no-repeat center;
     background-size: cover;
-    padding: 0% 11% 41% 11%;
+    padding: 0% 2% 41% 2%;
     background-position-x: 99%; }
     .home .home-container {
       grid-template-columns: auto; }
@@ -1317,9 +1324,25 @@ a {
     grid-template-columns: 100%; } }
 @media screen and (max-width: 720px) {
   .home {
-    background-position-x: 79%;
-    padding: 0% 11% 55% 11%; } }
+    background: url(../images/responsive-mobile-banner-new.png) no-repeat center;
+    padding: 5% 2% 44% 2%;
+    background-size: cover; }
+    .home img {
+      display: block;
+      position: absolute;
+      padding: 28px 16%;
+      max-width: 100%; } }
 @media screen and (max-width: 560px) {
+  .home {
+    background: url(../images/responsive-mobile-banner-new.png) no-repeat center;
+    padding: 5% 2% 44% 2%;
+    background-size: cover; }
+    .home img {
+      display: block;
+      position: absolute;
+      padding: 28px 16%;
+      max-width: 100%; }
+
   .main-section .aboutUs .services-section .services-heading {
     grid-template-columns: auto;
     padding-bottom: 30px; }
@@ -1329,6 +1352,16 @@ a {
     font-size: 15px;
     line-height: 35px; } }
 @media screen and (max-width: 570px) {
+  .home {
+    background: url(../images/responsive-mobile-banner-new.png) no-repeat center;
+    padding: 5% 2% 49% 2%;
+    background-size: cover; }
+    .home img {
+      display: block;
+      position: absolute;
+      padding: 4% 11% 0% 7%;
+      max-width: 100%; }
+
   .main-section .aboutUs .services-section .our-services-list .services li {
     display: grid;
     justify-content: center;
@@ -1340,9 +1373,14 @@ a {
     margin: 0; }
 
   .home {
-    background-position-x: 74% !important;
-    padding: 5% 20px 100% 20px !important;
-    background-size: 255% 100% !important; }
+    background: url(../images/responsive-mobile-banner-new.png) no-repeat center;
+    padding: 5% 6% 54% 6%;
+    background-size: cover; }
+    .home img {
+      display: block;
+      position: absolute;
+      padding: 7% 16% 0% 2%;
+      max-width: 100%; }
     .home .home-container .servicesRepair-wrapper .heading {
       font-size: 24px;
       padding: 40px 0 8px; }
@@ -1364,12 +1402,24 @@ a {
     .main-section .aboutUs .services-section .services-heading .heading6 {
       font-size: 30px;
       padding: 15px 0 0px; }
-  .main-section .aboutUs .services-section .our-services-list .services li .benz-services {
-    font-size: 17px;
-    text-align: center;
-    display: none; }
-  .main-section .aboutUs .services-section .our-services-list .services li:hover .benz-services {
-    display: block; }
+  .main-section .aboutUs .services-section .our-services-list {
+    padding: 20px !important; }
+    .main-section .aboutUs .services-section .our-services-list .services {
+      grid-template-columns: 100% !important; }
+      .main-section .aboutUs .services-section .our-services-list .services li:nth-child(1) {
+        grid-column: auto !important; }
+      .main-section .aboutUs .services-section .our-services-list .services li:nth-child(2) {
+        grid-column: auto !important; }
+      .main-section .aboutUs .services-section .our-services-list .services li:nth-child(3) {
+        grid-column: auto !important; }
+      .main-section .aboutUs .services-section .our-services-list .services li:nth-child(4) {
+        grid-column: auto !important; }
+      .main-section .aboutUs .services-section .our-services-list .services li .benz-services {
+        font-size: 17px;
+        text-align: center;
+        display: none; }
+      .main-section .aboutUs .services-section .our-services-list .services li:hover .benz-services {
+        display: block; }
   .main-section .latest-work .latest-work-container {
     margin: 90px 0 0 0;
     padding: 0 15px; }

@@ -9,6 +9,7 @@
                     Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
             </div>
         </div>
+        <img src="../../images/banner-car.png"/>
     </section>
     <section class="main-section">
         <section class="aboutUs">

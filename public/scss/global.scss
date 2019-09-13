@@ -4,8 +4,8 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
-    overflow-x:hidden;
+body, html{
+    overflow-x:hidden !important;
 }
 .container {
     margin: 0 auto;
