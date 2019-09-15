@@ -42,12 +42,20 @@
                     cursor: pointer;
                 }
 
-                li.active {
-                    color: #3ccf3c;
+                li {
+                    a{
+                        .active{
+                            color: #3ccf3c;
+                        }
+                    }
                 }
 
-                li:hover {
-                    color: #3ccf3c;
+                li {
+                    a{
+                        :hover{
+                            color: #3ccf3c;
+                        }
+                    }
                 }
             }
         }

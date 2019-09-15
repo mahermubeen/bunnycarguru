@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
+@font-face {
+  src: url(../fonts/Poppins-Regular.ttf);
+  font-family: 'Poppins-regular'; }
+@font-face {
+  src: url(../fonts/Poppins-Light.ttf);
+  font-family: 'Poppins-Light'; }
 * {
   margin: 0;
   padding: 0;
@@ -95,9 +102,9 @@ a {
         padding: 15px;
         color: black;
         cursor: pointer; }
-      .header .responsive-nav > nav ul li.active {
+      .header .responsive-nav > nav ul li a .active {
         color: #3ccf3c; }
-      .header .responsive-nav > nav ul li:hover {
+      .header .responsive-nav > nav ul li a :hover {
         color: #3ccf3c; }
   .header .responsive-nav.active {
     display: grid; }
@@ -1444,6 +1451,303 @@ a {
         padding: 60px 20px 50px; }
   .main-section .map-div {
     margin: 0 0 0; } }
+@font-face {
+  src: url(../fonts/Poppins-Regular.ttf);
+  font-family: 'Poppins-regular'; }
+@font-face {
+  src: url(../fonts/Poppins-Light.ttf);
+  font-family: 'Poppins-Light'; }
+*, *::after, *::before {
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: Poppins-regular, sans-serif; }
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto; }
+
+.about-wrapper h1 {
+  font-size: 2.5em;
+  font-family: Poppins-Light, sans-serif;
+  line-height: 1.4em;
+  padding-top: 9px; }
+.about-wrapper .green-heading {
+  color: #32cd32; }
+.about-wrapper .about-section {
+  margin: 7% 0 0;
+  font-size: 1em;
+  padding: 6.5em 1em;
+  background-image: url("../images/about-bg.png");
+  background-color: #32cd32;
+  background-size: cover;
+  text-align: center; }
+  .about-wrapper .about-section h1 {
+    padding-bottom: 0.3em;
+    color: #004700; }
+  .about-wrapper .about-section p {
+    color: #ffffff;
+    font-size: 1em;
+    word-spacing: 0.1em; }
+.about-wrapper .welcome-section {
+  font-size: 1em;
+  padding: 7.8em 0; }
+  .about-wrapper .welcome-section .container {
+    display: flex; }
+    .about-wrapper .welcome-section .container div {
+      flex: 1; }
+      .about-wrapper .welcome-section .container div h1 {
+        padding-bottom: 0.5em;
+        text-transform: uppercase; }
+      .about-wrapper .welcome-section .container div p {
+        font-size: 1em;
+        letter-spacing: 2px;
+        text-align: justify;
+        color: #787878;
+        line-height: 27px; }
+    .about-wrapper .welcome-section .container > :first-child {
+      padding-right: 3em; }
+.about-wrapper .scale-section {
+  font-size: 1em;
+  padding: 7em 0;
+  background-color: #32cd32; }
+  .about-wrapper .scale-section .container {
+    display: grid;
+    grid-gap: 1.2em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .about-wrapper .scale-section .container > div {
+      border-radius: 5px;
+      flex: 1;
+      padding: 1.5em 1.4em 1.4em;
+      display: flex;
+      display: flex;
+      background-color: #ffffff;
+      align-items: center;
+      transition: all 0.25s ease-out; }
+      .about-wrapper .scale-section .container > div svg {
+        width: 3.5em;
+        margin-right: 1em;
+        fill: #004700; }
+      .about-wrapper .scale-section .container > div h2 {
+        font-size: 1.15em;
+        line-height: 1em;
+        color: #004700; }
+      .about-wrapper .scale-section .container > div p {
+        font-size: 1.8em;
+        color: #32cd32; }
+      .about-wrapper .scale-section .container > div:hover {
+        background-color: #004700; }
+        .about-wrapper .scale-section .container > div:hover p, .about-wrapper .scale-section .container > div:hover h2 {
+          color: #ffffff; }
+        .about-wrapper .scale-section .container > div:hover svg {
+          fill: #ffffff; }
+    .about-wrapper .scale-section .container > div.active {
+      background-color: #004700; }
+      .about-wrapper .scale-section .container > div.active p, .about-wrapper .scale-section .container > div.active h2 {
+        color: #ffffff; }
+      .about-wrapper .scale-section .container > div.active svg {
+        fill: #ffffff; }
+    .about-wrapper .scale-section .container > :last-child {
+      margin-right: 0; }
+.about-wrapper .team-section {
+  padding-top: 8.5em; }
+  .about-wrapper .team-section .container {
+    display: flex;
+    padding-bottom: 20px;
+    position: relative; }
+    .about-wrapper .team-section .container .team-img {
+      background-image: url("../images/team.png");
+      background-size: cover;
+      background-position: center; }
+    .about-wrapper .team-section .container div {
+      background-color: #ffffff !important;
+      box-shadow: 3px 4px 5px 4px #f5f5f6;
+      flex: 1;
+      margin-right: 20px; }
+      .about-wrapper .team-section .container div img {
+        height: 100%; }
+    .about-wrapper .team-section .container > :nth-child(2) {
+      flex: 1.3;
+      padding: 2em 1.3em 2em 1.8em; }
+      .about-wrapper .team-section .container > :nth-child(2) h1 {
+        padding-bottom: 0.5em; }
+      .about-wrapper .team-section .container > :nth-child(2) p {
+        font-size: 1em;
+        letter-spacing: 2px;
+        text-align: justify;
+        color: #787878;
+        line-height: 27px; }
+  .about-wrapper .team-section .images-container {
+    height: 63em;
+    background-image: url(../images/team-bg.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: -10em;
+    position: relative; }
+    .about-wrapper .team-section .images-container .container {
+      position: relative;
+      height: 100%; }
+      .about-wrapper .team-section .images-container .container img {
+        position: absolute;
+        height: auto;
+        width: auto;
+        bottom: 6em;
+        left: 0; }
+.about-wrapper .customer-preview-section {
+  background-image: url("../images/customer-preview-bg.png");
+  background-size: cover;
+  padding: 8em 1em; }
+  .about-wrapper .customer-preview-section .container {
+    text-align: center; }
+    .about-wrapper .customer-preview-section .container h1 {
+      color: #474747; }
+    .about-wrapper .customer-preview-section .container > p {
+      padding: 1em 2.5em;
+      color: #706f72; }
+    .about-wrapper .customer-preview-section .container .customer-content {
+      display: flex;
+      align-items: center;
+      padding: 2.6em 0; }
+      .about-wrapper .customer-preview-section .container .customer-content > div {
+        flex: 1;
+        margin-right: 1em; }
+        .about-wrapper .customer-preview-section .container .customer-content > div .customer-preview {
+          display: block;
+          padding: 3em 1.5em;
+          background-color: #ffffff;
+          border-radius: 5px;
+          font-size: 1em;
+          text-align: left;
+          line-height: 1.8em;
+          position: relative;
+          overflow: visible;
+          box-shadow: 0 0 22px -10px #787878;
+          color: #706f72;
+          z-index: 11; }
+          .about-wrapper .customer-preview-section .container .customer-content > div .customer-preview .comment-arrow {
+            position: absolute;
+            left: -15px;
+            bottom: -72px;
+            width: 100px;
+            height: 100px;
+            z-index: 1; }
+        .about-wrapper .customer-preview-section .container .customer-content > div > .customer {
+          display: flex;
+          padding: 4em 0;
+          align-items: center;
+          width: max-content;
+          transform: translateX(100px); }
+          .about-wrapper .customer-preview-section .container .customer-content > div > .customer .circle {
+            flex-shrink: 0;
+            width: 100px;
+            height: 100px;
+            border-radius: 200px;
+            margin-right: 20px; }
+          .about-wrapper .customer-preview-section .container .customer-content > div > .customer .john {
+            background-image: url("../images/john.png"); }
+          .about-wrapper .customer-preview-section .container .customer-content > div > .customer .peter {
+            background-image: url("../images/peter.png"); }
+          .about-wrapper .customer-preview-section .container .customer-content > div > .customer .customer-details {
+            text-align: left; }
+            .about-wrapper .customer-preview-section .container .customer-content > div > .customer .customer-details .name {
+              font-size: 1em;
+              font-weight: bold;
+              font-family: Poppins-regular, sans-serif; }
+            .about-wrapper .customer-preview-section .container .customer-content > div > .customer .customer-details .post {
+              font-size: 1em; }
+      .about-wrapper .customer-preview-section .container .customer-content > :last-child {
+        margin-right: 0; }
+    .about-wrapper .customer-preview-section .container .dots {
+      display: flex;
+      justify-content: center; }
+      .about-wrapper .customer-preview-section .container .dots span {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        background-color: #e0e8df;
+        margin: 0 6px;
+        border-radius: 30px;
+        cursor: pointer; }
+      .about-wrapper .customer-preview-section .container .dots span.active {
+        background-color: #32cd32; }
+.about-wrapper .how-it-works {
+  background-image: url("../images/how-it-works-bg.png");
+  background-size: cover;
+  padding: 8em 1em; }
+  .about-wrapper .how-it-works .container {
+    text-align: center; }
+    .about-wrapper .how-it-works .container h1 {
+      color: #474747; }
+    .about-wrapper .how-it-works .container > p {
+      padding: 1em 2.5em 5em;
+      color: #706f72; }
+
+@media screen and (max-width: 1250px) {
+  .container {
+    margin: 0 30px; } }
+@media screen and (max-width: 1024px) {
+  .container {
+    margin: 0 25px; }
+
+  .about-wrapper h1 {
+    font-size: 2.2em; }
+  .about-wrapper .welcome-section, .about-wrapper .about-section, .about-wrapper .scale-section, .about-wrapper .customer-preview-section, .about-wrapper .how-it-works {
+    padding: 4.3em 0; }
+  .about-wrapper .scale-section {
+    font-size: 0.85em; }
+  .about-wrapper .welcome-section .container > :first-child {
+    padding-right: 1em; }
+  .about-wrapper .team-section {
+    padding-top: 4.3em; }
+    .about-wrapper .team-section .images-container {
+      height: 63vmin;
+      margin-top: -3vmin; }
+      .about-wrapper .team-section .images-container .container img {
+        width: 38vmin;
+        bottom: 8vmin; } }
+@media screen and (max-width: 768px) {
+  .about-wrapper .about-section {
+    margin: 10% 0 0; }
+  .about-wrapper .welcome-section, .about-wrapper .about-section, .about-wrapper .scale-section, .about-wrapper .customer-preview-section, .about-wrapper .how-it-works {
+    padding: 3.5em 0; }
+  .about-wrapper .welcome-section div img {
+    width: 100%;
+    max-width: 100%;
+    height: auto; }
+  .about-wrapper .welcome-section .container, .about-wrapper .team-section .container {
+    flex-direction: column; }
+  .about-wrapper .team-section .container .team-img {
+    flex: none;
+    width: 100%;
+    height: 67vmin; }
+  .about-wrapper .team-section .container div {
+    margin-right: 0; }
+  .about-wrapper .customer-preview-section .container .customer-content {
+    flex-direction: column; }
+    .about-wrapper .customer-preview-section .container .customer-content > div {
+      margin-right: 0; }
+      .about-wrapper .customer-preview-section .container .customer-content > div .customer {
+        transform: translateX(68px); } }
+@media screen and (max-width: 425px) {
+  .about-wrapper .about-section {
+    margin: 20% 0 0; }
+  .about-wrapper h1 {
+    font-size: 1.6em; }
+  .about-wrapper .customer-preview-section .container .customer-content > div > .customer {
+    transform: translateX(10px); }
+  .about-wrapper .customer-preview-section .container > p {
+    padding: 1em 0.5em; }
+  .about-wrapper .team-section .container > :nth-child(2) {
+    padding: 1em 1em 1em 1em; }
+    .about-wrapper .team-section .container > :nth-child(2) p {
+      letter-spacing: 1px; }
+  .about-wrapper .how-it-works .container > p {
+    padding: 1em 0.5em 5em; }
+  .about-wrapper .welcome-section .container > :first-child {
+    padding-right: 0; }
+  .about-wrapper .welcome-section .container div p {
+    letter-spacing: 1px; } }
 .footer {
   background: url("../images/footer-img.png") no-repeat top right; }
   .footer .footer-list {

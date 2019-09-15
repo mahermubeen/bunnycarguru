@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
     <link rel="icon" type="image/ico" href="{{ secure_asset('images/carguru-logo.png') }}"/>
     <script src="{{ secure_asset('https://kit.fontawesome.com/b11236bde2.js') }}"></script>
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 </head>
 <body>
 <div class="wrapper">
@@ -15,17 +15,19 @@
             <div onclick="closeNav()" class="cross"></div>
             <nav>
                 <ul>
-                    <li class="active">Home</li>
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Blog</li>
-                    <li>Search By Car</li>
-                    <li>Contact Us</li>
+                    <li><a class="active" href={{url('/home')}}>Home</a></li>
+                    <li><a href={{url('/about')}}>About Us</a></li>
+                    <li><a href={{url('/services')}}>Services</a></li>
+                    <li><a href={{url('/blog')}}>Blog</a></li>
+                    <li><a href={{url('/searchByCar')}}>Search By Car</a></li>
+                    <li><a href={{url('/contact')}}>Contact Us</a></li>
                 </ul>
             </nav>
         </div>
         <div class="brand-logo">
-            <img class="brand-img" alt="logo-icon" src="images/carguru-logo.png">
+            <a href={{ url('/home')  }}>
+                <img class="brand-img" alt="logo-icon" src="images/carguru-logo.png">
+            </a>
         </div>
         <div class="nav-content">
             <div class="container-nav">
@@ -58,12 +60,12 @@
                 </div>
                 <nav class="nav-list">
                     <ul class="options">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">SEARCH BY CAR</a></li>
-                        <li><a href="#">CONTACT US</a></li>
+                        <li><a class="active" href={{url('/home')}}>HOME</a></li>
+                        <li><a href={{url('/about')}}>ABOUT US</a></li>
+                        <li><a href={{url('/services')}}>SERVICES</a></li>
+                        <li><a href={{url('/blog')}}>BLOG</a></li>
+                        <li><a href={{url('/searchByCar')}}>SEARCH BY CAR</a></li>
+                        <li><a href={{url('/contact')}}>CONTACT US</a></li>
                     </ul>
                     <ul class="search-checkout">
                         <li><a href="#"><img alt="bucket" src="images/bucket.png"></a></li>

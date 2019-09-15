@@ -18,4 +18,5 @@ Route::get('/customRegister', 'CustomAuth\RegisterController@showRegistrationFor
 Route::post('/customRegister', 'CustomAuth\RegisterController@register');
 
 Route::get('/home', 'HomeController@index');
+Route::get('/about', 'HomeController@about');
 
