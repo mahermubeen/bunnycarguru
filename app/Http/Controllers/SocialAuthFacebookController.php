@@ -13,9 +13,10 @@ class SocialAuthFacebookController extends Controller
      *
      * @return void
      */
-    public function redirect()
+    public function redirect($provider)
     {
-        return Socialite::driver('facebook')->redirect();
+        return Socialite::driver($provider)->redirect();
+
     }
 
     /**
@@ -28,5 +29,16 @@ class SocialAuthFacebookController extends Controller
         $user = $service->createOrGetUser(Socialite::driver('facebook')->user());
         auth()->login($user);
         return redirect()->to('/home');
+    }
+
+
+
+    public function callback()
+    {
+        $user = Socialite::driver('facebook')->user();
+
+        return $user->getEmail();
+
+        // $user->token;
     }
 }
