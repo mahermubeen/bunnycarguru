@@ -17,8 +17,8 @@ class CreateUsersTable extends Migration
             $table->bigIncrements('id');
             $table->string('fname')->nullable()->default('');
             $table->string('lname')->nullable()->default('');
-            $table->string('email')->unique();
-            $table->string('password');
+            $table->string('email')->nullable()->default('');
+            $table->string('password')->nullable()->default('');
             $table->string('status')->default(1);
             $table->string('avatar')->default('default.png');
             $table->string('google_id')->default(1);
