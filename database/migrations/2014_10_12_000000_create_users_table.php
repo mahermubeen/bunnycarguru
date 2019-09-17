@@ -22,7 +22,6 @@ class CreateUsersTable extends Migration
             $table->string('status')->default(1);
             $table->string('avatar')->default('default.png');
             $table->string('google_id')->default(1);
-            $table->string('linkedin_id')->default(1);
             $table->string('avatar_original')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();

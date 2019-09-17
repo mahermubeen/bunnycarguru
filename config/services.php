@@ -2,9 +2,9 @@
 
 return [
     'google' => [
-        'client_id'     => '767216119534-tvat0q47cc9kn66dkro1d4gcvra7lgae.apps.googleusercontent.com',
-        'client_secret' => 'cGezCwZwqmi3gEFm_3zHGh5-',
-        'redirect'      => 'https://localhost:8000/google/callback'
+        'client_id'     => '705249485824-et1sg19e0llmunnfintgv3sst1kt9hh2.apps.googleusercontent.com',
+        'client_secret' => 'WKENq5Y2DnZDoyQSlGf_ggaE',
+        'redirect'      => 'https://bunnycarguru.herokuapp.com/google/callback'
     ],
 
     'facebook' => [

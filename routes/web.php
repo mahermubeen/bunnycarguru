@@ -24,15 +24,10 @@ Route::get('/password/reset', 'CustomAuth\ResetPasswordController@showResetForm'
 
 Route::get('/home', 'HomeController@index');
 Route::get('/about', 'HomeController@about');
+Route::get('/services', 'HomeController@services');
 
-Route::get('/google/redirect', 'customAuth\LoginController@redirectToProvider');
-Route::get('/google/callback', 'customAuth\LoginController@handleProviderCallback');
+Route::get('/google/redirect', 'SocialAuthGoogleController@redirect');
+Route::get('/google/callback', 'SocialAuthGoogleController@callback');
 
 Route::get('/facebook/redirect', 'SocialAuthFacebookController@redirect');
 Route::get('/facebook/callback', 'SocialAuthFacebookController@callback');
-
-Route::get('/linkedin/redirect', 'SocialAuthLinkedinController@redirect');
-Route::get('/linkedin/callback', 'SocialAuthLinkedinController@callback');
-
-Route::get('/twitter/redirect', 'SocialAuthTwitterController@redirect');
-Route::get('/twitter/callback', 'SocialAuthTwitterController@callback');
