@@ -68,6 +68,7 @@
                             name="email"
                             value="{{ old('email') }}"
                             placeholder="Email"
+                            required
                         />
                     </div>
                     @error('email')
@@ -82,6 +83,7 @@
                             name="password"
                             placeholder="Password"
                             autocomplete="new-password"
+                            required
                         />
                     </div>
                     @error('password')
