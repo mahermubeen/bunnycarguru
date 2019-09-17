@@ -42,7 +42,7 @@ class SocialAuthGoogleController extends Controller
             return redirect()->to('/home');
         }
         catch (Exception $e) {
-            return 'error';
+            return $e;
         }
     }
 }
