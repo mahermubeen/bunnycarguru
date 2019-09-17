@@ -10,7 +10,7 @@ return [
     'facebook' => [
         'client_id' => '396056224439149',
         'client_secret' => '3df86f840eeb560c911761e24e6fd404',
-        'redirect' => 'https://bunnycarguru.herokuapp.com/callback',
+        'redirect' => 'https://bunnycarguru.herokuapp.com/facebook/callback',
     ],
 
     'linkedin' => [

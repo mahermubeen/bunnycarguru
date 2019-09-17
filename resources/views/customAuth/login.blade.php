@@ -73,7 +73,7 @@
                                 </button>
 
                                 <ul class="apis">
-                                    <li class="fb"><a href="{{route('socialfb.auth',['provider' => 'facebook'])}}"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li class="fb"><a href="{{url('/facebook/redirect')}}"><i class="fab fa-facebook-f"></i></a></li>
                                     <li class="google"><a href="{{ url('/google/redirect') }}"><i class="fab fa-google-plus-g"></i></a></li>
 
                                 </ul>

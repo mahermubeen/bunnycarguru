@@ -28,14 +28,8 @@ Route::get('/about', 'HomeController@about');
 Route::get('/google/redirect', 'customAuth\LoginController@redirectToProvider');
 Route::get('/google/callback', 'customAuth\LoginController@handleProviderCallback');
 
-
-Route::get('{provider}/auth/callback', [
-    'uses' => 'SocialAuthFacebookController@redirect',
-    'as'   => 'socialfb.auth'
-]);
-Route::get('auth/{provider}/callback', 'SocialAuthFacebookController@redirect');
-
-
+Route::get('/facebook/redirect', 'SocialAuthFacebookController@redirect');
+Route::get('/facebook/callback', 'SocialAuthFacebookController@callback');
 
 Route::get('/linkedin/redirect', 'SocialAuthLinkedinController@redirect');
 Route::get('/linkedin/callback', 'SocialAuthLinkedinController@callback');
