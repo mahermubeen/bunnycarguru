@@ -1682,6 +1682,13 @@ html {
     .about-wrapper .how-it-works .container > p {
       padding: 1em 2.5em 5em;
       color: #706f72; }
+    .about-wrapper .how-it-works .container .how-it-works-images figure {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 4%;
+      justify-content: center; }
+      .about-wrapper .how-it-works .container .how-it-works-images figure img {
+        max-width: 100%; }
 
 @media screen and (max-width: 1250px) {
   .container {
@@ -1729,7 +1736,7 @@ html {
       margin-right: 0; }
       .about-wrapper .customer-preview-section .container .customer-content > div .customer {
         transform: translateX(68px); } }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .about-wrapper .about-section {
     margin: 20% 0 0; }
   .about-wrapper h1 {
@@ -1742,6 +1749,8 @@ html {
     padding: 1em 1em 1em 1em; }
     .about-wrapper .team-section .container > :nth-child(2) p {
       letter-spacing: 1px; }
+  .about-wrapper .how-it-works .container .how-it-works-images figure {
+    grid-template-columns: 100%; }
   .about-wrapper .how-it-works .container > p {
     padding: 1em 0.5em 5em; }
   .about-wrapper .welcome-section .container > :first-child {

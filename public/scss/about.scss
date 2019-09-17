@@ -340,7 +340,6 @@ html {
 
         .container {
             text-align: center;
-
             h1 {
                 color: $light-black;
             }
@@ -348,6 +347,17 @@ html {
             & > p {
                 padding: 1em 2.5em 5em;
                 color: $dark-gray;
+            }
+            .how-it-works-images{
+                figure{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-gap: 4%;
+                    justify-content: center;
+                    img{
+                        max-width: 100%;
+                    }
+                }
             }
         }
     }
@@ -461,7 +471,7 @@ html {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
     .about-wrapper {
         .about-section{
             margin: 20% 0 0;
@@ -500,6 +510,11 @@ html {
 
         .how-it-works {
             .container {
+                .how-it-works-images{
+                    figure{
+                        grid-template-columns: 100%;
+                    }
+                }
                 & > p {
                     padding: 1em 0.5em 5em;
                 }

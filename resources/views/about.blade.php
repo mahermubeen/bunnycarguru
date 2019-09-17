@@ -152,7 +152,13 @@
             <div class="container">
                 <h1>How it Works</h1>
                 <p>Lorem ispum dolor smith emet sample business text goes here</p>
-                <img src="./images/3-steps_PNG-file.png"/>
+                <div class="how-it-works-images">
+                    <figure>
+                        <img src="../../images/how-it-work1.png"/>
+                        <img src="../../images/how-it-work2.png"/>
+                        <img src="../../images/how-it-work3.png"/>
+                    </figure>
+                </div>
             </div>
         </section>
     </div>
