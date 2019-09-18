@@ -695,7 +695,7 @@ a {
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 2000px
 */
-@media (min-width: 1025px) and (max-width: 2000px) {
+@media screen and (max-width: 2000px) {
   .login-body .login-container .login-heading {
     padding: 30px 0 15px; }
     .login-body .login-container .login-heading a {
@@ -711,7 +711,7 @@ a {
     .login-body .login-container .login-box-body .login-form .login-btn-box .login-apis-box button {
       width: 140px;
       height: 50px; } }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .login-body .login-container .login-heading {
     padding: 15px 0 10px; }
     .login-body .login-container .login-heading a {
@@ -755,7 +755,7 @@ a {
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
-@media (min-width: 680px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .login-body .login-container .login-heading {
     padding: 15px 0 10px; }
     .login-body .login-container .login-heading a {
@@ -795,7 +795,7 @@ a {
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
-@media (min-width: 425px) and (max-width: 679px) {
+@media screen and (max-width: 679px) {
   .login-body {
     background: none;
     position: relative;
@@ -852,7 +852,7 @@ a {
         .login-body .login-container .login-box-body .login-list-ul li a {
           font-size: 15px;
           line-height: 15px; } }
-@media (max-width: 424px) {
+@media screen and (max-width: 424px) {
   .login-body {
     background: none;
     position: relative;
@@ -910,7 +910,7 @@ a {
         .login-body .login-container .login-box-body .login-list-ul li a {
           font-size: 15px;
           line-height: 15px; } }
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .login-body .login-container .login-box-body .login-form .form-group {
     margin: 15px 0 0;
     padding: 10px;
