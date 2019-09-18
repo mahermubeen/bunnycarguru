@@ -373,8 +373,10 @@
   ##Screen = B/w 320px to 479px
 */
 
-@media screen and (max-width: 679px) {
 
+@media  all and (max-width: 679px),
+screen and (-webkit-min-device-pixel-ratio: 3.0) and (max-width: 1080px),
+screen and (-webkit-min-device-pixel-ratio: 2.0) and (max-width: 720px) {
     .login-body{
         background:none;
         position: relative;
@@ -457,11 +459,13 @@
             }
         }
     }
-
 }
 
-@media screen and (max-width: 424px) {
 
+
+@media  all and (max-width: 424px),
+screen and (-webkit-min-device-pixel-ratio: 3.0) and (max-width: 1080px),
+screen and (-webkit-min-device-pixel-ratio: 2.0) and (max-width: 720px) {
     .login-body{
         background:none;
         position: relative;
@@ -545,12 +549,12 @@
             }
         }
     }
-
 }
 
 
-@media screen and (max-width: 320px) {
-
+@media  all and (max-width:360px),
+screen and (-webkit-min-device-pixel-ratio: 3.0) and (max-width: 1080px),
+screen and (-webkit-min-device-pixel-ratio: 2.0) and (max-width: 720px) {
     .login-body{
         .login-container{
             .login-box-body{
@@ -568,5 +572,4 @@
             }
         }
     }
-
 }
