@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b48edb9c-5847-42b7-bed5-8ad587156319" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.sass-cache/9e6a35d20e592b5eb315fc0fbd644ef2ca6f33a0/about.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/public/.sass-cache/9e6a35d20e592b5eb315fc0fbd644ef2ca6f33a0/about.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.sass-cache/9e6a35d20e592b5eb315fc0fbd644ef2ca6f33a0/index.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/public/.sass-cache/9e6a35d20e592b5eb315fc0fbd644ef2ca6f33a0/index.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.sass-cache/9e6a35d20e592b5eb315fc0fbd644ef2ca6f33a0/login.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/public/.sass-cache/9e6a35d20e592b5eb315fc0fbd644ef2ca6f33a0/login.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/login.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customAuth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customAuth/login.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +185,7 @@
       <workItem from="1568652916211" duration="21529000" />
       <workItem from="1568794654115" duration="299000" />
       <workItem from="1568795069833" duration="32000" />
-      <workItem from="1568795252531" duration="4694000" />
+      <workItem from="1568795252531" duration="5668000" />
     </task>
     <servers />
   </component>

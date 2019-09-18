@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>CarGuru | Login </title>
     <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="viewport" content="width=device-width, target-densityDpi=device-dpi">
     <link rel="icon" type="image/ico" href="{{ secure_asset('images/carguru-logo.png') }}"/>
     <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
     <script src="{{ secure_asset('https://kit.fontawesome.com/b11236bde2.js') }}"></script>
