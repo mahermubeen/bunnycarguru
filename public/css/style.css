@@ -596,7 +596,7 @@ a {
       display: grid;
       justify-content: center;
       padding: 0px 100px 60px 200px;
-      max-width: 100vw;
+      width: 100%;
       grid-column: 1/3;
       background-repeat: no-repeat;
       background-size: 100% 100%;
@@ -911,65 +911,12 @@ a {
           font-size: 15px;
           line-height: 15px; } }
 @media (max-width: 320px) {
-  .login-body {
-    background: none;
-    position: relative;
-    display: block; }
-    .login-body .login-container {
-      display: block;
-      border-radius: 0; }
-      .login-body .login-container .login-heading {
-        grid-column: 1/3;
-        padding: 30px 0 20px;
-        border-radius: 0; }
-        .login-body .login-container .login-heading a {
-          font-size: 30px;
-          line-height: 30px; }
-        .login-body .login-container .login-heading .cross {
-          display: none; }
-      .login-body .login-container .login-box-body {
-        padding: 0 35px !important;
-        background-image: none;
-        background: #ffffff;
-        display: block; }
-        .login-body .login-container .login-box-body .login-box-list {
-          padding: 20px 0 0; }
-        .login-body .login-container .login-box-body .login-form {
-          margin: 15px 0 0;
-          display: grid;
-          grid-template-rows: auto; }
-          .login-body .login-container .login-box-body .login-form .login-btn-box .login-apis-box {
-            display: grid;
-            grid-template-columns: 100%;
-            align-items: center;
-            grid-gap: 15%;
-            padding: 15px 0; }
-            .login-body .login-container .login-box-body .login-form .login-btn-box .login-apis-box .apis .google a {
-              width: 45px;
-              height: 45px; }
-            .login-body .login-container .login-box-body .login-form .login-btn-box .login-apis-box .apis .fb a {
-              width: 45px;
-              height: 45px; }
-            .login-body .login-container .login-box-body .login-form .login-btn-box .login-apis-box button {
-              background-color: limegreen;
-              box-shadow: 0px 2px 62px 0px rgba(0, 0, 0, 0.15);
-              height: 45px;
-              border-radius: 32px;
-              border: none;
-              color: white;
-              font-size: 16px;
-              line-height: 28px;
-              cursor: pointer;
-              width: 100%; }
-          .login-body .login-container .login-box-body .login-form .form-group {
-            margin: 15px 0 0;
-            padding: 10px;
-            max-width: 100%; }
-            .login-body .login-container .login-box-body .login-form .form-group input {
-              width: 100%; }
-        .login-body .login-container .login-box-body .login-list-ul li a {
-          font-size: 15px;
-          line-height: 15px; } }
+  .login-body .login-container .login-box-body .login-form .form-group {
+    margin: 15px 0 0;
+    padding: 10px;
+    max-width: 100%; }
+    .login-body .login-container .login-box-body .login-form .form-group input {
+      width: 100%; } }
 .home {
   padding: 3% 20% 29% 13%;
   margin: 7% 0 0 0;
