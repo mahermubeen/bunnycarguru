@@ -241,7 +241,7 @@
                 }
                 .login-form{
                     margin: 5px 0 0;
-                    width: 250px;
+                    width: 100%;
                     .form-group {
                         margin: 15px 0 0;
                         padding: 7px;
@@ -326,7 +326,7 @@
                 }
                 .login-form{
                     margin: 5px 0 0;
-                    width: 230px;
+                    width: 100%;
                     .form-group {
                         margin: 15px 0 0;
                         padding: 7px;
@@ -405,7 +405,7 @@ screen and (-webkit-min-device-pixel-ratio: 2.0) and (max-width: 720px) {
                 }
                 .login-form{
                     margin: 15px 0 0;
-                    width: 230px;
+                    width: 100%;
                     display: grid;
                     grid-template-rows: auto;
                     .login-btn-box{
@@ -495,7 +495,7 @@ screen and (-webkit-min-device-pixel-ratio: 2.0) and (max-width: 720px) {
                 }
                 .login-form{
                     margin: 15px 0 0;
-                    width: 230px;
+                    width: 100%;
                     display: grid;
                     grid-template-rows: auto;
                     .login-btn-box{
@@ -559,11 +559,11 @@ screen and (-webkit-min-device-pixel-ratio: 2.0) and (max-width: 720px) {
         .login-container{
             .login-box-body{
                 .login-form{
-                    width: 230px;
+                    width: 100%;
                     .form-group {
                         margin: 15px 0 0;
                         padding: 10px;
-                        max-width: 100%;
+                        width: 100%;
                         input{
                             width: 100%;
                         }
