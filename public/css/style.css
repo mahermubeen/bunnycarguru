@@ -771,7 +771,7 @@ a {
       font-size: 17px !important; }
     .login-body .login-container .login-box-body .login-form {
       margin: 5px 0 0;
-      width: 100%; }
+      width: 230px; }
       .login-body .login-container .login-box-body .login-form .form-group {
         margin: 15px 0 0;
         padding: 7px; }
@@ -820,7 +820,7 @@ a {
           padding: 20px 0 0; }
         .login-body .login-container .login-box-body .login-form {
           margin: 15px 0 0;
-          max-width: 100%;
+          width: 230px;
           display: grid;
           grid-template-rows: auto; }
           .login-body .login-container .login-box-body .login-form .login-btn-box .login-apis-box {
@@ -878,7 +878,7 @@ a {
           padding: 20px 0 0; }
         .login-body .login-container .login-box-body .login-form {
           margin: 15px 0 0;
-          max-width: 100%;
+          width: 230px;
           display: grid;
           grid-template-rows: auto; }
           .login-body .login-container .login-box-body .login-form .login-btn-box .login-apis-box {
@@ -911,12 +911,14 @@ a {
           font-size: 15px;
           line-height: 15px; } }
 @media screen and (max-width: 320px) {
-  .login-body .login-container .login-box-body .login-form .form-group {
-    margin: 15px 0 0;
-    padding: 10px;
-    max-width: 100%; }
-    .login-body .login-container .login-box-body .login-form .form-group input {
-      width: 100%; } }
+  .login-body .login-container .login-box-body .login-form {
+    width: 230px; }
+    .login-body .login-container .login-box-body .login-form .form-group {
+      margin: 15px 0 0;
+      padding: 10px;
+      max-width: 100%; }
+      .login-body .login-container .login-box-body .login-form .form-group input {
+        width: 100%; } }
 .home {
   padding: 3% 20% 29% 13%;
   margin: 7% 0 0 0;
