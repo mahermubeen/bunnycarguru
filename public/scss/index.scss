@@ -642,7 +642,7 @@
             .latest-work-container {
                 .work-heading {
                     button {
-                        width: 185px;
+                        width: 100%;
                         height: 59px;
                     }
 
@@ -775,6 +775,14 @@
                 }
             }
         }
+        .latest-work-container{
+            .work-heading {
+                grid-template-columns: 100%;
+                button {
+                    width: 100% !important;
+                }
+            }
+        }
     }
 }
 
@@ -810,6 +818,7 @@
     }
     .main-section {
         .aboutUs {
+            padding: 10px 0 10px;
             .about-section {
                 padding: 0 20px;
 
@@ -869,16 +878,19 @@
 
         .latest-work {
             .latest-work-container {
-                margin: 90px 0 0 0;
+                margin: 90px 0 45px 0;
                 padding: 0 15px;
-
                 .work-heading {
                     display: grid;
                     grid-template-columns: 100%;
                     justify-content: space-between;
                     align-items: center;
                     grid-gap: 20px;
-
+                    .discover-content{
+                        h2 {
+                            font-size: 28px;
+                        }
+                    }
                     button {
                         width: 100%;
                         height: 59px;
