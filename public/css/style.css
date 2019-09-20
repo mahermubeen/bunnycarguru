@@ -2337,6 +2337,27 @@ html {
             .main-wrapper.blog .blog-section .blog-container .section-2 .main-blogs figure img {
               max-width: 100%;
               width: 100%; }
+      .main-wrapper.blog .blog-section .blog-container .section-3 {
+        grid-column: 2/3; }
+        .main-wrapper.blog .blog-section .blog-container .section-3 .pages-ul {
+          display: grid;
+          grid-template-columns: repeat(5, max-content);
+          grid-gap: 10px; }
+          .main-wrapper.blog .blog-section .blog-container .section-3 .pages-ul li div {
+            border: 1px solid #cccccc;
+            border-radius: 50%;
+            width: 38px;
+            height: 38px;
+            padding: 5px;
+            text-align: center; }
+            .main-wrapper.blog .blog-section .blog-container .section-3 .pages-ul li div a {
+              font-size: 16px;
+              line-height: 28px;
+              color: #32cd32; }
+            .main-wrapper.blog .blog-section .blog-container .section-3 .pages-ul li div img {
+              padding: 0 0 3px; }
+          .main-wrapper.blog .blog-section .blog-container .section-3 .pages-ul li:nth-child(4) div {
+            border: 0; }
 
 .footer {
   background: url("../images/footer-img.png") no-repeat top right; }
