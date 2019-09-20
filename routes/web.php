@@ -25,6 +25,7 @@ Route::get('/password/reset', 'CustomAuth\ResetPasswordController@showResetForm'
 Route::get('/home', 'HomeController@index');
 Route::get('/about', 'HomeController@about');
 Route::get('/services', 'HomeController@services');
+Route::get('/blog', 'HomeController@blog');
 
 Route::get('/google/redirect', 'SocialAuthGoogleController@redirect');
 Route::get('/google/callback', 'SocialAuthGoogleController@callback');
