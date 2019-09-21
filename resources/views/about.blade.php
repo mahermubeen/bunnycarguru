@@ -7,8 +7,8 @@
             <p>Home &bull; About Us</p>
         </section>
         <section class="welcome-section">
-            <div class="container">
-                <div>
+            <div class="container welcome-wrapper">
+                <div class="welcome-para">
                     <h1 class="green-heading">
                         Welcome to UAE's first online Tire/Type shop
                     </h1>
@@ -25,8 +25,8 @@
                         Lorem ipsum dolor sit amet, consectetur
                     </p>
                 </div>
-                <div>
-                    <img src="./images/about-online-tyre-shop.png">
+                <div class="welcome-img">
+                   <img src="images/about-online-tyre-shop.png" />
                 </div>
             </div>
         </section>
