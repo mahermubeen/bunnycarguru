@@ -225,6 +225,9 @@ a {
     transform: translateX(10px); }
   .customer-preview-section .container > p {
     padding: 1em 0.5em; } }
+@media screen and (max-width: 425px) {
+  .main-wrapper h1 {
+    font-size: 2.2em; } }
 .header {
   height: 103px;
   display: grid;
@@ -2359,6 +2362,122 @@ html {
           .main-wrapper.blog .blog-section .blog-container .section-3 .pages-ul li:nth-child(4) div {
             border: 0; }
 
+:root {
+  --rem: 16px; }
+
+.contact-wrapper .main-content {
+  padding: 7vw 0 0; }
+  .contact-wrapper .main-content .container {
+    display: flex;
+    padding: 1em;
+    justify-content: space-between; }
+    .contact-wrapper .main-content .container > * {
+      margin-right: 3em; }
+    .contact-wrapper .main-content .container > :last-child {
+      margin-right: 0; }
+    .contact-wrapper .main-content .container .info {
+      flex-basis: 472px; }
+      .contact-wrapper .main-content .container .info h1 {
+        font-size: 1.9em;
+        color: #32cd32;
+        padding-top: 0;
+        padding-bottom: 1em;
+        line-height: 1.7em;
+        font-family: Poppins-regular, sans-serif; }
+        .contact-wrapper .main-content .container .info h1 a {
+          color: #004700;
+          text-decoration: underline; }
+      .contact-wrapper .main-content .container .info article {
+        display: flex;
+        align-items: center;
+        padding: 1.7em 0 1.7em;
+        border-bottom: 1px solid #787878; }
+        .contact-wrapper .main-content .container .info article img {
+          width: 75px;
+          padding-right: 1.8em; }
+        .contact-wrapper .main-content .container .info article > div p {
+          color: #787878;
+          font-size: 1.4em; }
+        .contact-wrapper .main-content .container .info article > div > div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between; }
+          .contact-wrapper .main-content .container .info article > div > div a {
+            color: #32cd32;
+            text-decoration: none;
+            font-size: 1.2em; }
+        .contact-wrapper .main-content .container .info article > div > * {
+          padding-bottom: 0.75em; }
+        .contact-wrapper .main-content .container .info article > div > :last-child {
+          padding-bottom: 0; }
+    .contact-wrapper .main-content .container form {
+      flex-basis: 50%; }
+      .contact-wrapper .main-content .container form input,
+      .contact-wrapper .main-content .container form textarea {
+        display: block;
+        width: 100%;
+        padding: 0.7em;
+        border: 1px solid #787878;
+        border-radius: 8px;
+        margin-bottom: 1.6em;
+        font-size: 1em;
+        font-family: inherit; }
+      .contact-wrapper .main-content .container form button {
+        padding: 1em 2em;
+        background-color: #32cd32;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+        width: 100%;
+        border-radius: 50px;
+        cursor: pointer;
+        border: none; }
+        .contact-wrapper .main-content .container form button img {
+          width: 20px;
+          margin-left: 20px; }
+.contact-wrapper .img-content {
+  background-image: url("../images/contact-us-bg.png");
+  background-size: cover;
+  position: relative;
+  height: 50vw;
+  margin-top: -6vw; }
+  .contact-wrapper .img-content img {
+    position: absolute;
+    width: 33vw;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 15%; }
+
+@media screen and (max-width: 850px) {
+  .contact-wrapper .main-content {
+    padding: 40px 0; }
+    .contact-wrapper .main-content .container {
+      flex-direction: column;
+      font-size: 14px; }
+      .contact-wrapper .main-content .container > * {
+        margin-right: 0;
+        margin-bottom: 3em; } }
+@media screen and (max-width: 425px) {
+  .main-wrapper .heading-section {
+    font-size: 1em;
+    padding: 2.5em 1em;
+    background-image: url(../images/about-bg.png);
+    background-color: #32cd32;
+    background-size: cover;
+    text-align: center;
+    margin-top: 20%; }
+
+  .contact-wrapper .main-content .container {
+    padding: 0;
+    font-size: 13px; }
+  .contact-wrapper .img-content {
+    margin-top: -17vw; } }
+@media screen and (max-width: 350px) {
+  .contact-wrapper .main-content .container {
+    padding: 0;
+    font-size: 11.5px; } }
 .footer {
   background: url("../images/footer-img.png") no-repeat top right; }
   .footer .footer-list {

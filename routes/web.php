@@ -26,6 +26,7 @@ Route::get('/home', 'HomeController@index');
 Route::get('/about', 'HomeController@about');
 Route::get('/services', 'HomeController@services');
 Route::get('/blog', 'HomeController@blog');
+Route::get('/contact', 'HomeController@contact');
 
 Route::get('/google/redirect', 'SocialAuthGoogleController@redirect');
 Route::get('/google/callback', 'SocialAuthGoogleController@callback');
