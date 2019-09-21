@@ -26,7 +26,7 @@
                     </p>
                 </div>
                 <div>
-                    <img src="./images/type-shop-image.png">
+                    <img src="./images/about-online-tyre-shop.png">
                 </div>
             </div>
         </section>
