@@ -40,4 +40,9 @@ class HomeController extends Controller
     {
         return view('blog');
     }
+
+    public function contact()
+    {
+        return view('contact');
+    }
 }

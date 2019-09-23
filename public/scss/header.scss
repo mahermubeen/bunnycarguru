@@ -180,6 +180,27 @@
             .search-checkout {
                 li {
                     padding: 0 4px 0 3px;
+                    a{
+                        position: relative;
+                        .cart-bubble{
+                            position: absolute;
+                            right: 0;
+                            bottom: 15px;
+                            background-color: #004700;
+                            border-radius: 50%;
+                            width: 15px;
+                            height: 15px;
+                            color: red;
+                            font-size: 12px;
+                            span{
+                                bottom: 17px;
+                                left: 4px;
+                                position: relative;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+
                 }
             }
         }
