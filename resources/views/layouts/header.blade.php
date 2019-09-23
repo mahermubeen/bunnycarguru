@@ -74,7 +74,7 @@
                 </nav>
             </div>
         </div>
-        <div onclick="openNav()" id="bars" class="bars">
+        <div onclick="openNav()" id="bars" class="bars"></div>
     </header>
 
 @yield('content')

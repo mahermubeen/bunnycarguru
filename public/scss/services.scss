@@ -165,15 +165,134 @@
 
 
 @media screen and (max-width: 1024px){
-  .main-wrapper {
-    .quality-service-section{
-      font-size: 0.8em;
-      .container{
-        flex-direction: column;
-        .content{
-          padding-top: 2em;
+    .main-wrapper {
+        .quality-service-section{
+            font-size: 0.8em;
+            .container{
+                flex-direction: column;
+                .content{
+                    padding-top: 2em;
+                }
+            }
         }
-      }
     }
-  }
+    .main-wrapper.service{
+        .our-services-section{
+            .container{
+                & > div {
+                    font-size: 0.9em;
+                    h1{
+                        font-size: 2.1em;
+                    }
+                    .img-content{
+                        height: 32.5em;
+                        flex-basis: 52%;
+                    }
+                    .text-content{
+                        min-height: 24.2em;
+                        flex-basis: 59%;
+                        padding: 2.2em 30px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 900px){
+    .main-wrapper.service {
+        .our-services-section {
+            .container {
+                & > div{
+                    h1{
+                        font-size: 1.6em;
+                    }
+                    .text-content{
+                        font-size: 14px;
+                    }
+                    .img-content{
+                        height: 31.6em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 730px){
+    .main-wrapper.service {
+        .our-services-section {
+            .container {
+
+                & > div {
+                    display: block;
+                    h1{
+                        font-size: 2em;
+                    }
+                    .img-content{
+                        height: 55vmin;
+                        padding: 2em 20px;
+                    }
+                    .text-content{
+                        margin: 0;
+                        padding: 2.2em 30px;
+                        min-height: auto;
+                        flex-basis: auto;
+                        div{
+                            margin: 0;
+                            max-width: 100%;
+                            .crousel-btns{
+                                bottom: 1.67em;
+                                left: auto;
+                                right: 30px !important;
+                            }
+                        }
+                    }
+                }
+                & >:nth-child(odd){
+                    .text-content{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px){
+    .main-wrapper.service {
+        .heading-section{
+            margin-top: 20%;
+        }
+        .our-services-section {
+            .container {
+                margin: 0 20px;
+                & > div {
+                    h1{
+                        font-size: 1.6em;
+                    }
+                    .text-content{
+                        padding: 2em 20px;
+                        div {
+                            .crousel-btns{
+                                bottom: 2.3em;
+                                height: max-content;
+                                width: max-content;
+                                button{
+                                    height: 40px;
+                                    width: 40px;
+                                    img{
+                                        width: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
