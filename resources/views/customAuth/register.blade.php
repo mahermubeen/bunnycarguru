@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
 </head>
 <body>
-
 <div class="register-body">
     <div class="register-container">
         <div></div>
