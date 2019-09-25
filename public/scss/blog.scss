@@ -4,10 +4,23 @@
     background-position-y: center;
 
     .blog-section {
-        padding: 5em 0 44em;
-        background: url(../images/blog-banner-img.png) no-repeat;
+        padding: 5em 0 15em;
+        background: url(../images/blog-banner-img1.png) no-repeat;
         background-position: bottom;
+        background-size: contain;
         background-color: #fafafa;
+        .images-container {
+            display: grid;
+            justify-content: center;
+            .car-container {
+                img {
+                    width: 65vmin;
+                    position: relative;
+                    top: 79%;
+                    right: 38%;
+                }
+            }
+        }
         .blog-container{
             display: grid;
             grid-template-columns: max-content 1fr;
@@ -15,7 +28,7 @@
             .section-1{
                 background-color: rgb(245, 245, 245);
                 width: 270px;
-                height: 88%;
+                height: max-content;
                 padding:30px;
                 .guru-img{
                     width: 210px;
@@ -23,6 +36,12 @@
                     overflow: hidden;
                     display: grid;
                     justify-content: center;
+                    .normal{
+                        display: block;
+                    }
+                    .responsive{
+                        display: none;
+                    }
                 }
                 .recent-posts{
                     margin: 50px 0 35px;
@@ -207,7 +226,7 @@
                 }
             }
             .section-2{
-                width: 870px;
+                max-width: 870px;
                 .main-blogs{
                     .blog-details{
                         padding: 30px 0 0;
@@ -258,7 +277,7 @@
                     padding: 30px;
                     margin: 0 0 30px 0;
                     figure{
-                        height: 500px;
+                        height: max-content;
                         overflow: hidden;
                         img{
                             max-width: 100%;
@@ -303,22 +322,140 @@
     }
 }
 
-
 @media screen and (max-width: 1024px){
-
+    .main-wrapper.blog {
+        .blog-section {
+            padding: 3em 0 10em;
+            .images-container {
+                .car-container {
+                    img{
+                        width: 50vmin;
+                    }
+                }
+            }
+            .blog-container{
+                grid-gap: 20px;
+                .section-1{
+                    padding: 25px ;
+                    height: max-content;
+                }
+                .section-2 {
+                    .main-blogs{
+                        padding: 25px;
+                    }
+                }
+            }
+        }
+    }
 }
 
-
-
-
-@media screen and (max-width: 900px){
-
+@media screen and (max-width: 768px){
+    .main-wrapper.blog {
+        .blog-section {
+            padding: 3em 0 9em;
+            .images-container {
+                .car-container {
+                    img{
+                        width: 35vmin;
+                        top: 105%;
+                    }
+                }
+            }
+            .blog-container{
+                grid-gap: 20px;
+                .section-1{
+                    padding: 25px ;
+                    height: max-content;
+                }
+                .section-2 {
+                    .main-blogs{
+                        padding: 25px;
+                    }
+                }
+            }
+        }
+    }
 }
 
-@media screen and (max-width: 730px){
-
+@media screen and (max-width: 640px){
+    .main-wrapper.blog {
+        .blog-section {
+            padding: 0 0 5em !important;
+            .images-container {
+                .car-container {
+                    img{
+                        width: 37vmin;
+                        top: 90%;
+                        right: 23%;
+                    }
+                }
+            }
+            .blog-container{
+                display: block;
+                .section-1{
+                    width: 100%;
+                    margin: 10% 0 15%;
+                    .guru-img{
+                        width: auto;
+                        height: auto;
+                        overflow: visible;
+                        img{
+                            max-width: 100%;
+                        }
+                        .normal{
+                            display: none;
+                        }
+                        .responsive{
+                            display: block;
+                            max-width: 86vw;
+                            margin-top: 30px;
+                        }
+                    }
+                    .recent-projects {
+                        figure {
+                            img{
+                                width: 24vw;
+                                height: 17vw;
+                            }
+                        }
+                    }
+                }
+                .section-3 {
+                    .pages-ul{
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 385px){
+    .main-wrapper.blog {
+        .blog-section {
+            padding: 0 0 5em !important;
+            .images-container {
+                .car-container {
+                    img{
+                        top: 103%;
+                    }
+                }
+            }
+        }
+    }
+}
 
+@media screen and (max-width: 320px){
+    .main-wrapper.blog {
+        .blog-section {
+            padding: 0 0 5em !important;
+            .images-container {
+                .car-container {
+                    img{
+                        top: 127%;
+                    }
+                }
+            }
+        }
+    }
 }

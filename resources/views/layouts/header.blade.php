@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>CarGuru</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="icon" type="image/ico" href="{{ asset('images/carguru-logo.png') }}"/>
-    <script src="{{ asset('https://kit.fontawesome.com/b11236bde2.js') }}"></script>
+    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
+    <link rel="icon" type="image/ico" href="{{ secure_asset('images/carguru-logo.png') }}"/>
+    <script src="{{ secure_asset('https://kit.fontawesome.com/b11236bde2.js') }}"></script>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 </head>
 <body>
+
 <div class="wrapper">
     <header class="header">
         <div id="main-nav" class="responsive-nav">
@@ -68,7 +69,7 @@
                         <li><a href={{url('/contact')}}>CONTACT US</a></li>
                     </ul>
                     <ul class="search-checkout">
-                        <li><a href="#">
+                        <li><a href={{ url('/cart') }}>
                             <img alt="bucket" src="images/bucket.png">
                             <div class="cart-bubble">
                                 <span>2</span>

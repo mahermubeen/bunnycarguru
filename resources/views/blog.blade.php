@@ -199,6 +199,12 @@
                     </ul>
                 </div>
             </div>
+            <div class="images-container">
+                <div class="car-container">
+                    <img src="images/team-car.png"/>
+                </div>
+            </div>
         </section>
+
     </div>
 @endsection

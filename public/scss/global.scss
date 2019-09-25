@@ -30,8 +30,12 @@ h1 {
     font-family: myriad-pro, sans-serif;
 }
 
-button, input, textarea {
+button, input, textarea, select {
     outline: none;
+}
+
+img{
+    max-width: 100%;
 }
 
 li {
@@ -41,6 +45,30 @@ li {
 
 a {
     text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+.shadow{
+    box-shadow: $secondary-shadow !important;
 }
 
 .benz-btn {
@@ -281,6 +309,11 @@ a {
 
 
 @media screen and (max-width: 768px) {
+    .main-wrapper {
+        .heading-section{
+            padding: 3.5em 1em;
+        }
+    }
     .customer-preview-section {
         padding: 3.5em 0;
 
@@ -302,6 +335,11 @@ a {
 
 
 @media screen and (max-width: 425px) {
+    .main-wrapper {
+        .heading-section{
+            padding: 3em 1em;
+        }
+    }
     .customer-preview-section {
         .container {
             .customer-content {

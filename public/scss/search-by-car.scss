@@ -1,145 +1,152 @@
 $border: 1px solid $light-gray;
 .wrapper{
   background-color: #eaf6f8;
-  .container{
-    padding: 33px 0;
-    .shadow{
-      box-shadow: 5px 0 5px 1px $gray;
-    }
-    button, input{
-      border: none;
+  .searc-car-section{
+    background-image:url('../images/search-car-back-bottom-banner.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding: 0 0 5em;
+    .container{
+      padding: 33px 0;
+      .shadow{
+        box-shadow: 5px 0 5px 1px $gray;
+      }
+      button, input{
+        border: none;
+        font-weight: 500;
+      }
       font-weight: 500;
-    }
-    font-weight: 500;
 
-    .shop-by{
-      padding: 25px 27px;
-      background-color: $white;
-
-      h2{
-        font-size: 0.9em;
-        padding-bottom: 0.9rem;
-        color: $blackish;
-      }
-      .square{
-        border-radius: 4px;
-      }
-      .primary{
-        background-color: $green;
-        color: $dark-green;
-        font-size: 12px;
-        padding: 7px 25px;
-        height: 30px;
-        border-radius: 40px;
-        text-transform: uppercase;
-        font-weight: bold;
-      }
-
-      .secondary{
+      .shop-by{
+        padding: 25px 27px;
         background-color: $white;
-        color: $grayish;
-        border: $border;
-        width: 110px;
-        margin-right: 10px;
-        height: 44px;
-        box-shadow: $secondary-shadow;
-      }
-      .secondary:nth-last-of-type{
-        background-color: red;
-        margin-right: 0;
-      }
-      .checkbox{
-        position: relative;
-        width: max-content;
-        margin-right: 30px;
-        input{
-          -webkit-appearance: none;
-          width: 180px;
-          display: block;
-          height: 100%;
-          background-color: $light-gray;
-          border-radius: 40px;
-          padding: 22px;
-          &:before, &:after{
-            height: 28px;
-            line-height: 30px;
-            color: $grayish;
-            text-align: center;
-            position: absolute;
-            font-size: 12px;
-            text-transform: uppercase;
-            top: 50%;
-            transform: translate(0, -50%);
-            z-index: 1;
-            width: 80px;
-          }
-          &:before{
-            content: "size";
-            left: 10px;
-            font-weight: bold;
-            color: $dark-green;
-          }
-          &:after{
-            content: "vehicle";
-            left: 50%;
-          }
-        }
 
-        label{
-          width: 80px;
-          height: 30px;
-          background-color: #32cd32;
-          position: absolute;
-          border-radius: 40px;
-          top: 50%;
-          transform: translate(0,-50%);
-          left: 5%;
-          z-index: 0;
-          transition: all ease 0.25s;
+        h2{
+          font-size: 0.9em;
+          padding-bottom: 0.9rem;
+          color: $blackish;
         }
-        input:checked{
-          &:before{
-            font-weight: initial;
-            color: initial;
-          }
-          &:after{
-            font-weight: bold;
-            color: $dark-green;
-          }
-          & ~label{
-            left: 50% !important;
-          }
+        .square{
+          border-radius: 4px;
         }
-      }
-
-      .type-wrapper{
-        margin: 0 20px;
-        .right-btn{
-          width: 28px;
-          height: 28px;
-          border-radius: 40px;
+        .primary{
           background-color: $green;
+          color: $dark-green;
+          font-size: 12px;
+          padding: 7px 25px;
+          height: 30px;
+          border-radius: 40px;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+
+        .secondary{
+          background-color: $white;
+          color: $grayish;
+          border: $border;
+          width: 110px;
           margin-right: 10px;
-          img{
-            width: 6px;
+          height: 44px;
+          box-shadow: $secondary-shadow;
+        }
+        .secondary:nth-last-of-type{
+          background-color: red;
+          margin-right: 0;
+        }
+        .checkbox{
+          position: relative;
+          width: max-content;
+          margin-right: 30px;
+          input{
+            -webkit-appearance: none;
+            width: 180px;
+            display: block;
+            height: 100%;
+            background-color: $light-gray;
+            border-radius: 40px;
+            padding: 22px;
+            &:before, &:after{
+              height: 28px;
+              line-height: 30px;
+              color: $grayish;
+              text-align: center;
+              position: absolute;
+              font-size: 12px;
+              text-transform: uppercase;
+              top: 50%;
+              transform: translate(0, -50%);
+              z-index: 1;
+              width: 80px;
+            }
+            &:before{
+              content: "size";
+              left: 10px;
+              font-weight: bold;
+              color: $dark-green;
+            }
+            &:after{
+              content: "vehicle";
+              left: 50%;
+            }
+          }
+
+          label{
+            width: 80px;
+            height: 30px;
+            background-color: #32cd32;
+            position: absolute;
+            border-radius: 40px;
+            top: 50%;
+            transform: translate(0,-50%);
+            left: 5%;
+            z-index: 0;
+            transition: all ease 0.25s;
+          }
+          input:checked{
+            &:before{
+              font-weight: initial;
+              color: initial;
+            }
+            &:after{
+              font-weight: bold;
+              color: $dark-green;
+            }
+            & ~label{
+              left: 50% !important;
+            }
           }
         }
-        p{
-          color: $grayish;
-          font-size: 14.5px;
+
+        .type-wrapper{
+          margin: 0 20px;
+          .right-btn{
+            width: 28px;
+            height: 28px;
+            border-radius: 40px;
+            background-color: $green;
+            margin-right: 10px;
+            img{
+              width: 6px;
+            }
+          }
+          p{
+            color: $grayish;
+            font-size: 14.5px;
+          }
         }
+
+        .location{
+          min-width: 145px !important;
+          border: $border;
+          border-radius: 40px !important;
+        }
+
+
+
       }
-
-      .location{
-        min-width: 145px !important;
-        border: $border;
-        border-radius: 40px !important;
-      }
-
-
 
     }
-
   }
 }
 
@@ -284,8 +291,31 @@ $border: 1px solid $light-gray;
           color: $gray;
           font-size: 14px;
           margin-right: 10px;
-          img{
-            height: 19px;
+          cursor:pointer;
+          &:hover{
+            background-color: $dark-gray;
+            color: $white;
+          }
+          &:hover .img-brand {
+            background: url('../images/brand-white.png') no-repeat;
+            background-size: 19px 19px;
+          }
+          &:hover .img-price {
+            background: url('../images/price-white.png') no-repeat;
+            background-size: 19px 19px;
+          }
+          .img-price{
+            width:20px;
+            height: 20px;
+            background:url('../images/price.png') no-repeat;
+            background-size: 19px 19px;
+            margin-right: 10px;
+          }
+          .img-brand{
+            width:20px;
+            height: 20px;
+            background:url('../images/brand.png') no-repeat;
+            background-size: 19px 19px;
             margin-right: 10px;
           }
         }
@@ -305,7 +335,7 @@ $border: 1px solid $light-gray;
         width: 260px;
         border: 1px solid #eeeeee;
         background-color:#f8f8f8;
-        .header{
+        .item-wrapper{
           background-color: #f8f8f8;
           display: flex;
           align-items: center;
