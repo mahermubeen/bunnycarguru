@@ -6,7 +6,6 @@
             <h1>Blog</h1>
             <p>Home &bull; Blog</p>
         </section>
-
         <section class="blog-section">
             <div class="container blog-container">
                 <div class="section-1">
@@ -200,6 +199,12 @@
                     </ul>
                 </div>
             </div>
+            <div class="images-container">
+                <div class="car-container">
+                    <img src="images/team-car.png"/>
+                </div>
+            </div>
         </section>
+
     </div>
 @endsection

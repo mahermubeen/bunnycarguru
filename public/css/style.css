@@ -348,6 +348,23 @@ a {
               color: #32cd32; }
       .header .container-nav .nav-list .search-checkout li {
         padding: 0 4px 0 3px; }
+        .header .container-nav .nav-list .search-checkout li a {
+          position: relative; }
+          .header .container-nav .nav-list .search-checkout li a .cart-bubble {
+            position: absolute;
+            right: 0;
+            bottom: 15px;
+            background-color: #004700;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            color: red;
+            font-size: 12px; }
+            .header .container-nav .nav-list .search-checkout li a .cart-bubble span {
+              bottom: 17px;
+              left: 4px;
+              position: relative;
+              color: #ffffff; }
 
 @media screen and (max-width: 2560px) {
   .header {
@@ -1270,16 +1287,22 @@ a {
       justify-content: center;
       align-items: center;
       font-weight: 500;
+      text-align: center;
+      border-radius: 0 0 4px 4px;
       padding: 20px;
-      max-width: 374px;
       font-size: 20px;
       line-height: 27px;
       background-color: #32cd32;
-      position: absolute;
-      bottom: 52px;
-      width: 100%; }
+      bottom: 7px;
+      width: 100%;
+      position: absolute; }
     .main-section .latest-work .work-images .work-img {
-      cursor: pointer; }
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative; }
       .main-section .latest-work .work-images .work-img img {
         max-width: 100%; }
       .main-section .latest-work .work-images .work-img:hover .image-hover-detail {
@@ -2137,10 +2160,19 @@ html {
   background-size: 100% 147%;
   background-position-y: center; }
   .main-wrapper.blog .blog-section {
-    padding: 5em 0 44em;
-    background: url(../images/blog-banner-img.png) no-repeat;
+    padding: 5em 0 15em;
+    background: url(../images/blog-banner-img1.png) no-repeat;
     background-position: bottom;
+    background-size: contain;
     background-color: #fafafa; }
+    .main-wrapper.blog .blog-section .images-container {
+      display: grid;
+      justify-content: center; }
+      .main-wrapper.blog .blog-section .images-container .car-container img {
+        width: 65vmin;
+        position: relative;
+        top: 79%;
+        right: 38%; }
     .main-wrapper.blog .blog-section .blog-container {
       display: grid;
       grid-template-columns: max-content 1fr;
@@ -2148,7 +2180,7 @@ html {
       .main-wrapper.blog .blog-section .blog-container .section-1 {
         background-color: whitesmoke;
         width: 270px;
-        height: 88%;
+        height: max-content;
         padding: 30px; }
         .main-wrapper.blog .blog-section .blog-container .section-1 .guru-img {
           width: 210px;
@@ -2156,6 +2188,10 @@ html {
           overflow: hidden;
           display: grid;
           justify-content: center; }
+          .main-wrapper.blog .blog-section .blog-container .section-1 .guru-img .normal {
+            display: block; }
+          .main-wrapper.blog .blog-section .blog-container .section-1 .guru-img .responsive {
+            display: none; }
         .main-wrapper.blog .blog-section .blog-container .section-1 .recent-posts {
           margin: 50px 0 35px; }
           .main-wrapper.blog .blog-section .blog-container .section-1 .recent-posts h3 {
@@ -2301,7 +2337,7 @@ html {
             .main-wrapper.blog .blog-section .blog-container .section-1 .find-on-facebook .like-btn-wrapper a {
               display: grid; }
       .main-wrapper.blog .blog-section .blog-container .section-2 {
-        width: 870px; }
+        max-width: 870px; }
         .main-wrapper.blog .blog-section .blog-container .section-2 .main-blogs {
           border-radius: 6px;
           background-color: white;
@@ -2344,7 +2380,7 @@ html {
                 font-size: 16px;
                 line-height: 28px; }
           .main-wrapper.blog .blog-section .blog-container .section-2 .main-blogs figure {
-            height: 500px;
+            height: max-content;
             overflow: hidden; }
             .main-wrapper.blog .blog-section .blog-container .section-2 .main-blogs figure img {
               max-width: 100%;
@@ -2371,6 +2407,70 @@ html {
           .main-wrapper.blog .blog-section .blog-container .section-3 .pages-ul li:nth-child(4) div {
             border: 0; }
 
+@media screen and (max-width: 1024px) {
+  .main-wrapper.blog .blog-section {
+    padding: 3em 0 10em; }
+    .main-wrapper.blog .blog-section .images-container .car-container img {
+      width: 50vmin; }
+    .main-wrapper.blog .blog-section .blog-container {
+      grid-gap: 20px; }
+      .main-wrapper.blog .blog-section .blog-container .section-1 {
+        padding: 25px;
+        height: max-content; }
+      .main-wrapper.blog .blog-section .blog-container .section-2 .main-blogs {
+        padding: 25px; } }
+@media screen and (max-width: 768px) {
+  .main-wrapper.blog .blog-section {
+    padding: 3em 0 9em; }
+    .main-wrapper.blog .blog-section .images-container .car-container img {
+      width: 35vmin;
+      top: 105%; }
+    .main-wrapper.blog .blog-section .blog-container {
+      grid-gap: 20px; }
+      .main-wrapper.blog .blog-section .blog-container .section-1 {
+        padding: 25px;
+        height: max-content; }
+      .main-wrapper.blog .blog-section .blog-container .section-2 .main-blogs {
+        padding: 25px; } }
+@media screen and (max-width: 640px) {
+  .main-wrapper.blog .blog-section {
+    padding: 0 0 5em !important; }
+    .main-wrapper.blog .blog-section .images-container .car-container img {
+      width: 37vmin;
+      top: 90%;
+      right: 23%; }
+    .main-wrapper.blog .blog-section .blog-container {
+      display: block; }
+      .main-wrapper.blog .blog-section .blog-container .section-1 {
+        width: 100%;
+        margin: 10% 0 15%; }
+        .main-wrapper.blog .blog-section .blog-container .section-1 .guru-img {
+          width: auto;
+          height: auto;
+          overflow: visible; }
+          .main-wrapper.blog .blog-section .blog-container .section-1 .guru-img img {
+            max-width: 100%; }
+          .main-wrapper.blog .blog-section .blog-container .section-1 .guru-img .normal {
+            display: none; }
+          .main-wrapper.blog .blog-section .blog-container .section-1 .guru-img .responsive {
+            display: block;
+            max-width: 86vw;
+            margin-top: 30px; }
+        .main-wrapper.blog .blog-section .blog-container .section-1 .recent-projects figure img {
+          width: 24vw;
+          height: 17vw; }
+      .main-wrapper.blog .blog-section .blog-container .section-3 .pages-ul {
+        justify-content: center; } }
+@media screen and (max-width: 385px) {
+  .main-wrapper.blog .blog-section {
+    padding: 0 0 5em !important; }
+    .main-wrapper.blog .blog-section .images-container .car-container img {
+      top: 103%; } }
+@media screen and (max-width: 320px) {
+  .main-wrapper.blog .blog-section {
+    padding: 0 0 5em !important; }
+    .main-wrapper.blog .blog-section .images-container .car-container img {
+      top: 127%; } }
 :root {
   --rem: 16px; }
 
