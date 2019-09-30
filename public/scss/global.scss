@@ -30,9 +30,15 @@ h1 {
     font-family: myriad-pro, sans-serif;
 }
 
-button, input, textarea {
+button, input, textarea, select {
     outline: none;
 }
+
+img{
+    max-width: 100%;
+}
+
+
 
 li {
     list-style: none;
@@ -41,6 +47,30 @@ li {
 
 a {
     text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+}
+.align-center{
+    align-items: center;
+}
+.space-between, .justify-spaceBetween{
+    justify-content: space-between ;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+.shadow{
+    box-shadow: $secondary-shadow !important;
 }
 
 .benz-btn {
@@ -90,6 +120,7 @@ a {
 
 .container {
     max-width: 1170px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -113,7 +144,8 @@ a {
         background-color: $green;
         background-size: cover;
         text-align: center;
-        margin-top: 7%;
+        background-position: center;
+        //margin-top: 7%;
 
         h1 {
             padding-bottom: 0.3em;
@@ -153,6 +185,7 @@ a {
 
             & > :first-child {
                 padding-right: 3em;
+
             }
         }
     }
@@ -281,6 +314,11 @@ a {
 
 
 @media screen and (max-width: 768px) {
+    .main-wrapper {
+        .heading-section{
+            padding: 3.5em 1em;
+        }
+    }
     .customer-preview-section {
         padding: 3.5em 0;
 
@@ -302,6 +340,11 @@ a {
 
 
 @media screen and (max-width: 425px) {
+    .main-wrapper {
+        .heading-section{
+            padding: 3em 1em;
+        }
+    }
     .customer-preview-section {
         .container {
             .customer-content {
@@ -317,6 +360,15 @@ a {
             }
         }
     }
+    .wrapper.search-by-cart {
+        .container {
+            .shop-by {
+                .secondary{
+                    width: 75px !important;
+                }
+            }
+        }
+    }
 }
 
 //own responsive style
@@ -328,3 +380,4 @@ a {
         }
     }
 }
+

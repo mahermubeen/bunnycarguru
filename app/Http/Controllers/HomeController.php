@@ -45,4 +45,14 @@ class HomeController extends Controller
     {
         return view('contact');
     }
+
+    public function searchByCar()
+    {
+        return view('searchByCar');
+    }
+
+    public function cart()
+    {
+        return view('cart');
+    }
 }
