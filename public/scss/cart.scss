@@ -1,7 +1,14 @@
 .wrapper.cart {
-    background:url('../images/cart-bg-img.png') no-repeat;
-    padding: 100px 20px 14% 20px;
-    background-size:contain;
+    background-image:    url('../images/cart-bg-img.png'),
+    url('../images/searchCar-bg-img-bottom.png');
+    background-repeat:   no-repeat,
+    no-repeat;
+    background-position: top,
+    bottom;
+    background-size: cover, contain;
+    background-color: #f8f8f8;
+    padding: 100px 20px 23% 20px;
+
   //padding: 100px 0 42vw;
   //background-image: url("../images/bg-top.png"), url("../images/bg-bottom.png");
   //background-position: 0 0, 85% 0;
