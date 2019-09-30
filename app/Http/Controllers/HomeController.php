@@ -45,8 +45,6 @@ class HomeController extends Controller
     {
         return view('contact');
     }
-
-<<<<<<< HEAD
     public function cart()
     {
         return view('cart');
@@ -55,15 +53,5 @@ class HomeController extends Controller
     public function searchByCar()
     {
         return view('searchByCar');
-=======
-    public function searchByCar()
-    {
-        return view('searchByCar');
-    }
-
-    public function cart()
-    {
-        return view('cart');
->>>>>>> efb2db1da53d14eec0c381ff9b67a5a8492f47de
     }
 }
