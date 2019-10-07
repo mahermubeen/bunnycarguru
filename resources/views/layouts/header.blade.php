@@ -66,6 +66,7 @@
                         <li><a href={{url('/services')}}>SERVICES</a></li>
                         <li><a href={{url('/blog')}}>BLOG</a></li>
                         <li><a href={{url('/searchByCar')}}>SEARCH BY CAR</a></li>
+                        <li><a href={{url('/tyres')}}>TYRES</a></li>
                         <li><a href={{url('/contact')}}>CONTACT US</a></li>
                     </ul>
                     <ul class="search-checkout">

@@ -65,9 +65,14 @@ class User extends Authenticatable
         User::where('id', $id) -> delete();
     }
 
-
     public function update_avatar($data, $where) {
         return User::where($where) -> update($data);
     }
 
+
+
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
+    }
 }

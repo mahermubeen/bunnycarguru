@@ -1,18 +1,48 @@
 $border: 1px solid $light-gray;
 
-.wrapper.search-by-cart{
-    background-image:    url('../images/searchBycar-blue-background.png'),
-    url('../images/searchCar-bg-img-bottom.png');
-    background-repeat:   no-repeat,
-    no-repeat;
-    background-position: top,
-    bottom;
-    background-size: contain, contain;
-    padding: 0 0 4%;
+.wrapper.search-by-car{
     background-color: #f8f8f8;
     .container{
         padding: 33px 20px;
         box-sizing: content-box;
+        .search-wrapper{
+            display: grid;
+            grid-template-columns: 11fr 1fr;
+            grid-gap: 15px;
+            align-items: center;
+        }
+
+        .carNames-wrapper{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 15px;
+        }
+        .cars{
+            padding: 20px 0 15px;
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            .car{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 74px;
+                height: 34px;
+                align-items: center;
+                margin-right: 10px;
+                background-color: $light-gray;
+                img{
+                    width: 12px;
+                    margin-right: 7px;
+                    cursor: pointer;
+                }
+                a{
+                    color: $dark-gray;
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+            }
+        }
         .shadow{
             box-shadow: 5px 0 5px 1px $gray;
         }
@@ -20,6 +50,7 @@ $border: 1px solid $light-gray;
             border: none;
             font-weight: 500;
         }
+
         font-weight: 500;
 
         .shop-by{
@@ -32,26 +63,37 @@ $border: 1px solid $light-gray;
                 color: $blackish;
             }
             & > div{
+                display: grid;
                 flex-wrap: wrap;
                 & >*{
                     flex-shrink: 0;
                     margin-bottom: 20px !important;
                 }
             }
+            .search-input{
+                font-size: 12px;
+                color: #787878;
+                padding: 9px 12px;
+                width: 100%;
+                border-radius: 20px;
+                border: 1px solid #d7d7d7;
+                &::placeholder{
+                    color: $off-white;
+                }
+            }
             .square{
                 border-radius: 4px;
             }
             .primary{
-                background-color: $green;
-                color: $dark-green;
+                background-color: #32cd32;
+                color: #004700;
                 font-size: 12px;
+                height: 38px;
                 padding: 7px 25px;
-                height: 30px;
-                border-radius: 40px;
+                border-radius: 20px;
                 text-transform: uppercase;
                 font-weight: bold;
             }
-
             .secondary{
                 background-color: $white;
                 color: $grayish;
@@ -133,7 +175,6 @@ $border: 1px solid $light-gray;
                     }
                 }
             }
-
             .type-wrapper{
                 margin: 0 20px;
                 .right-btn{
@@ -151,358 +192,21 @@ $border: 1px solid $light-gray;
                     font-size: 14.5px;
                 }
             }
-
             .location{
                 min-width: 145px !important;
                 border: $border;
                 border-radius: 40px !important;
             }
-
-
-
         }
 
     }
 }
-
-.car-tyre-section{
-    display: grid;
-    grid-template-columns: max-content auto;
-    margin-top: 30px;
-    grid-gap: 20px;
-    aside{
-        width: 270px;
-        background-color: $white;
-        height: max-content;
-        & >:first-child{
-            padding: 15px 25px 0;
-        }
-        h2{
-            font-weight: 500;
-            color: #8d8d8d;
-            text-transform: uppercase;
-            font-size: 1.07em;
-        }
-        .clear-btn{
-            all: unset;
-            text-transform: uppercase;
-            color: $green;
-            font-size: 0.97em;
-        }
-        .cars{
-            padding: 20px 0 15px;
-            display: flex;
-            align-items: center;
-            flex-wrap: nowrap;
-            .car{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 74px;
-                height: 34px;
-                align-items: center;
-                margin-right: 10px;
-                background-color: $light-gray;
-                img{
-                    width: 12px;
-                    margin-right: 7px;
-                    cursor: pointer;
-                }
-                p{
-                    color: $dark-gray;
-                    font-size: 12px;
-                    font-weight: bold;
-                }
-            }
-        }
-        .dropdown{
-            -webkit-appearance: none;
-            width: 100%;
-            padding: 5px 0;
-            font-size: 15px;
-            font-weight: 600;
-            background-color: transparent;
-            color: $green;
-            text-transform: uppercase;
-            background-image: url("../images/dropdown-toggle.png");
-            background-repeat: no-repeat;
-            background-position: right center;
-            border: none;
-        }
-        .search-input{
-            font-size: 11px;
-            color: $gray;
-            padding: 9px 12px;
-            width: 100%;
-            margin: 10px 0;
-            border-radius: 20px;
-            border: 1px solid $off-white;
-            &::placeholder{
-                color: $off-white;
-            }
-        }
-        .checks{
-            padding: 15px 0;
-            div{
-                padding: 5px 0;
-                display: flex;
-                align-items: center;
-                input{
-                    -webkit-appearance: none;
-                    width: 14px;
-                    height: 14px;
-                    margin-right: 14px;
-                    border: 1px solid $gray;
-                }
-                label{
-                    font-size: 13px;
-                    color: $gray;
-                }
-                input:checked {
-                    background-color: #32cd32;
-                    background-image: url('../images/check.png');
-                    background-size: 8px;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    & ~ label{
-                        color: $green;
-                    }
-                }
-            }
-        }
-        .ul-dropdowns{
-            padding-top: 25px;
-            .li-dropdown{
-                padding: 11px 25px;
-                border-top: 1px solid $off-white;
-                border-radius: 0;
-                background-position: 95% center;
-            }
-        }
-    }
-    section{
-        background-color: transparent;
-        .car-tyre-header{
-            padding: 30px;
-            background-color: $white;
-            margin-bottom: 4px;
-            h1{
-                color: $light-black;
-                font-size: 20px;
-                padding-bottom: 20px;
-            }
-            .filters{
-                display: grid;
-                flex-wrap: wrap;
-                grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
-                grid-gap: 10px;
-                & > div{
-                    flex: 1;
-                    align-items: center;
-                    background-color: $light-gray;
-                    display: flex;
-                    padding: 10px 15px;
-                    color: $gray;
-                    font-size: 14px;
-                    img{
-                        height: 19px;
-                        margin-right: 10px;
-                    }
-                }
-                & >:last-child{
-                    margin-right: 0;
-                }
-            }
-        }
-        .car-tyre-body{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            padding: 30px;
-            background-color: $white;
-            .item{
-                margin-right: 10px;
-                margin-bottom: 20px;
-                border: 1px solid #eeeeee;
-                background-color:#f8f8f8;
-                .header{
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding: 15px 18px;
-                    border-bottom: 1px solid #eeeeee;
-                    .checkbox{
-                        display: flex;
-                        align-items: center;
-                        input{
-                            margin-right: 5px;
-                            width: 13px;
-                        }
-                        label{
-                            font-size: 10px;
-                        }
-                    }
-                }
-                .item-img{
-                    height: 176px;
-                    background-position: bottom;
-                    background-image: url('../images/item-pic.png');
-                    background-size: cover;
-                }
-                .sample{
-                    background-color: $white;
-                    padding: 20px 18px 15px;
-                    border-bottom: 1px solid #eeeeee;
-                    h2{
-                        font-weight: 500;
-                        color: $light-black;
-                        text-transform: uppercase;
-                        padding-bottom: 4px;
-                        font-size: 15px;
-                    }
-                    & > div{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        p{
-                            color: $gray;
-                            font-size: 12px;
-                        }
-                        .stars{
-                            display: flex;
-                            justify-content: space-between;
-                            .fa-star{
-                                font-size: 10px;
-                                margin: 0 1px;
-                                color: $off-white;
-                            }
-                            .fa-star.active{
-                                color: $yellow;
-                            }
-                        }
-                    }
-                }
-                .description{
-                    padding: 10px 10px;
-                    display: flex;
-                    justify-content: space-around;
-                    background-color:#f8f8f8;
-                    border-bottom: 1px solid #eeeeee;
-                    margin-top: -7px;
-                    h2{
-                        color: $light-black;
-                        font-size: 16px;
-                    }
-                }
-                .tyre-char{
-                    display: flex;
-                    justify-content: space-around;
-                    padding: 12px;
-                    border-bottom: 1px solid #eeeeee;
-                    margin-bottom: 5px;
-                    background-color: $white;
-                    & > div{
-                        display: flex;
-                        justify-content: space-between;
-                        background-color: $green;
-                        color: $white;
-                        padding: 0px 13px;
-                        align-items: center;
-                        border-radius: 20px;
-                        p{
-                            line-height: normal;
-                            margin-right: 5px;
-                        }
-                        img{
-                            width: 15px;
-                            flex-shrink: 0;
-                            height: auto;
-                        }
-                    }
-                }
-                .tyre-state{
-                    display: flex;
-                    border-top: 1px solid #eeeeee;
-                    border-bottom: 1px solid #eeeeee;
-                    background-color: $white;
-                    a{
-                        color: $green;
-                        font-size: 14px;
-                        padding: 10px;
-                        text-decoration: underline;
-                        text-align: center;
-                        width: 50%;
-                    }
-                    .available{
-                        border-left: 1px solid #eeeeee;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        justify-items: center;
-                        width: 50%;
-                        p{
-                            color: $red;
-                            font-size: 12px;
-                        }
-                        img{
-                            padding-right: 10px;
-                            width: 23px;
-                        }
-                    }
-                }
-                .price-section{
-                    padding: 10px;
-                    text-align: center;
-                    h1{
-                        display: block;
-                        color: $dark-gray;
-                        font-weight: 500;
-                        font-size: 20px;
-                        span{
-                            font-weight: bold;
-                            color: $green;
-                        }
-                    }
-                    p{
-                        color: $green;
-                    }
-                    & > div{
-                        margin: 14px 0;
-                        display: grid;
-                        justify-content: center;
-                        grid-gap: 15px;
-                        grid-template-columns: auto auto;
-                        select{
-                            -webkit-appearance: none;
-                            background-color: $white;
-                            color: $gray;
-                            background-image: url("../images/arrow-down.png");
-                            background-position: 80% center;
-                            background-repeat: no-repeat;
-                            width: 91px;
-                        }
-                        button,select{
-                            border: 1px solid $green;
-                            border-radius: 30px;
-                            padding: 10px 18px;
-                            font-size: 14px;
-                        }
-                        button{
-                            background: $green;
-                            color: $white;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
 //responsive
 
 //@media screen and max-width:
 
 @media screen and (max-width: 944px){
-    .wrapper.search-by-cart {
+    .wrapper.search-by-car {
         .container {
             .shop-by {
                 .type-wrapper{
@@ -523,7 +227,7 @@ $border: 1px solid $light-gray;
 }
 
 @media screen and (max-width: 356px){
-    .wrapper.search-by-cart {
+    .wrapper.search-by-car {
         .container {
             padding: 33px 15px;
             .shop-by{

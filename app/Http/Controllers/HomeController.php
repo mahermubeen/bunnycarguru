@@ -50,8 +50,8 @@ class HomeController extends Controller
         return view('cart');
     }
 
-    public function searchByCar()
+    public function tyres()
     {
-        return view('searchByCar');
+        return view('tyres');
     }
 }
