@@ -5,10 +5,11 @@
         <div class="container">
             <section class="shop-by shadow">
                 <div class="flex space-between">
-                    <div class="search-wrapper">
-                        <input class="search-input shadow" type="text" name="search-by-car" placeholder="Search Car"/>
-                        <button class="primary">Search</button>
-                    </div>
+                    <form class="search-wrapper" method="POST" action="{{ url('/searchByCar/addCar') }}">
+                        @csrf
+                        <input id="name" type="text" placeholder="Add Car" class="search-input shadow @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus />
+                        <button type="submit" class="primary">Add</button>
+                    </form>
                     <div class="carNames-wrapper">
                         <div class="cars">
 

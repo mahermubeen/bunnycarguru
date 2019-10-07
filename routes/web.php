@@ -30,6 +30,7 @@ Route::get('/contact', 'HomeController@contact');
 Route::get('/cart', 'HomeController@cart');
 Route::get('/tyres', 'HomeController@tyres');
 Route::get('/searchByCar', 'SearchByCarController@searchByCar');
+Route::post('/searchByCar/addCar', 'SearchByCarController@addCar');
 Route::get('/servicesAndRepair/{id}', 'SearchByCarController@servicesAndRepair');
 
 

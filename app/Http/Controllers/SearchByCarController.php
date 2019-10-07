@@ -36,6 +36,24 @@ class SearchByCarController extends Controller
         return view('searchByCar', ['cars' => $cars]);
     }
 
+    public function addCar(Request $data)
+    {
+        $this -> validate($data, [
+            'name' => ['required', 'string', 'max:255']
+        ]);
+
+        $data = array(
+            'name'      =>  $data['name']
+        );
+
+        $id = $this -> car -> add($data);
+
+        if($id > 0)
+            return redirect('/searchByCar');
+        else
+            return redirect() -> back() -> with('error', 'Error! Please try again.') -> withInput();
+    }
+
     public function servicesAndRepair($id)
     {
         if(!$id or $id < 1)
