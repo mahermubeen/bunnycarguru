@@ -69,6 +69,9 @@ class SearchByCarController extends Controller
 
         $car = $this -> car -> get_car($id);
 
-        return view('services-and-repair', ['car' => $car]);
+        $string = $car->model;
+        $models = explode(",", $string);
+
+        return view('services-and-repair', ['car' => $car, 'models' => $models]);
     }
 }

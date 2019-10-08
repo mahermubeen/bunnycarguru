@@ -15,6 +15,8 @@ class CreateBatteriesTable extends Migration
     {
         Schema::create('batteries', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('company')->default('');
             $table->timestamps();
         });
     }

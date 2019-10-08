@@ -11,32 +11,40 @@
                 <div class="form-services">
                     <div class="services-form-list">
                         <ul>
-                            <li><a href="#"><img alt="battery" src="../images/battery.png"></a></li>
+                            <li class="active-service"><a href="#"><img alt="battery" src="../images/battery.png"></a></li>
                             <li><a href="#"><img alt="tyre" src="../images/tyre.png"></a></li>
                             <li><a href="#"><img alt="oil" src="../images/oil.png"></a></li>
                             <li><a href="#"><img alt="customer" src="../images/customer.png"></a></li>
                         </ul>
                     </div>
                     <form class="services-form">
-                        <label class="labels" for="fname">First Name*</label>
-                        <label class="labels" for="lname">Last Name*</label>
-                        <input class="inputs" id="fname" type="text" name="fname">
-                        <input class="inputs" id="lname" type="text" name="lname">
-                        <label class="labels" for="email">Email</label>
-                        <label class="labels" for="phone">Phone*</label>
-                        <input class="inputs" id="email" type="text" name="email">
+                        <label class="labels" class="row" for="carModel">{{ $car->name }} Models*</label>
+                        <select class="row inputs" id="carModel">
+                            <option>-----------Select Car Model-----------</option>
+                             @foreach($models as $model)
+                                    <option>{{$model}}</option>
+                             @endforeach
+                        </select>
+                        <label class="labels" class="row" for="batteryBrand">Batteries Brands*</label>
+                        <select class="row inputs" id="batteryBrand">
+                            <option></option>
+                            <option>hello</option>
+                            <option>hello</option>
+                            <option>hello</option>
+                        </select>
+                        <label class="labels" for="name">Name</label>
+                        <label class="labels" for="phone">Mob#*</label>
+                        <input class="inputs" id="name" type="text" name="name">
                         <input class="inputs" id="phone" type="text" name="phone">
                         <label class="labels" class="row" for="location">Your Location</label>
-                        <input class="inputs row" id="location" type="text" name="location">
-                        <label class="labels" class="row" for="service">Services Interested</label>
-                        <select class="row inputs" id="service">
+                        <select class="row inputs" id="location">
                             <option></option>
                             <option>hello</option>
                             <option>hello</option>
                             <option>hello</option>
                         </select>
                         <label class="row form-btn">
-                            <button type="button" class="benz-btn">Send <img src="../images/send-arrow.png" alt="send-arrow"/></button>
+                            <button type="button" class="benz-btn">Click for Price <img src="../images/send-arrow.png" alt="send-arrow"/></button>
                         </label>
                     </form>
                 </div>
