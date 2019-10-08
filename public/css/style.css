@@ -95,6 +95,119 @@ a {
   cursor: pointer;
   background-color: transparent; }
 
+.heading {
+  color: #004700;
+  font-size: 50px;
+  line-height: 55px;
+  padding: 45px 0 0; }
+
+.heading2 {
+  color: #727272;
+  font-size: 23px;
+  line-height: 28px; }
+
+.heading3 {
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 50px; }
+
+.heading4 {
+  color: #ffffff;
+  font-size: 23px;
+  line-height: 28px; }
+
+.heading5 {
+  color: #32cd32;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 500; }
+
+.heading6 {
+  color: #32cd32;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 500;
+  padding: 45px 0 0; }
+
+.heading7 {
+  color: #32cd32;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 500; }
+
+.heading8 {
+  color: #474747;
+  font-size: 40px;
+  line-height: 50px; }
+
+.heading9 {
+  color: #474747;
+  font-size: 23px;
+  line-height: 28px; }
+
+.man-heading {
+  color: #474747;
+  font-size: 22px;
+  line-height: 28px; }
+
+.paragraph {
+  line-height: 32px;
+  font-size: 18px;
+  color: #6c677c; }
+
+.paragraph2 {
+  line-height: 32px;
+  font-size: 16px;
+  color: #6c677c; }
+
+.paragraph3 {
+  line-height: 32px;
+  font-size: 18px;
+  color: #ffffff; }
+
+.paragraph4 {
+  line-height: 28px;
+  font-size: 15px;
+  color: #ffffff; }
+
+.paragraph5 {
+  line-height: 32px;
+  font-size: 18px;
+  color: #6c677c; }
+
+.paragraph6 {
+  line-height: 30px;
+  font-size: 16px;
+  color: #6c677c; }
+
+.paragraph7 {
+  line-height: 32px;
+  font-size: 18px;
+  color: #706f72; }
+
+.paragraph8 {
+  line-height: 30px;
+  font-size: 16px;
+  color: #706f72; }
+
+.paragraph9 {
+  line-height: 28px;
+  font-size: 16px;
+  color: #6c677c; }
+
+.man-des {
+  line-height: 30px;
+  font-size: 16px;
+  color: #32cd32; }
+
+.inputs {
+  width: 100%;
+  background-color: white;
+  box-shadow: inset 0 3px 7px 0 rgba(50, 205, 50, 0.15);
+  border: none;
+  padding: 15px;
+  font-size: 20px; }
+
 ::-webkit-scrollbar {
   width: 7px; }
 
@@ -2630,7 +2743,7 @@ html {
     font-weight: 500; }
     .wrapper.search-by-car .container .search-wrapper {
       display: grid;
-      grid-template-columns: 11fr 1fr;
+      grid-template-columns: 14fr 1fr;
       grid-gap: 15px;
       align-items: center; }
     .wrapper.search-by-car .container .carNames-wrapper {
@@ -2639,16 +2752,15 @@ html {
       grid-gap: 15px; }
     .wrapper.search-by-car .container .cars {
       padding: 20px 0 15px;
-      display: flex;
-      align-items: center;
-      flex-wrap: nowrap; }
+      grid-gap: 10px;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr); }
       .wrapper.search-by-car .container .cars .car {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 74px;
+        width: 100%;
         height: 34px;
-        align-items: center;
         margin-right: 10px;
         background-color: #f5f5f6; }
         .wrapper.search-by-car .container .cars .car img {
@@ -2997,393 +3109,205 @@ html {
       grid-column: 1/3;
       width: 100% !important;
       margin-bottom: 20px; } }
-.container {
-  margin: 0 auto;
-  max-width: 1170px; }
-
-.container-nav {
-  margin: 0 auto 0 0;
-  max-width: 1170px;
-  height: 103px; }
-
-.home-container {
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10%; }
-
-.heading {
-  color: #004700;
-  font-size: 50px;
-  line-height: 55px;
-  padding: 45px 0 0; }
-
-.heading2 {
-  color: #727272;
-  font-size: 23px;
-  line-height: 28px; }
-
-.heading3 {
-  color: #ffffff;
-  font-size: 40px;
-  line-height: 50px; }
-
-.heading4 {
-  color: #ffffff;
-  font-size: 23px;
-  line-height: 28px; }
-
-.heading5 {
-  color: #32cd32;
-  font-size: 20px;
-  line-height: 50px;
-  font-weight: 500; }
-
-.heading6 {
-  color: #32cd32;
-  font-size: 40px;
-  line-height: 50px;
-  font-weight: 500;
-  padding: 45px 0 0; }
-
-.heading7 {
-  color: #32cd32;
-  font-size: 22px;
-  line-height: 28px;
-  font-weight: 500; }
-
-.heading8 {
-  color: #474747;
-  font-size: 40px;
-  line-height: 50px; }
-
-.heading9 {
-  color: #474747;
-  font-size: 23px;
-  line-height: 28px; }
-
-.man-heading {
-  color: #474747;
-  font-size: 22px;
-  line-height: 28px; }
-
-.paragraph {
-  line-height: 32px;
-  font-size: 18px;
-  color: #6c677c; }
-
-.paragraph2 {
-  line-height: 32px;
-  font-size: 16px;
-  color: #6c677c; }
-
-.paragraph3 {
-  line-height: 32px;
-  font-size: 18px;
-  color: #ffffff; }
-
-.paragraph4 {
-  line-height: 28px;
-  font-size: 15px;
-  color: #ffffff; }
-
-.paragraph5 {
-  line-height: 32px;
-  font-size: 18px;
-  color: #6c677c; }
-
-.paragraph6 {
-  line-height: 30px;
-  font-size: 16px;
-  color: #6c677c; }
-
-.paragraph7 {
-  line-height: 32px;
-  font-size: 18px;
-  color: #706f72; }
-
-.paragraph8 {
-  line-height: 30px;
-  font-size: 16px;
-  color: #706f72; }
-
-.paragraph9 {
-  line-height: 28px;
-  font-size: 16px;
-  color: #6c677c; }
-
-.man-des {
-  line-height: 30px;
-  font-size: 16px;
-  color: #32cd32; }
-
-.brand-img {
-  position: relative;
-  left: 18%; }
-
-.search-checkout li {
-  padding: 0 4px 0 3px; }
-
-.home {
+.wrapper.services-and-repair .service-and-repair-home {
   background: url("../images/banner-img.png") no-repeat center;
-  background-size: cover; }
-
-.services-form-list ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; }
-
-.services-form-list li {
-  justify-content: center;
-  align-items: center;
-  display: grid;
-  border: 1px solid #8080806e;
-  padding: 5px;
-  margin-left: 7px;
-  cursor: pointer;
-  box-shadow: 1px 10px 3px 1px rgba(0, 0, 0, 0.1); }
-
-.services-form-list li:nth-child(1) {
-  margin-left: 0; }
-
-.services-form-list li:hover {
-  border: 1px solid #32cd32; }
-
-.services-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 6px;
-  justify-content: center;
-  padding: 45px 50px 60px;
-  border-radius: 6px;
-  background-color: white;
-  box-shadow: 0 14px 6px 2px rgba(68, 65, 71, 0.05); }
-
-.inputs {
-  width: 100%;
-  background-color: white;
-  box-shadow: inset 0 3px 7px 0 rgba(50, 205, 50, 0.15);
-  border: none;
-  padding: 15px;
-  font-size: 20px; }
-
-.services-form .labels {
-  line-height: 2.8;
-  color: #6c677c;
-  font-size: 15px; }
-
-.services-form .form-btn {
-  margin: 28px 0 0; }
-
-.services-form .form-btn .benz-btn {
-  height: 60px;
-  border-radius: 30px;
-  background-color: #cfcfcf; }
-
-.services .benz-btn:hover {
-  background-color: #32cd32; }
-
-.services-form .row {
-  grid-column: 1/3; }
-
-.about-section {
-  text-align: center; }
-
-.about-section .heading6 {
-  padding: 100px 0 40px; }
-
-.about-section .paragraph {
-  padding: 0 0 55px;
-  color: #6c677c; }
-
-.services-section .paragraph {
-  padding: 0 0 55px;
-  color: #6c677c; }
-
-.services-section .heading6 {
-  padding: 45px 0 40px; }
-
-.aboutUs {
+  background-size: cover;
+  padding: 0 0 5%; }
+  .wrapper.services-and-repair .service-and-repair-home .container {
+    margin: 0 auto;
+    max-width: 1170px; }
+  .wrapper.services-and-repair .service-and-repair-home .home-container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10%; }
+    .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form-list ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; }
+      .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form-list ul li {
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        border: 1px solid #8080806e;
+        padding: 5px;
+        margin-left: 7px;
+        cursor: pointer;
+        box-shadow: 1px 10px 3px 1px rgba(0, 0, 0, 0.1); }
+        .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form-list ul li:nth-child(1) {
+          margin-left: 0; }
+        .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form-list ul li:hover {
+          border: 1px solid #32cd32; }
+    .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 6px;
+      justify-content: center;
+      padding: 45px 50px 60px;
+      border-radius: 6px;
+      background-color: white;
+      box-shadow: 0 14px 6px 2px rgba(68, 65, 71, 0.05); }
+      .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form .labels {
+        line-height: 2.8;
+        color: #6c677c;
+        font-size: 15px; }
+      .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form .form-btn {
+        margin: 28px 0 0; }
+      .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form .row {
+        grid-column: 1/3; }
+        .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form .row .benz-btn {
+          height: 60px;
+          border-radius: 30px;
+          border: none;
+          color: #ffffff;
+          font-family: 'Poppins', sans-serif;
+          font-size: 18px;
+          width: 100%;
+          padding: 12px 0;
+          text-align: center;
+          cursor: pointer;
+          background-color: limegreen; }
+.wrapper.services-and-repair .service-and-repair-aboutUs {
   background: url("../images/about-img.png") no-repeat;
   text-align: center;
   padding: 0 0 100px; }
-
-.services-section .our-services-list .services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 240px));
-  justify-content: center;
-  grid-gap: 4.5%; }
-
-.our-services-list .services li h3 {
-  padding: 28px 5px 0; }
-
-.our-services-list .services li .para {
-  padding: 28px 0 28px;
-  line-height: 32px;
-  font-size: 16px;
-  color: #6c677c; }
-
-.work .work-section {
+  .wrapper.services-and-repair .service-and-repair-aboutUs .container .about-section {
+    text-align: center; }
+    .wrapper.services-and-repair .service-and-repair-aboutUs .container .about-section .heading6 {
+      padding: 100px 0 40px; }
+    .wrapper.services-and-repair .service-and-repair-aboutUs .container .about-section .paragraph {
+      padding: 0 0 55px;
+      color: #6c677c; }
+  .wrapper.services-and-repair .service-and-repair-aboutUs .container .services-section .paragraph {
+    padding: 0 0 55px;
+    color: #6c677c; }
+  .wrapper.services-and-repair .service-and-repair-aboutUs .container .services-section .heading6 {
+    padding: 45px 0 40px; }
+  .wrapper.services-and-repair .service-and-repair-aboutUs .container .services-section .our-services-list .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 240px));
+    justify-content: center;
+    grid-gap: 4.5%; }
+    .wrapper.services-and-repair .service-and-repair-aboutUs .container .services-section .our-services-list .services li h3 {
+      padding: 28px 5px 0; }
+    .wrapper.services-and-repair .service-and-repair-aboutUs .container .services-section .our-services-list .services li .para {
+      padding: 28px 0 28px;
+      line-height: 32px;
+      font-size: 16px;
+      color: #6c677c; }
+.wrapper.services-and-repair .work .car-img {
+  position: relative;
+  left: 25%;
+  top: 25%;
+  width: 90px;
+  height: 40%;
+  max-width: 90px; }
+.wrapper.services-and-repair .work .work-section {
   display: grid;
   grid-template-columns: 49% 49% 1fr;
   grid-auto-rows: 585px;
   padding: 30px 0 60px; }
-
-.work .car-img {
-  position: relative;
-  left: 25%;
-  top: 25%; }
-
-.work .work-section .work-img {
-  display: flex; }
-
-.work .work-section .work-img img {
-  width: 100%;
-  border-radius: 6px; }
-
-.work .work-section .how-wrapper {
-  overflow-y: scroll;
-  height: 100%;
-  padding: 0 30px; }
-
-::-webkit-scrollbar {
-  width: 7px; }
-
-::-webkit-scrollbar-track {
-  background-color: #eaeaea; }
-
-::-webkit-scrollbar-thumb {
-  background-color: #004700;
-  width: 120%;
-  height: 52px; }
-
-.work .work-section .how-wrapper > .paragraph5 {
-  margin: 32px 0; }
-
-.chooseService {
+  .wrapper.services-and-repair .work .work-section .how-wrapper {
+    overflow-y: scroll;
+    height: 100%;
+    padding: 0 30px; }
+    .wrapper.services-and-repair .work .work-section .how-wrapper .paragraph5 {
+      margin: 32px 0; }
+  .wrapper.services-and-repair .work .work-section .work-img {
+    display: flex; }
+    .wrapper.services-and-repair .work .work-section .work-img img {
+      width: 100%;
+      border-radius: 6px; }
+.wrapper.services-and-repair .chooseService {
   padding: 100px 0;
   text-align: center; }
-
-.chooseService .choose-service-wrapper .paragraph5 {
-  padding: 30px 0; }
-
-.chooseService .choose-service-wrapper .heading6 {
-  padding: 0; }
-
-.chooseService .choose-service-images {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 1em;
-  grid-auto-rows: minmax(380px, 380px); }
-
-.choose-service-images figure img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
-.choose-service-images figure:nth-child(1) {
-  grid-column: 1/3; }
-
-.choose-service-images figure:nth-child(2) {
-  grid-column: 3/5;
-  grid-row: 1/3; }
-
-.choose-service-images figure:nth-child(3) {
-  grid-column: 5/7; }
-
-.choose-service-images figure:last-child {
-  grid-column: 5/7; }
-
-.schedule {
+  .wrapper.services-and-repair .chooseService .choose-service-wrapper .paragraph5 {
+    padding: 30px 0; }
+  .wrapper.services-and-repair .chooseService .choose-service-wrapper .heading6 {
+    padding: 0; }
+  .wrapper.services-and-repair .chooseService .choose-service-images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(380px, 380px); }
+    .wrapper.services-and-repair .chooseService .choose-service-images figure:nth-child(1) {
+      grid-column: 1/3; }
+    .wrapper.services-and-repair .chooseService .choose-service-images figure:nth-child(2) {
+      grid-column: 3/5;
+      grid-row: 1/3; }
+    .wrapper.services-and-repair .chooseService .choose-service-images figure:nth-child(3) {
+      grid-column: 5/7; }
+    .wrapper.services-and-repair .chooseService .choose-service-images figure:last-child {
+      grid-column: 5/7; }
+    .wrapper.services-and-repair .chooseService .choose-service-images figure img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+.wrapper.services-and-repair .schedule {
   background: url("../images/schedule-img.png") no-repeat;
   background-size: cover;
   padding: 140px 0 220px;
   text-align: center; }
-
-.schedule .paragraph3 {
-  padding: 20px 0 50px; }
-
-.schedule-wrapper .schedule-list {
-  margin: 60px 0 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
-
-.schedule-wrapper .schedule-list li {
-  border-right: 1px solid #ffffff; }
-
-.schedule-wrapper .schedule-list li:last-child {
-  border-right: none; }
-
-.choose-us-section {
+  .wrapper.services-and-repair .schedule .container .schedule-wrapper .schedule-list {
+    margin: 60px 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+    .wrapper.services-and-repair .schedule .container .schedule-wrapper .schedule-list li {
+      border-right: 1px solid #ffffff; }
+      .wrapper.services-and-repair .schedule .container .schedule-wrapper .schedule-list li:last-child {
+        border-right: none; }
+  .wrapper.services-and-repair .schedule .container .schedule-wrapper .paragraph3 {
+    padding: 20px 0 50px; }
+.wrapper.services-and-repair .choose-us-section {
   background: url("../images/why-choose-bg.png") no-repeat top;
   background-size: cover;
   padding: 300px 0 1px; }
-
-.choose-us-section .heading3 {
-  text-align: center; }
-
-.choose-us-section .paragraph3 {
-  text-align: center;
-  padding: 22px 0 45px; }
-
-.choose-us-carousal {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1.8em;
-  grid-auto-rows: 530px; }
-
-.choose-us-carousal .carousal {
-  border-radius: 6px;
-  background-color: white;
-  box-shadow: 0 2px 29px 3px rgba(70, 70, 70, 0.03);
-  padding: 50px 35px 15px 30px; }
-
-.choose-us-carousal .carousal .heading5 {
-  margin: 20px 0; }
-
-.customers-wrapper {
-  margin: 300px 0 180px; }
-
-.customers-wrapper .heading8 {
-  text-align: center; }
-
-.customers-wrapper .paragraph7 {
-  text-align: center;
-  padding: 36px 0 60px 0; }
-
-.customers-wrapper .customers-carousal {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px; }
-
-.customers-wrapper .customers-carousal .carousal .carousal-man-detail {
-  display: grid;
-  grid-template-columns: 6.250em 20% 1fr;
-  grid-gap: 20px; }
-
-.carousal .carousal-idea {
-  background-color: white;
-  box-shadow: 0px 2px 29.12px 2.88px rgba(70, 70, 70, 0.1);
-  padding: 50px 35px 40px 30px; }
-
-.carousal-man-detail .man-img {
-  grid-column: 2; }
-
-.customers-wrapper .customers-carousal .carousal .carousal-man-detail img {
-  border-radius: 50%;
-  width: 116px;
-  height: 116px; }
-
-.recent-heading {
-  border-bottom: 1px solid #eaeaea; }
-
-.recent-heading:last-child {
-  border-bottom: none; }
-
-.polygon {
-  width: 90px;
-  height: 60px;
-  clip-path: polygon(65% 0, 0 0, 100% 100%);
-  background-color: #ffffff; }
+  .wrapper.services-and-repair .choose-us-section .container .choose-us-wrapper .heading3 {
+    text-align: center; }
+  .wrapper.services-and-repair .choose-us-section .container .choose-us-wrapper .paragraph3 {
+    text-align: center;
+    padding: 22px 0 45px; }
+  .wrapper.services-and-repair .choose-us-section .container .choose-us-wrapper .choose-us-carousal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.8em;
+    grid-auto-rows: 530px; }
+    .wrapper.services-and-repair .choose-us-section .container .choose-us-wrapper .choose-us-carousal .carousal {
+      border-radius: 6px;
+      background-color: white;
+      box-shadow: 0 2px 29px 3px rgba(70, 70, 70, 0.03);
+      padding: 50px 35px 15px 30px; }
+      .wrapper.services-and-repair .choose-us-section .container .choose-us-wrapper .choose-us-carousal .carousal .heading5 {
+        margin: 20px 0; }
+  .wrapper.services-and-repair .choose-us-section .container .customers-wrapper {
+    margin: 300px 0 180px; }
+    .wrapper.services-and-repair .choose-us-section .container .customers-wrapper .customers-carousal {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 30px; }
+      .wrapper.services-and-repair .choose-us-section .container .customers-wrapper .customers-carousal .carousal .polygon {
+        width: 90px;
+        height: 60px;
+        clip-path: polygon(65% 0, 0 0, 100% 100%);
+        background-color: #ffffff; }
+      .wrapper.services-and-repair .choose-us-section .container .customers-wrapper .customers-carousal .carousal .carousal-idea {
+        background-color: white;
+        box-shadow: 0px 2px 29.12px 2.88px rgba(70, 70, 70, 0.1);
+        padding: 50px 35px 40px 30px; }
+      .wrapper.services-and-repair .choose-us-section .container .customers-wrapper .customers-carousal .carousal .carousal-man-detail {
+        display: grid;
+        grid-template-columns: 6.250em 20% 1fr;
+        grid-gap: 20px; }
+        .wrapper.services-and-repair .choose-us-section .container .customers-wrapper .customers-carousal .carousal .carousal-man-detail img {
+          border-radius: 50%;
+          width: 116px;
+          height: 116px; }
+        .wrapper.services-and-repair .choose-us-section .container .customers-wrapper .customers-carousal .carousal .carousal-man-detail .man-img {
+          grid-column: 2; }
+    .wrapper.services-and-repair .choose-us-section .container .customers-wrapper .heading8 {
+      text-align: center; }
+    .wrapper.services-and-repair .choose-us-section .container .customers-wrapper .paragraph7 {
+      text-align: center;
+      padding: 36px 0 60px 0; }
 
 .wrapper.search-by-cart {
   background-image: url("../images/searchBycar-blue-background.png"), url("../images/searchCar-bg-img-bottom.png");

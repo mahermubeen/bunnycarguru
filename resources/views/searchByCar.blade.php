@@ -5,14 +5,13 @@
         <div class="container">
             <section class="shop-by shadow">
                 <div class="flex space-between">
-                    <form class="search-wrapper" method="POST" action="{{ url('/searchByCar/addCar') }}">
-                        @csrf
-                        <input id="name" type="text" placeholder="Add Car" class="search-input shadow @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus />
-                        <button type="submit" class="primary">Add</button>
+                    <form class="search-wrapper" method="GET" action="{{ url('/searchCar') }}">
+                        <input type="text" name="search" class="search-input shadow" value="{{ isset($_REQUEST['search']) ? $_REQUEST['search'] : ''  }}" placeholder="Search Car" required autocomplete="search" autofocus>
+                        <button type="submit" class="primary">Search</button>
                     </form>
+
                     <div class="carNames-wrapper">
                         <div class="cars">
-
                                 @if(count($cars) > 0)
                                     @foreach($cars as $car)
                                     <div class="car">
@@ -22,7 +21,6 @@
                                     </div>
                                     @endforeach
                                 @endif
-
                         </div>
                     </div>
                 </div>

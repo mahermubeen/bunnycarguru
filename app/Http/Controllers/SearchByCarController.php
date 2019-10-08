@@ -36,6 +36,14 @@ class SearchByCarController extends Controller
         return view('searchByCar', ['cars' => $cars]);
     }
 
+    public function searchCar(Request $request){
+        $search = $request -> get('search');
+
+        $cars = Car::where('name', 'like', '%'. $search . '%')->get();
+
+        return view('/searchByCar', compact('cars'));
+    }
+
     public function addCar(Request $data)
     {
         $this -> validate($data, [

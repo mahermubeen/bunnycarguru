@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'CustomAuth\LoginController@showLoginForm');
+Route::get('/', 'CustomAuth\LoginController@showLoginForm')->name('customLogin');
 Route::post('/customLogin', 'CustomAuth\LoginController@login');
 Route::post('/logout', 'CustomAuth\LoginController@logout');
 Route::get('/customRegister', 'CustomAuth\RegisterController@showRegistrationForm');
@@ -29,9 +29,12 @@ Route::get('/blog', 'HomeController@blog');
 Route::get('/contact', 'HomeController@contact');
 Route::get('/cart', 'HomeController@cart');
 Route::get('/tyres', 'HomeController@tyres');
+
+
 Route::get('/searchByCar', 'SearchByCarController@searchByCar');
 Route::post('/searchByCar/addCar', 'SearchByCarController@addCar');
 Route::get('/servicesAndRepair/{id}', 'SearchByCarController@servicesAndRepair');
+Route::get('/searchCar', 'SearchByCarController@searchCar');
 
 
 Route::get('/google/redirect', 'SocialAuthGoogleController@redirect');
