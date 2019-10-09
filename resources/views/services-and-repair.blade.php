@@ -42,6 +42,9 @@
                         <label class="labels" class="row" for="location">Your Location</label>
                         <select class="row inputs" id="location">
                             <option></option>
+                            @foreach($branches as $branch)
+                            <option>{{$branch->city}}</option>
+                            @endforeach
                         </select>
                         <label class="row form-btn">
                             <button type="submit" class="benz-btn">Click for Price <img src="../images/send-arrow.png" alt="send-arrow"/></button>
