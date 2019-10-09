@@ -3,11 +3,20 @@
 namespace App\Http\Controllers;
 
 use App\Car;
+use App\Battery;
+use App\Oil;
+use App\Tyre;
+use App\Branch;
+
 use Illuminate\Http\Request;
 
 class SearchByCarController extends Controller
 {
     private $car;
+    private $battery;
+    private $oil;
+    private $tyre;
+    private $branch;
 
     /**
      * -------------------
@@ -19,6 +28,10 @@ class SearchByCarController extends Controller
     public function __construct()
     {
         $this->car = new Car();
+        $this->battery = new Battery();
+        $this->oil = new Oil();
+        $this->tyre = new Tyre();
+        $this->branch= new Branch();
 
         $this->middleware('auth');
     }
@@ -67,11 +80,13 @@ class SearchByCarController extends Controller
         if(!$id or $id < 1)
             return redirect() -> back();
 
-        $car = $this -> car -> get_car($id);
+        $car = $this->car-> get_car($id);
+
+        $cars = Car::where('id', $id)->with('batteries')->get();
 
         $string = $car->model;
         $models = explode(",", $string);
 
-        return view('services-and-repair', ['car' => $car, 'models' => $models]);
+        return view('services-and-repair', ['models' => $models, 'cars' => $cars, 'car' => $car]);
     }
 }

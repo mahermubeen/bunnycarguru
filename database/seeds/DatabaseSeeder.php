@@ -16,5 +16,7 @@ class DatabaseSeeder extends Seeder
         $this->call(OilTableSeeder::class);
         $this->call(BatteryTableSeeder::class);
         $this->call(TyreTableSeeder::class);
+        $this->call(CarBatteryTableSeeder::class);
+        $this->call(BranchesTableSeeder::class);
     }
 }

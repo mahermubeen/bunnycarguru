@@ -3131,7 +3131,6 @@ html {
         justify-content: center;
         align-items: center;
         display: grid;
-        border: 1px solid #8080806e;
         padding: 5px;
         margin-left: 7px;
         cursor: pointer;
@@ -3141,14 +3140,14 @@ html {
         .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form-list ul li:hover {
           border: 2px solid #32cd32; }
     .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form {
-      display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 6px;
       justify-content: center;
       padding: 45px 50px 60px;
       border-radius: 6px;
       background-color: white;
-      box-shadow: 0 14px 6px 2px rgba(68, 65, 71, 0.05); }
+      box-shadow: 0 14px 6px 2px rgba(68, 65, 71, 0.05);
+      display: grid; }
       .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form .labels {
         line-height: 2.8;
         color: #6c677c;

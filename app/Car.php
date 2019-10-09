@@ -32,27 +32,10 @@ class Car extends Model
     }
 
 
-    public function students()
-    {
-        return $this->belongsToMany(Student::class, 'Car_students', 'Car_id', 'student_id') -> withTimestamps();
-    }
 
-    public function teachers()
-    {
-        return $this->belongsToMany(Teacher::class, 'Car_teachers', 'Car_id', 'teacher_id') -> withTimestamps();
-    }
 
-    public function subjects()
+    public function batteries()
     {
-        return $this->belongsToMany(Subject::class, 'Car_subjects', 'Car_id', 'subject_id') -> withTimestamps();
-    }
-
-    public function teachrs()
-    {
-        return $this -> hasMany(Teacher::class, 'Car_id', 'id');
-    }
-    public function studnts()
-    {
-        return $this -> hasMany(Student::class, 'Car_id', 'id');
+        return $this->belongsToMany(Battery::class, 'car_batteries', 'car_id', 'battery_id') -> withTimestamps();
     }
 }

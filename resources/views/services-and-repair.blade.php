@@ -10,28 +10,31 @@
                 </div>
                 <div class="form-services">
                     <div class="services-form-list">
-                        <ul>
-                            <li class="active-service"><a href="#"><img alt="battery" src="../images/battery.png"></a></li>
-                            <li><a href="#"><img alt="tyre" src="../images/tyre.png"></a></li>
-                            <li><a href="#"><img alt="oil" src="../images/oil.png"></a></li>
-                            <li><a href="#"><img alt="customer" src="../images/customer.png"></a></li>
+                        <ul class="services-form-ul">
+                            <li class="active-service" onClick="showPanel(0)"><a href="#"><img alt="battery" src="../images/battery.png"></a></li>
+                            <li onClick="showPanel(1)"><a href="#"><img alt="tyre" src="../images/tyre.png"></a></li>
+                            <li onClick="showPanel(2)"><a href="#"><img alt="oil" src="../images/oil.png"></a></li>
+                            <li onClick="showPanel(3)"><a href="#"><img alt="customer" src="../images/customer.png"></a></li>
                         </ul>
                     </div>
                     <form class="services-form">
-                        <label class="labels" class="row" for="carModel">{{ $car->name }} Models*</label>
-                        <select class="row inputs" id="carModel">
-                            <option>-----------Select Car Model-----------</option>
-                             @foreach($models as $model)
-                                    <option>{{$model}}</option>
-                             @endforeach
-                        </select>
-                        <label class="labels" class="row" for="batteryBrand">Batteries Brands*</label>
-                        <select class="row inputs" id="batteryBrand">
-                            <option></option>
-                            <option>hello</option>
-                            <option>hello</option>
-                            <option>hello</option>
-                        </select>
+
+                            <label class="labels" class="row" for="carModel">{{ $car->name }} Models*</label>
+                            <select class="row inputs" id="carModel">
+                                <option></option>
+                                 @foreach($models as $model)
+                                        <option>{{$model}}</option>
+                                 @endforeach
+                            </select>
+                            <label class="labels" class="row" for="batteryBrand">Batteries Brands*</label>
+                            <select class="row inputs" id="batteryBrand">
+                                <option></option>
+                                @foreach($cars as $car)
+                                    @foreach($car -> batteries as $battery)
+                                        <option>{{$battery->name}}</option>
+                                    @endforeach
+                                @endforeach
+                            </select>
                         <label class="labels" for="name">Name</label>
                         <label class="labels" for="phone">Mob#*</label>
                         <input class="inputs" id="name" type="text" name="name">
@@ -39,13 +42,11 @@
                         <label class="labels" class="row" for="location">Your Location</label>
                         <select class="row inputs" id="location">
                             <option></option>
-                            <option>hello</option>
-                            <option>hello</option>
-                            <option>hello</option>
                         </select>
                         <label class="row form-btn">
-                            <button type="button" class="benz-btn">Click for Price <img src="../images/send-arrow.png" alt="send-arrow"/></button>
+                            <button type="submit" class="benz-btn">Click for Price <img src="../images/send-arrow.png" alt="send-arrow"/></button>
                         </label>
+
                     </form>
                 </div>
             </div>
