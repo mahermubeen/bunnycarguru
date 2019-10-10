@@ -31,10 +31,8 @@ Route::get('/cart', 'HomeController@cart');
 Route::get('/tyres', 'HomeController@tyres');
 
 
-Route::get('/searchByCar', 'SearchByCarController@searchByCar');
-Route::post('/searchByCar/addCar', 'SearchByCarController@addCar');
-Route::get('/servicesAndRepair/{id}', 'SearchByCarController@servicesAndRepair');
-Route::get('/searchCar', 'SearchByCarController@searchCar');
+Route::get('/searchByCar', 'SearchByCarController@searchByCar')->name('cars.index');
+Route::get('/servicesAndRepair/{id}', 'SearchByCarController@servicesAndRepair')->name('repairAndService.show');
 
 
 Route::get('/google/redirect', 'SocialAuthGoogleController@redirect');

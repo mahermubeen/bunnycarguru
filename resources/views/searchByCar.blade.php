@@ -5,24 +5,41 @@
         <div class="container">
             <section class="shop-by shadow">
                 <div class="flex space-between">
-                    <form class="search-wrapper" method="GET" action="{{ url('/searchCar') }}">
-                        <input type="text" name="search" class="search-input shadow" value="{{ isset($_REQUEST['search']) ? $_REQUEST['search'] : ''  }}" placeholder="Search Car" required autocomplete="search" autofocus>
-                        <button type="submit" class="primary">Search</button>
-                    </form>
 
-                    <div class="carNames-wrapper">
-                        <div class="cars">
-                                @if(count($cars) > 0)
-                                    @foreach($cars as $car)
-                                    <div class="car">
-                                        <a href={{ url('/servicesAndRepair/'.$car -> id) }}>
-                                            {{ $car -> name }}
-                                        </a>
-                                    </div>
-                                    @endforeach
-                                @endif
-                        </div>
+                    <div class="container">
+                        <h1>Select Car</h1>
+                        <table class="table table-bordered data-table">
+                            <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Name</th>
+                                <th width="100px">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
                     </div>
+
+{{--                    <div class="search-wrapper">--}}
+{{--                        <input type="text" name="search" class="search-input shadow" value="{{  }}" placeholder="Search Car" required autofocus/>--}}
+
+{{--                        <button id="filter" name="filter" type="button" class="primary">Search</button>--}}
+{{--                        <button id="reset" name="reset" type="button" class="primary">Reset</button>--}}
+{{--                    </div>--}}
+
+{{--                    <div id="car_data" class="carNames-wrapper">--}}
+{{--                        <div class="cars" id="filter_name">--}}
+{{--                                    @foreach($carName as $car)--}}
+{{--                                    <div class="car">--}}
+{{--                                        <a href={{ url('/servicesAndRepair/'.$car -> id) }}>--}}
+{{--                                            {{ $car -> name }}--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
+{{--                                    @endforeach--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+
                 </div>
             </section>
         </div>

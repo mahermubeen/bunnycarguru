@@ -44,11 +44,23 @@ class SearchByCarController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
 
-    public function searchByCar()
+    public function searchByCar(Request $request)
     {
-        $cars = $this -> car -> get_cars();
+        if ($request->ajax()) {
+            $data = Car::latest()->get();
+            return Datatables::of($data)
+                ->addIndexColumn()
+                ->addColumn('action', function(Car $car){
 
-        return view('searchByCar', ['cars' => $cars]);
+                    $btn = '<a href="' . route('repairAndService.show', $car->id) .'" class="edit btn btn-primary btn-sm">View</a>';
+
+                    return $btn;
+                })
+                ->rawColumns(['action'])
+                ->make(true);
+        }
+
+        return view('searchByCar');
     }
 
     public function searchCar(Request $request){
