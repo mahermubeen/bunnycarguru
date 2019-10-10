@@ -12,7 +12,7 @@ class Oil extends Model
         return $oil -> id;
     }
 
-    public function get_batteries() {
+    public function get_oils() {
         return Oil::all();
     }
 

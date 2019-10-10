@@ -11,10 +11,22 @@
                 <div class="form-services">
                     <div class="services-form-list">
                         <ul class="services-form-ul">
-                            <li class="tab-links" onclick="openCity(event, 'battery')"><img alt="battery" src="../images/battery.png"></li>
-                            <li class="tab-links" onclick="openCity(event, 'tyre')"><img alt="tyre" src="../images/tyre.png"></li>
-                            <li class="tab-links" onclick="openCity(event, 'oil')"><img alt="oil" src="../images/oil.png"></li>
-                            <li class="tab-links" onclick="openCity(event, 'gas')"><img alt="customer" src="../images/customer.png"></li>
+                            <li class="tab-links" onclick="openCity(event, 'battery')">
+                                <img alt="battery" src="../images/battery.png">
+                                <span>Battery</span>
+                            </li>
+                            <li class="tab-links" onclick="openCity(event, 'tyre')">
+                                <img alt="tyre" src="../images/tyre.png">
+                                <span>Tyre</span>
+                            </li>
+                            <li class="tab-links" onclick="openCity(event, 'oil')">
+                                <img alt="oil" src="../images/oil.png">
+                                <span>Oil</span>
+                            </li>
+                            <li class="tab-links" onclick="openCity(event, 'gas')">
+                                <img alt="customer" src="../images/ac-gas.png">
+                                <span>AC Gas</span>
+                            </li>
                         </ul>
                     </div>
                     <form id="battery" class="services-form tab-content">
@@ -28,10 +40,8 @@
                             <label class="labels" class="row" for="batteryBrand">Batteries Brands*</label>
                             <select class="row inputs" id="batteryBrand">
                                 <option></option>
-                                @foreach($cars as $car)
-                                    @foreach($car -> batteries as $battery)
-                                        <option>{{$battery->name}}</option>
-                                    @endforeach
+                                @foreach($batteries as $battery)
+                                    <option>{{$battery->name}}</option>
                                 @endforeach
                             </select>
                         <label class="labels" for="name">Name</label>
@@ -42,7 +52,7 @@
                         <select class="row inputs" id="location">
                             <option></option>
                             @foreach($branches as $branch)
-                            <option>{{$branch->city}}</option>
+                                <option>{{$branch->city}}</option>
                             @endforeach
                         </select>
                         <label class="labels" for="email">Email</label>
@@ -63,10 +73,8 @@
                         <label class="labels" class="row" for="batteryBrand">Please Select Tyre Size*</label>
                         <select class="row inputs" id="batteryBrand">
                             <option></option>
-                            @foreach($cars as $car)
-                                @foreach($car -> tyres as $tyre)
-                                    <option>{{$tyre->name}}</option>
-                                @endforeach
+                            @foreach($tyres as $tyre)
+                                <option>{{$tyre->name}}</option>
                             @endforeach
                         </select>
                         <label class="labels" for="name">Name</label>
@@ -99,10 +107,8 @@
                         <label class="labels" class="row" for="batteryBrand">Select Oil*</label>
                         <select class="row inputs" id="batteryBrand">
                             <option></option>
-                            @foreach($cars as $car)
-                                @foreach($car -> oils as $oil)
-                                    <option>{{$oil->name}}</option>
-                                @endforeach
+                            @foreach($oils as $oil)
+                                <option>{{$oil->name}}</option>
                             @endforeach
                         </select>
                         <label class="labels" for="name">Name</label>

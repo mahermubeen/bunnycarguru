@@ -7,6 +7,7 @@
     <link rel="icon" type="image/ico" href="{{ secure_asset('images/carguru-logo.png') }}"/>
     <script src="{{ secure_asset('https://kit.fontawesome.com/b11236bde2.js') }}"></script>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    
 </head>
 <body>
 

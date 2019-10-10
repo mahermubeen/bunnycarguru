@@ -8,6 +8,8 @@ use App\Oil;
 use App\Tyre;
 use App\Branch;
 
+use DataTables;
+
 use Illuminate\Http\Request;
 
 class SearchByCarController extends Controller
@@ -80,16 +82,16 @@ class SearchByCarController extends Controller
         if(!$id or $id < 1)
             return redirect() -> back();
 
-        $car = $this->car-> get_car($id);
-        $string = $car->model;
-        $models = explode(",", $string);
+        $data['car'] = $this->car-> get_car($id);
+        $string = $data['car']->model;
+        $data['models'] = explode(",", $string);
 
-        $branches = $this->branch-> get_branches();
+        $data['branches'] = $this->branch-> get_branches();
+        $data['batteries'] = $this->battery-> get_batteries();
+        $data['tyres'] = $this->tyre-> get_tyres();
+        $data['oils']  = $this->oil-> get_oils();
 
-        $cars = Car::where('id', $id)->with('batteries', 'tyres', 'oils')->get();
 
-
-
-        return view('services-and-repair', ['models' => $models, 'cars' => $cars, 'car' => $car, 'branches' => $branches]);
+        return view('services-and-repair', $data);
     }
 }

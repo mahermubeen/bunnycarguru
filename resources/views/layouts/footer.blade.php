@@ -76,6 +76,9 @@
         evt.currentTarget.className += " active-service";
     }
     openCity(event, 'battery');
+
+
+
 </script>
 
 </body>
