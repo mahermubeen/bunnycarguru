@@ -11,14 +11,13 @@
                 <div class="form-services">
                     <div class="services-form-list">
                         <ul class="services-form-ul">
-                            <li class="active-service" onClick="showPanel(0)"><a href="#"><img alt="battery" src="../images/battery.png"></a></li>
-                            <li onClick="showPanel(1)"><a href="#"><img alt="tyre" src="../images/tyre.png"></a></li>
-                            <li onClick="showPanel(2)"><a href="#"><img alt="oil" src="../images/oil.png"></a></li>
-                            <li onClick="showPanel(3)"><a href="#"><img alt="customer" src="../images/customer.png"></a></li>
+                            <li class="tab-links" onclick="openCity(event, 'battery')"><img alt="battery" src="../images/battery.png"></li>
+                            <li class="tab-links" onclick="openCity(event, 'tyre')"><img alt="tyre" src="../images/tyre.png"></li>
+                            <li class="tab-links" onclick="openCity(event, 'oil')"><img alt="oil" src="../images/oil.png"></li>
+                            <li class="tab-links" onclick="openCity(event, 'gas')"><img alt="customer" src="../images/customer.png"></li>
                         </ul>
                     </div>
-                    <form class="services-form">
-
+                    <form id="battery" class="services-form tab-content">
                             <label class="labels" class="row" for="carModel">{{ $car->name }} Models*</label>
                             <select class="row inputs" id="carModel">
                                 <option></option>
@@ -46,6 +45,106 @@
                             <option>{{$branch->city}}</option>
                             @endforeach
                         </select>
+                        <label class="labels" for="email">Email</label>
+                        <input class="row inputs" id="email" type="email" name="email">
+                        <label class="row form-btn">
+                            <button type="submit" class="benz-btn">Click for Price <img src="../images/send-arrow.png" alt="send-arrow"/></button>
+                        </label>
+
+                    </form>
+                    <form id="tyre" class="services-form tab-content">
+                        <label class="labels" class="row" for="carModel">{{ $car->name }} Models*</label>
+                        <select class="row inputs" id="carModel">
+                            <option></option>
+                            @foreach($models as $model)
+                                <option>{{$model}}</option>
+                            @endforeach
+                        </select>
+                        <label class="labels" class="row" for="batteryBrand">Please Select Tyre Size*</label>
+                        <select class="row inputs" id="batteryBrand">
+                            <option></option>
+                            @foreach($cars as $car)
+                                @foreach($car -> batteries as $battery)
+                                    <option>{{$battery->name}}</option>
+                                @endforeach
+                            @endforeach
+                        </select>
+                        <label class="labels" for="name">Name</label>
+                        <label class="labels" for="phone">Mob#*</label>
+                        <input class="inputs" id="name" type="text" name="name">
+                        <input class="inputs" id="phone" type="text" name="phone">
+                        <label class="labels" class="row" for="location">Your Location</label>
+                        <select class="row inputs" id="location">
+                            <option></option>
+                            @foreach($branches as $branch)
+                                <option>{{$branch->city}}</option>
+                            @endforeach
+                        </select>
+                        <label class="labels" for="email">Email</label>
+                        <input class="row inputs" id="email" type="email" name="email">
+                        <label class="row form-btn">
+                            <button type="submit" class="benz-btn">Click for Price <img src="../images/send-arrow.png" alt="send-arrow"/></button>
+                        </label>
+
+                    </form>
+                    <form id="oil" class="services-form tab-content">
+
+                        <label class="labels" class="row" for="carModel">{{ $car->name }} Models*</label>
+                        <select class="row inputs" id="carModel">
+                            <option></option>
+                            @foreach($models as $model)
+                                <option>{{$model}}</option>
+                            @endforeach
+                        </select>
+                        <label class="labels" class="row" for="batteryBrand">Select Oil*</label>
+                        <select class="row inputs" id="batteryBrand">
+                            <option></option>
+                            @foreach($cars as $car)
+                                @foreach($car -> batteries as $battery)
+                                    <option>{{$battery->name}}</option>
+                                @endforeach
+                            @endforeach
+                        </select>
+                        <label class="labels" for="name">Name</label>
+                        <label class="labels" for="phone">Mob#*</label>
+                        <input class="inputs" id="name" type="text" name="name">
+                        <input class="inputs" id="phone" type="text" name="phone">
+                        <label class="labels" class="row" for="location">Your Location</label>
+                        <select class="row inputs" id="location">
+                            <option></option>
+                            @foreach($branches as $branch)
+                                <option>{{$branch->city}}</option>
+                            @endforeach
+                        </select>
+                        <label class="labels" for="email">Email</label>
+                        <input class="row inputs" id="email" type="email" name="email">
+                        <label class="row form-btn">
+                            <button type="submit" class="benz-btn">Click for Price <img src="../images/send-arrow.png" alt="send-arrow"/></button>
+                        </label>
+
+                    </form>
+                    <form id="gas" class="services-form tab-content">
+
+                        <label class="labels" class="row" for="carModel">{{ $car->name }} Models*</label>
+                        <select class="row inputs" id="carModel">
+                            <option></option>
+                            @foreach($models as $model)
+                                <option>{{$model}}</option>
+                            @endforeach
+                        </select>
+                        <label class="labels" for="name">Name</label>
+                        <label class="labels" for="phone">Mob#*</label>
+                        <input class="inputs" id="name" type="text" name="name">
+                        <input class="inputs" id="phone" type="text" name="phone">
+                        <label class="labels" class="row" for="location">Your Location</label>
+                        <select class="row inputs" id="location">
+                            <option></option>
+                            @foreach($branches as $branch)
+                                <option>{{$branch->city}}</option>
+                            @endforeach
+                        </select>
+                        <label class="labels" for="email">Email</label>
+                        <input class="row inputs" id="email" type="email" name="email">
                         <label class="row form-btn">
                             <button type="submit" class="benz-btn">Click for Price <img src="../images/send-arrow.png" alt="send-arrow"/></button>
                         </label>

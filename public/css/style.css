@@ -206,7 +206,7 @@ a {
   box-shadow: inset 0 3px 7px 0 rgba(50, 205, 50, 0.15);
   border: none;
   padding: 15px;
-  font-size: 20px;
+  font-size: 15px;
   color: #6c677c; }
 
 ::-webkit-scrollbar {
@@ -3122,22 +3122,24 @@ html {
     justify-content: space-between;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10%; }
-    .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form-list ul {
+    .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form-list .services-form-ul {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr; }
-      .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form-list ul .active-service {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px; }
+      .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form-list .services-form-ul .active-service {
         border: 2px solid #32cd32; }
-      .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form-list ul li {
+      .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form-list .services-form-ul li {
         justify-content: center;
         align-items: center;
         display: grid;
         padding: 5px;
-        margin-left: 7px;
         cursor: pointer;
+        width: 100%;
+        height: 100px;
         box-shadow: 1px 10px 3px 1px rgba(0, 0, 0, 0.1); }
-        .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form-list ul li:nth-child(1) {
+        .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form-list .services-form-ul li:nth-child(1) {
           margin-left: 0; }
-        .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form-list ul li:hover {
+        .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form-list .services-form-ul li:hover {
           border: 2px solid #32cd32; }
     .wrapper.services-and-repair .service-and-repair-home .home-container .form-services .services-form {
       grid-template-columns: 1fr 1fr;
