@@ -1,6 +1,7 @@
 <?php
 
 namespace App;
+use DB;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -27,10 +28,8 @@ class Tyre extends Model
         Tyre::where('id', $id) -> delete();
     }
 
-    public function carss()
-    {
-        return $this->hasMany(Car::class, 'car_id', 'id');
-    }
+
+
 
     public function cars()
     {

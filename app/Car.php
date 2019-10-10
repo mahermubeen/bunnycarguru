@@ -38,4 +38,14 @@ class Car extends Model
     {
         return $this->belongsToMany(Battery::class, 'car_batteries', 'car_id', 'battery_id') -> withTimestamps();
     }
+
+    public function tyres()
+    {
+        return $this->belongsToMany(Tyre::class, 'car_tyres', 'car_id', 'tyre_id') -> withTimestamps();
+    }
+
+    public function oils()
+    {
+        return $this->belongsToMany(Oil::class, 'car_oils', 'car_id', 'oil_id') -> withTimestamps();
+    }
 }

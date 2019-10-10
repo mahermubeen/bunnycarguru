@@ -81,12 +81,14 @@ class SearchByCarController extends Controller
             return redirect() -> back();
 
         $car = $this->car-> get_car($id);
-        $branches = $this->branch-> get_branches();
-
-        $cars = Car::where('id', $id)->with('batteries')->get();
-
         $string = $car->model;
         $models = explode(",", $string);
+
+        $branches = $this->branch-> get_branches();
+
+        $cars = Car::where('id', $id)->with('batteries', 'tyres', 'oils')->get();
+
+
 
         return view('services-and-repair', ['models' => $models, 'cars' => $cars, 'car' => $car, 'branches' => $branches]);
     }

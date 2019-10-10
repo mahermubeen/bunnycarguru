@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class CarBattery extends Model
+class CarTyre extends Model
 {
     protected $guarded = ['updated_at', 'created_at'];
 
@@ -13,11 +13,12 @@ class CarBattery extends Model
         CarBattery::create($info);
     }
 
-    public function edit_carBattery ($data, $where) {
+    public function edit_carTyre($data, $where) {
         return Car::where($where) -> update($data);
     }
 
-    public function delete_CarBattery($battery_id, $car_id) {
-        CarBattery::where(['battery_id'   => $battery_id, 'car_id' => $car_id] ) -> delete();
+    public function delete_carTyre($tyre_id, $car_id)
+    {
+        CarBattery::where(['tyre_id' => $tyre_id, 'car_id' => $car_id])->delete();
     }
 }

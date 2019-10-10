@@ -64,8 +64,8 @@
                         <select class="row inputs" id="batteryBrand">
                             <option></option>
                             @foreach($cars as $car)
-                                @foreach($car -> batteries as $battery)
-                                    <option>{{$battery->name}}</option>
+                                @foreach($car -> tyres as $tyre)
+                                    <option>{{$tyre->name}}</option>
                                 @endforeach
                             @endforeach
                         </select>
@@ -100,8 +100,8 @@
                         <select class="row inputs" id="batteryBrand">
                             <option></option>
                             @foreach($cars as $car)
-                                @foreach($car -> batteries as $battery)
-                                    <option>{{$battery->name}}</option>
+                                @foreach($car -> oils as $oil)
+                                    <option>{{$oil->name}}</option>
                                 @endforeach
                             @endforeach
                         </select>

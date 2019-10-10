@@ -1,6 +1,7 @@
 <?php
 
 namespace App;
+use DB;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -27,10 +28,7 @@ class Oil extends Model
         Oil::where('id', $id) -> delete();
     }
 
-    public function grads()
-    {
-        return $this->hasMany(Car::class, 'car_id', 'id');
-    }
+
 
     public function cars()
     {
