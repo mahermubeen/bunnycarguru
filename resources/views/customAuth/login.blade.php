@@ -8,9 +8,9 @@
     <meta name="viewport"
           content="target-densitydpi=device-dpi,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
     <meta content="True" name="HandheldFriendly">
-    <link rel="icon" type="image/ico" href="{{ asset('images/carguru-logo.png') }}"/>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <script src="{{ asset('https://kit.fontawesome.com/b11236bde2.js') }}"></script>
+    <link rel="icon" type="image/ico" href="{{ secure_asset('images/carguru-logo.png') }}"/>
+    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
+    <script src="{{ secure_asset('https://kit.fontawesome.com/b11236bde2.js') }}"></script>
 </head>
 <body>
 <div class="login-body">
@@ -36,7 +36,7 @@
                     <input id="password" style="display:none" type="password" name="fakepasswordremembered">
 
                         <div class="form-group has-feedback">
-                            <img src="{{ asset('images/mail.png') }}"/>
+                            <img src="{{ secure_asset('images/mail.png') }}"/>
                             <input  name="email"
                                     type="email"
                                    required
@@ -49,7 +49,7 @@
                         </span>
                     @enderror
                         <div class="form-group has-feedback">
-                            <img src="{{ asset('images/eye.png') }}"/>
+                            <img src="{{ secure_asset('images/eye.png') }}"/>
                             <input
                                    name="password"
                                    type="password"

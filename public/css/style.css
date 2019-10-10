@@ -27,16 +27,21 @@
   font-family: 'Poppins-Medium'; }
 *, *::after, *::before {
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-decoration: none !important; }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none !important; }
+  *:hover {
+    text-decoration: none !important; }
 
 body, html {
-  overflow-x: hidden !important; }
+  overflow-x: hidden !important;
+  text-decoration: none !important; }
 
 .container {
   margin: 0 auto;
@@ -468,7 +473,8 @@ a {
           .header .container-nav .nav-links .admin-login li a {
             color: white; }
             .header .container-nav .nav-links .admin-login li a:hover {
-              color: #004700; }
+              color: #004700;
+              text-decoration: none !important; }
         .header .container-nav .nav-links .admin-login span {
           color: #004700; }
       .header .container-nav .nav-links .login-apis li {
@@ -496,7 +502,8 @@ a {
           .header .container-nav .nav-list .options li a {
             color: #7a7a7a; }
             .header .container-nav .nav-list .options li a:hover {
-              color: #32cd32; }
+              color: #32cd32;
+              text-decoration: none !important; }
       .header .container-nav .nav-list .search-checkout li {
         padding: 0 4px 0 3px; }
         .header .container-nav .nav-list .search-checkout li a {
@@ -3320,6 +3327,17 @@ html {
     .wrapper.services-and-repair .choose-us-section .container .customers-wrapper .paragraph7 {
       text-align: center;
       padding: 36px 0 60px 0; }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  color: white !important;
+  border: none !important;
+  background-color: transparent !important;
+  background: none !important;
+  background: transparent !important;
+  background: transparent !important; }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  border: none !important; }
 
 .wrapper.search-by-cart {
   background-image: url("../images/searchBycar-blue-background.png"), url("../images/searchCar-bg-img-bottom.png");

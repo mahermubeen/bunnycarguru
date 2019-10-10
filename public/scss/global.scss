@@ -5,6 +5,7 @@
 *, *::after, *::before {
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none !important;
 }
 
 * {
@@ -12,9 +13,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none !important;
+    &:hover{
+         text-decoration: none !important;
+    }
 }
 body, html{
     overflow-x:hidden !important;
+    text-decoration: none !important;
 }
 .container {
     margin: 0 auto;
