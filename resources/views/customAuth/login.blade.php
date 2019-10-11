@@ -42,6 +42,7 @@
                                    required
                                     autocomplete="nope"
                                     placeholder="Email">
+
                         </div>
                         @error('email')
                         <span class="invalid-feedback" role="alert">
