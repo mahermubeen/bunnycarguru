@@ -16,6 +16,13 @@
 body, html{
     overflow-x:hidden !important;
 }
+
+.wrapper{
+    background: url(../images/bg.png) no-repeat;
+    background-position-x: right;
+    background-size: 55% 59px;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1170px;
@@ -221,17 +228,29 @@ a {
 
 @media screen and (max-width: 1240px) {
     .container {
-        margin: 0 30px;
+        max-width: 1074px !important;
     }
 }
 
-@media screen and (max-width: 500px){
-    .container{
-        margin: 0 15px;
+@media screen and (max-width: 1100px){
+    .wrapper{
+        background: url(../images/bg.png) no-repeat;
+        background-position-x: right;
+        background-size: 55% 47px;
     }
 }
 
+@media screen and (max-width: 765px){
+    .wrapper {
+        background-size: 100% 48px;
+    }
+}
 
+@media screen and (max-width: 670px){
+    .wrapper {
+        background-size: 100% 70px;
+    }
+}
 
 
 

@@ -12,6 +12,8 @@
         justify-content: space-between;
         grid-template-columns: 530px 1fr;
         grid-column-gap: 10%;
+        max-width: 985px;
+        margin: 0 auto;
 
         .servicesRepair-wrapper {
             .heading {
@@ -586,9 +588,10 @@
 
 
 @media screen and (max-width: 1100px) {
-    .home {
-        background: url('../images/responsive-banner.png') no-repeat center;
-        background-size: cover;
+    .header .container-nav .nav-links .admin-login li {
+        border-right: 1px solid white;
+        font-size: 10px;
+        padding: 0 10px;
     }
     .main-section {
         .aboutUs {

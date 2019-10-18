@@ -369,17 +369,8 @@ html {
 }
 
 
-//responsive
-@media screen and (max-width: 1250px) {
-    .container {
-        margin: 0 30px;
-    }
-}
 
 @media screen and (max-width: 1024px) {
-    .container {
-        margin: 0 25px;
-    }
     .about-wrapper {
         h1 {
             font-size: 2.2em;

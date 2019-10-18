@@ -12,7 +12,7 @@
 <body>
 
 <div class="wrapper">
-    <header class="header">
+    <header class="header container">
         <div id="main-nav" class="responsive-nav">
             <div onclick="closeNav()" class="cross"></div>
             <nav>
