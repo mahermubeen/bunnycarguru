@@ -29,6 +29,7 @@ Route::get('/blog', 'HomeController@blog');
 Route::get('/contact', 'HomeController@contact');
 Route::get('/cart', 'HomeController@cart');
 Route::get('/tyres', 'HomeController@tyres');
+Route::get('/batteries', 'HomeController@batteries');
 
 
 Route::get('/searchByCar', 'SearchByCarController@searchByCar');

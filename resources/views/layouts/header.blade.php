@@ -17,12 +17,14 @@
             <div onclick="closeNav()" class="cross"></div>
             <nav>
                 <ul>
-                    <li><a class="active" href={{url('/home')}}>Home</a></li>
-                    <li><a href={{url('/about')}}>About Us</a></li>
-                    <li><a href={{url('/services')}}>Services</a></li>
-                    <li><a href={{url('/blog')}}>Blog</a></li>
-                    <li><a href={{url('/searchByCar')}}>Search By Car</a></li>
-                    <li><a href={{url('/contact')}}>Contact Us</a></li>
+                    <li><a class="active" href={{url('/home')}}>HOME</a></li>
+                    <li><a href={{url('/about')}}>ABOUT US</a></li>
+                    <li><a href={{url('/services')}}>SERVICES</a></li>
+                    <li><a href={{url('/blog')}}>BLOG</a></li>
+                    <li><a href={{url('/searchByCar')}}>SEARCH BY CAR</a></li>
+                    <li><a href={{url('/tyres')}}>TYRES</a></li>
+                    <li><a href={{url('/batteries')}}>BATTERIES</a></li>
+                    <li><a href={{url('/contact')}}>CONTACT US</a></li>
                 </ul>
             </nav>
         </div>
@@ -68,6 +70,7 @@
                         <li><a href={{url('/blog')}}>BLOG</a></li>
                         <li><a href={{url('/searchByCar')}}>SEARCH BY CAR</a></li>
                         <li><a href={{url('/tyres')}}>TYRES</a></li>
+                        <li><a href={{url('/batteries')}}>BATTERIES</a></li>
                         <li><a href={{url('/contact')}}>CONTACT US</a></li>
                     </ul>
                     <ul class="search-checkout">

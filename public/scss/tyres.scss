@@ -3,12 +3,10 @@ $border: 1px solid $light-gray;
 .wrapper.search-by-cart{
     background-image:    url('../images/searchBycar-blue-background.png'),
     url('../images/searchCar-bg-img-bottom.png');
-    background-repeat:   no-repeat,
-    no-repeat;
-    background-position: top,
-    bottom;
-    background-size: contain, contain;
-    padding: 0 0 4%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 70%, contain;
+    background-position: top, bottom;
+    padding: 0px 0 13%;
     background-color: #f8f8f8;
     .container{
         padding: 33px 20px;

@@ -54,4 +54,9 @@ class HomeController extends Controller
     {
         return view('tyres');
     }
+
+    public function batteries()
+    {
+        return view('batteries');
+    }
 }

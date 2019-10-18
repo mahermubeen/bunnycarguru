@@ -3324,9 +3324,9 @@ html {
 .wrapper.search-by-cart {
   background-image: url("../images/searchBycar-blue-background.png"), url("../images/searchCar-bg-img-bottom.png");
   background-repeat: no-repeat, no-repeat;
+  background-size: 100% 70%, contain;
   background-position: top, bottom;
-  background-size: contain, contain;
-  padding: 0 0 4%;
+  padding: 0px 0 13%;
   background-color: #f8f8f8; }
   .wrapper.search-by-cart .container {
     padding: 33px 20px;
@@ -3717,6 +3717,377 @@ html {
             .car-tyre-section section .car-tyre-body .item .price-section > div button {
               background: #32cd32;
               color: #ffffff; }
+
+@media screen and (max-width: 944px) {
+  .wrapper.search-by-cart .container .shop-by .type-wrapper {
+    margin: 0; } }
+@media screen and (max-width: 720px) {
+  .car-tyre-section {
+    grid-template-columns: none; }
+    .car-tyre-section aside {
+      width: fit-content; } }
+@media screen and (max-width: 356px) {
+  .wrapper.search-by-cart .container {
+    padding: 33px 15px; }
+    .wrapper.search-by-cart .container .shop-by {
+      padding: 26px 20px 10px; }
+      .wrapper.search-by-cart .container .shop-by .type-wrapper {
+        margin: 0; }
+
+  .car-tyre-section {
+    margin-top: 20px; }
+    .car-tyre-section aside > :first-child {
+      padding: 15px 20px 0; }
+    .car-tyre-section section .car-tyre-header {
+      padding: 20px; }
+    .car-tyre-section section .car-tyre-body {
+      padding: 20px; } }
+.wrapper.search-by-cart {
+  background-image: url("../images/searchBycar-blue-background.png"), url("../images/searchCar-bg-img-bottom.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% 60%, contain;
+  background-position: top, bottom;
+  padding: 0px 0 13%;
+  background-color: #f8f8f8; }
+  .wrapper.search-by-cart .container {
+    padding: 33px 20px;
+    box-sizing: content-box;
+    font-weight: 500; }
+    .wrapper.search-by-cart .container .shadow {
+      box-shadow: 5px 0 5px 1px #787878; }
+    .wrapper.search-by-cart .container button, .wrapper.search-by-cart .container input {
+      border: none;
+      font-weight: 500; }
+    .wrapper.search-by-cart .container .car-battery {
+      padding: 30px;
+      background-color: #ffffff; }
+      .wrapper.search-by-cart .container .car-battery .batteries-headiing {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        grid-gap: 20px; }
+        .wrapper.search-by-cart .container .car-battery .batteries-headiing h2 {
+          font-size: 21px;
+          line-height: 73px;
+          color: #32cd32; }
+        .wrapper.search-by-cart .container .car-battery .batteries-headiing p {
+          color: #a7a7a7;
+          font-size: 13px;
+          line-height: 25px; }
+
+.car-tyre-section {
+  display: grid;
+  grid-template-columns: max-content auto;
+  margin-top: 30px;
+  grid-gap: 20px; }
+  .car-tyre-section .battry-aside {
+    width: 270px;
+    display: grid;
+    background-color: transparent;
+    grid-template-rows: repeat(3, max-content);
+    grid-gap: 10px;
+    height: max-content; }
+    .car-tyre-section .battry-aside .price-range-wrapper {
+      display: grid;
+      background-color: #ffffff;
+      padding: 0px 20px 25px 20px; }
+      .car-tyre-section .battry-aside .price-range-wrapper h2 {
+        font-size: 17px;
+        line-height: 50px;
+        color: #8d8d8d;
+        font-weight: bold; }
+      .car-tyre-section .battry-aside .price-range-wrapper .price-gray {
+        width: 100%;
+        height: 15px;
+        background-color: #ededed;
+        display: grid;
+        justify-content: center;
+        margin: 15px 0 15px; }
+        .car-tyre-section .battry-aside .price-range-wrapper .price-gray .price-white {
+          background-color: #fff;
+          border: 1px solid #ededed;
+          position: relative;
+          height: 15px;
+          width: 145px; }
+          .car-tyre-section .battry-aside .price-range-wrapper .price-gray .price-white .price-green-left {
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 35px;
+            height: 25px;
+            background-color: #32cd32;
+            cursor: pointer; }
+          .car-tyre-section .battry-aside .price-range-wrapper .price-gray .price-white .price-green-right {
+            position: absolute;
+            right: 0;
+            bottom: -6px;
+            width: 35px;
+            height: 25px;
+            background-color: #32cd32;
+            cursor: pointer; }
+      .car-tyre-section .battry-aside .price-range-wrapper p {
+        font-size: 13px;
+        line-height: 37px;
+        text-align: center;
+        color: #8d8d8d; }
+    .car-tyre-section .battry-aside .voltage-wrapper {
+      background-color: #ffffff;
+      padding: 0px 20px 40px 20px; }
+      .car-tyre-section .battry-aside .voltage-wrapper h2 {
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 50px;
+        color: #8d8d8d; }
+      .car-tyre-section .battry-aside .voltage-wrapper .voltage-form-wrapper {
+        display: grid;
+        grid-template-rows: repeat(3, 32px); }
+        .car-tyre-section .battry-aside .voltage-wrapper .voltage-form-wrapper .voltage-form input:checked ~ .checkmark:after {
+          display: block !important; }
+        .car-tyre-section .battry-aside .voltage-wrapper .voltage-form-wrapper .voltage-form {
+          font-size: 17px;
+          line-height: 60px;
+          color: #7e7e7e;
+          position: relative;
+          padding: 0 0 0 30px;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          /* Create a custom checkbox */
+          /* Create the checkmark/indicator (hidden when not checked) */
+          /* Style the checkmark/indicator */ }
+          .car-tyre-section .battry-aside .voltage-wrapper .voltage-form-wrapper .voltage-form input {
+            position: absolute;
+            left: 0px;
+            top: 20px;
+            z-index: 2;
+            opacity: 0;
+            cursor: pointer;
+            height: 22px;
+            width: 22px; }
+          .car-tyre-section .battry-aside .voltage-wrapper .voltage-form-wrapper .voltage-form .checkmark {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            border: 1px solid black; }
+          .car-tyre-section .battry-aside .voltage-wrapper .voltage-form-wrapper .voltage-form .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none; }
+          .car-tyre-section .battry-aside .voltage-wrapper .voltage-form-wrapper .voltage-form .checkmark:after {
+            left: 6px;
+            top: 2px;
+            width: 7px;
+            height: 11px;
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+    .car-tyre-section .battry-aside .capacity-wrapper {
+      background-color: #ffffff;
+      padding: 0px 20px 40px 20px; }
+      .car-tyre-section .battry-aside .capacity-wrapper h2 {
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 50px;
+        color: #8d8d8d; }
+      .car-tyre-section .battry-aside .capacity-wrapper .capacity-form-wrapper {
+        display: grid;
+        grid-template-rows: repeat(8, 32px); }
+        .car-tyre-section .battry-aside .capacity-wrapper .capacity-form-wrapper .capacity-form input:checked ~ .checkmark:after {
+          display: block !important; }
+        .car-tyre-section .battry-aside .capacity-wrapper .capacity-form-wrapper .capacity-form {
+          font-size: 17px;
+          line-height: 60px;
+          color: #7e7e7e;
+          position: relative;
+          padding: 0 0 0 30px;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          /* Create a custom checkbox */
+          /* Create the checkmark/indicator (hidden when not checked) */
+          /* Style the checkmark/indicator */ }
+          .car-tyre-section .battry-aside .capacity-wrapper .capacity-form-wrapper .capacity-form input {
+            position: absolute;
+            left: 0px;
+            top: 20px;
+            z-index: 2;
+            opacity: 0;
+            cursor: pointer;
+            height: 22px;
+            width: 22px; }
+          .car-tyre-section .battry-aside .capacity-wrapper .capacity-form-wrapper .capacity-form .checkmark {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            border: 1px solid black; }
+          .car-tyre-section .battry-aside .capacity-wrapper .capacity-form-wrapper .capacity-form .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none; }
+          .car-tyre-section .battry-aside .capacity-wrapper .capacity-form-wrapper .capacity-form .checkmark:after {
+            left: 6px;
+            top: 2px;
+            width: 7px;
+            height: 11px;
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+      .car-tyre-section .battry-aside .capacity-wrapper .show-more {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 50px;
+        color: #8d8d8d;
+        margin: 15px 0 0; }
+  .car-tyre-section section {
+    background-color: transparent;
+    display: grid;
+    grid-gap: 17px;
+    grid-template-rows: max-content; }
+    .car-tyre-section section .car-battery-header {
+      padding: 0 30px 25px 30px;
+      background-color: #ffffff; }
+      .car-tyre-section section .car-battery-header h2 {
+        font-size: 21px;
+        line-height: 73px;
+        color: #32cd32; }
+      .car-tyre-section section .car-battery-header .battery-options {
+        display: grid;
+        grid-template-columns: 1fr max-content; }
+        .car-tyre-section section .car-battery-header .battery-options .battery-form-list .battery-form-ul {
+          display: grid;
+          grid-template-columns: repeat(4, max-content);
+          grid-gap: 5px; }
+          .car-tyre-section section .car-battery-header .battery-options .battery-form-list .battery-form-ul .tab-links {
+            border: 1px solid #eeeeee;
+            background-color: white;
+            box-shadow: 0px 6px 6.08px 1.92px rgba(68, 65, 71, 0.05);
+            width: 92px;
+            height: 34px;
+            font-size: 15px;
+            color: #8d8d8d;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer; }
+          .car-tyre-section section .car-battery-header .battery-options .battery-form-list .battery-form-ul .active-battery {
+            background-color: #32cd32 !important;
+            color: #ffffff !important;
+            cursor: pointer; }
+        .car-tyre-section section .car-battery-header .battery-options .battery-select .battery-show-select {
+          border: none;
+          background-color: #ededed;
+          padding: 10px;
+          width: 112px;
+          height: 41px; }
+        .car-tyre-section section .car-battery-header .battery-options .battery-select .battery-sort-select {
+          border: none;
+          background-color: #ededed;
+          padding: 10px;
+          width: 181px;
+          height: 41px; }
+    .car-tyre-section section .car-battery-body {
+      background-color: white;
+      padding: 40px 25px; }
+      .car-tyre-section section .car-battery-body .battery-item-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px 0px;
+        justify-content: center; }
+        .car-tyre-section section .car-battery-body .battery-item-wrapper .batteries-show-more {
+          font-size: 14px;
+          line-height: 50px;
+          color: #ffffff;
+          background-color: limegreen;
+          width: 155px;
+          height: 53px;
+          -webkit-border-radius: 32px;
+          -moz-border-radius: 32px;
+          border-radius: 32px;
+          grid-column: 2;
+          margin: 0 auto;
+          cursor: pointer; }
+        .car-tyre-section section .car-battery-body .battery-item-wrapper .battery-item {
+          border: 1px solid #eeeeee;
+          background-color: white;
+          box-shadow: 0px 6px 6.08px 1.92px rgba(68, 65, 71, 0.05);
+          width: 258px;
+          height: 529px; }
+          .car-tyre-section section .car-battery-body .battery-item-wrapper .battery-item .battery-nameReviews {
+            position: relative; }
+            .car-tyre-section section .car-battery-body .battery-item-wrapper .battery-item .battery-nameReviews .battry-item-img {
+              position: absolute;
+              bottom: 50%;
+              left: 5%; }
+            .car-tyre-section section .car-battery-body .battery-item-wrapper .battery-item .battery-nameReviews .battery-review-main {
+              border: 1px solid #eeeeee;
+              background-color: #f8f8f8;
+              width: 257px;
+              height: 213px;
+              margin: 120px 0 0; }
+              .car-tyre-section section .car-battery-body .battery-item-wrapper .battery-item .battery-nameReviews .battery-review-main .review-bottom {
+                position: absolute;
+                bottom: 0;
+                padding: 0 20px 10px 20px; }
+                .car-tyre-section section .car-battery-body .battery-item-wrapper .battery-item .battery-nameReviews .battery-review-main .review-bottom p {
+                  font-size: 13px;
+                  line-height: 21px;
+                  color: #5a5a5a; }
+                .car-tyre-section section .car-battery-body .battery-item-wrapper .battery-item .battery-nameReviews .battery-review-main .review-bottom .battery-reviewsWrapper {
+                  display: grid;
+                  grid-template-columns: 1fr max-content;
+                  align-items: center; }
+                  .car-tyre-section section .car-battery-body .battery-item-wrapper .battery-item .battery-nameReviews .battery-review-main .review-bottom .battery-reviewsWrapper span {
+                    font-size: 14px;
+                    line-height: 40px;
+                    color: #5a5a5a;
+                    font-weight: bold; }
+          .car-tyre-section section .car-battery-body .battery-item-wrapper .battery-item .battery-buy-wrapper {
+            padding: 20px; }
+            .car-tyre-section section .car-battery-body .battery-item-wrapper .battery-item .battery-buy-wrapper .battry-buy-details .batry-detail {
+              font-size: 14px;
+              line-height: 24px;
+              display: grid;
+              grid-template-columns: 1fr max-content; }
+            .car-tyre-section section .car-battery-body .battery-item-wrapper .battery-item .battery-buy-wrapper p {
+              padding: 10px 0;
+              font-size: 18px;
+              line-height: 30px; }
+              .car-tyre-section section .car-battery-body .battery-item-wrapper .battery-item .battery-buy-wrapper p span {
+                color: #32cd32; }
+            .car-tyre-section section .car-battery-body .battery-item-wrapper .battery-item .battery-buy-wrapper .buy-btns {
+              display: grid;
+              grid-template-columns: 1fr 1fr; }
+              .car-tyre-section section .car-battery-body .battery-item-wrapper .battery-item .battery-buy-wrapper .buy-btns .batry-buy-select {
+                border: 1px solid limegreen;
+                background-color: white;
+                box-shadow: 0px 6px 6.08px 1.92px rgba(68, 65, 71, 0.05);
+                width: 80px;
+                height: 32px;
+                -webkit-border-radius: 32px;
+                -moz-border-radius: 32px;
+                border-radius: 32px;
+                padding: 0 0 0 10px;
+                cursor: pointer; }
+              .car-tyre-section section .car-battery-body .battery-item-wrapper .battery-item .battery-buy-wrapper .buy-btns .batry-buy-btn {
+                color: #ffffff;
+                background-color: limegreen;
+                box-shadow: 0px 6px 6.08px 1.92px rgba(68, 65, 71, 0.05);
+                width: 82px;
+                height: 34px;
+                -webkit-border-radius: 32px;
+                -moz-border-radius: 32px;
+                border-radius: 32px;
+                cursor: pointer; }
 
 @media screen and (max-width: 944px) {
   .wrapper.search-by-cart .container .shop-by .type-wrapper {
